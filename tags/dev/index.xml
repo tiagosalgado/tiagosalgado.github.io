@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on tiagosalgado.com</title>
+    <link>http://blog.tiagosalgado.com/tags/dev/</link>
+    <description>Recent content in Dev on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 02 Sep 2014 12:34:25 +0000</lastBuildDate>
+    <atom:link href="http://blog.tiagosalgado.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chrome dev tools dark theme</title>
+      <link>http://blog.tiagosalgado.com/2014/09/02/chrome-dev-tools-dark-theme/</link>
+      <pubDate>Tue, 02 Sep 2014 12:34:25 +0000</pubDate>
+      
+      <guid>http://blog.tiagosalgado.com/2014/09/02/chrome-dev-tools-dark-theme/</guid>
+      <description>&lt;p&gt;After seeing Iris Classon post about how to &lt;a href=&#34;http://irisclasson.com/2014/09/01/styling-chrome-dev-tools/&#34; target=&#34;_blank&#34;&gt;style Chrome Dev Tools&lt;/a&gt;, I knew I needed to give it a try.&lt;/p&gt;
+
+&lt;p&gt;I love Visual Studio dark theme, and having the same in Chrome is a joy for my eyes. So I&amp;#8217;ve done it, and I&amp;#8217;m happy.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.tiagosalgado.com/wp-content/uploads/2014/09/chrome-dev-tools-dark-theme.png&#34;&gt;&lt;img class=&#34;aligncenter wp-image-1425 &#34; src=&#34;http://blog.tiagosalgado.com/wp-content/uploads/2014/09/chrome-dev-tools-dark-theme-300x182.png&#34; alt=&#34;chrome-dev-tools-dark-theme&#34; width=&#34;399&#34; height=&#34;242&#34; srcset=&#34;http://blog.tiagosalgado.com/wp-content/uploads/2014/09/chrome-dev-tools-dark-theme-300x182.png 300w, http://blog.tiagosalgado.com/wp-content/uploads/2014/09/chrome-dev-tools-dark-theme-1024x622.png 1024w, http://blog.tiagosalgado.com/wp-content/uploads/2014/09/chrome-dev-tools-dark-theme.png 1052w&#34; sizes=&#34;(max-width: 399px) 100vw, 399px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Install:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add the extension &lt;a href=&#34;https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo&#34; target=&#34;_blank&#34;&gt;Zero Dark Matrix&lt;/a&gt; from Chrome Web store&lt;/li&gt;
+&lt;li&gt;Enable the Developer experiments (chrome://flags &amp;gt; Enable Developer Tools experiments) and click &amp;#8220;Relaunch Now&amp;#8221; at the bottom&lt;/li&gt;
+&lt;li&gt;Go to developer tools settings &amp;gt; Experiments &amp;gt; and tick Allow custom UI themes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks &lt;a href=&#34;http://irisclasson.com/&#34;&gt;Iris&lt;/a&gt; for the tip.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
