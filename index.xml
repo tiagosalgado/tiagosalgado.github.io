@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tiagosalgado.com</title>
-    <link>http://blog.tiagosalgado.com/</link>
+    <link>http://tiagosalgado.github.io/</link>
     <description>Recent content on tiagosalgado.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 02 Sep 2014 12:34:25 +0000</lastBuildDate>
-    <atom:link href="http://blog.tiagosalgado.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tiagosalgado.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Chrome dev tools dark theme</title>
-      <link>http://blog.tiagosalgado.com/2014/09/02/chrome-dev-tools-dark-theme/</link>
+      <link>http://tiagosalgado.github.io/2014/09/02/chrome-dev-tools-dark-theme/</link>
       <pubDate>Tue, 02 Sep 2014 12:34:25 +0000</pubDate>
       
-      <guid>http://blog.tiagosalgado.com/2014/09/02/chrome-dev-tools-dark-theme/</guid>
+      <guid>http://tiagosalgado.github.io/2014/09/02/chrome-dev-tools-dark-theme/</guid>
       <description>&lt;p&gt;After seeing Iris Classon post about how to &lt;a href=&#34;http://irisclasson.com/2014/09/01/styling-chrome-dev-tools/&#34; target=&#34;_blank&#34;&gt;style Chrome Dev Tools&lt;/a&gt;, I knew I needed to give it a try.&lt;/p&gt;
 
 &lt;p&gt;I love Visual Studio dark theme, and having the same in Chrome is a joy for my eyes. So I&amp;#8217;ve done it, and I&amp;#8217;m happy.&lt;/p&gt;
