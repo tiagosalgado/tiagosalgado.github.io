@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netponto on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/netponto/</link>
+    <description>Recent content in Netponto on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 23 Mar 2010 01:58:08 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/netponto/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>1ª Reunião Presencial da Comunidade NetPonto no Porto</title>
+      <link>https://blog.tiagosalgado.com/2010/03/23/1-reunio-presencial-da-comunidade-netponto-no-porto/</link>
+      <pubDate>Tue, 23 Mar 2010 01:58:08 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/03/23/1-reunio-presencial-da-comunidade-netponto-no-porto/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://img510.imageshack.us/img510/2407/netponto.jpg&#34; width=&#34;200&#34; height=&#34;65&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;No dia 27/03/2010 será realizada a 1ª reunião presencial da comunidade NetPonto, no Porto. Para participar, &lt;a href=&#34;http://netponto.org/reunioes/1a-reuniao-presencial-da-comunidade-netponto-no-porto/#registo&#34;&gt;efectue o registo&lt;/a&gt; de acordo com as &lt;a href=&#34;http://netponto.org/reunioes/1a-reuniao-presencial-da-comunidade-netponto-no-porto/#registo&#34;&gt;instruções abaixo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;a-name-agenda-agenda-a&#34;&gt;&lt;a name=&#34;agenda&#34;&gt;Agenda&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;14-00-8211-recepção-dos-participantes&#34;&gt;14:00 &amp;#8211; &lt;strong&gt;Recepção dos participantes&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;14:30 &amp;#8211; &lt;strong&gt;Apresentação da Comunidade NetPonto&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Apresentação da comunidade e dos nossos objectivos, planos para o futuro, e como é possível fazer parte e contribuir.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;14:45 &amp;#8211; &lt;strong&gt;Apresentação (TBD)&lt;/strong&gt;* &amp;#8211; &lt;a href=&#34;http://bit.ly/votacao-porto-marco-2010&#34;&gt;Vote no tema que gostaria de ver aqui&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;16:00 &amp;#8211; &lt;strong&gt;Coffee-break&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;16:30 &amp;#8211; &lt;strong&gt;Apresentação (TBD)&lt;/strong&gt;* &amp;#8211; &lt;a href=&#34;http://bit.ly/votacao-porto-marco-2010&#34;&gt;Vote no tema que gostaria de ver aqui&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;17:45 &amp;#8211; &lt;strong&gt;Painel de Discussão&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Votação dos Temas&lt;/strong&gt;: Como pode observar na agenda, a reunião terá duas apresentações de temas ainda não definidos, e que estão disponíveis para &lt;a href=&#34;http://bit.ly/votacao-porto-marco-2010&#34;&gt;votação&lt;/a&gt; neste endereço: &lt;a href=&#34;http://bit.ly/votacao-porto-marco-2010&#34;&gt;http://bit.ly/votacao-porto-marco-2010&lt;/a&gt;. Você escolhe o tema que mais gostaria de assistir, e nós apresentaremos os dois temas mais votados!&lt;br /&gt;
+Os temas disponíveis para &lt;a href=&#34;http://bit.ly/votacao-porto-marco-2010&#34;&gt;votação&lt;/a&gt; são estes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Introdução ao Entity Framework&lt;/li&gt;
+&lt;li&gt;Introdução ao eXtreme Programming&lt;/li&gt;
+&lt;li&gt;Introdução ao ASP .NET MVC&lt;/li&gt;
+&lt;li&gt;ASP .NET MVC na prática&lt;/li&gt;
+&lt;li&gt;Novidades do Visual Studio 2010&lt;/li&gt;
+&lt;li&gt;Novidades do .NET Framework 4.0&lt;/li&gt;
+&lt;li&gt;Novidades do C# e VB .NET no Framework 4.0&lt;/li&gt;
+&lt;li&gt;Introdução ao IronPython&lt;/li&gt;
+&lt;li&gt;Novidades do SQL Server 2008 para Developers&lt;/li&gt;
+&lt;li&gt;Introdução ao Windows Presentation Foundation (WPF)&lt;/li&gt;
+&lt;li&gt;Introdução ao Windows Communication Foundation (WCF)&lt;/li&gt;
+&lt;li&gt;Configuração de um Portal Sharepoint 2007&lt;/li&gt;
+&lt;li&gt;Ferramentas de apoio ao Desenvolvimento de Software&lt;/li&gt;
+&lt;li&gt;Introdução ao NHibernate OR/M&lt;/li&gt;
+&lt;li&gt;FluentNHibernate: Mapeamento Fluente e Automático para o NHibernate&lt;/li&gt;
+&lt;li&gt;Introdução ao Lucene.net&lt;/li&gt;
+&lt;li&gt;Geração de Código com o MyGeneration&lt;/li&gt;
+&lt;li&gt;Tecnologia .NET em Mundos Virtuais&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://bit.ly/votacao-porto-marco-2010&#34;&gt;Vote no tema que gostaria de assistir!&lt;/a&gt; &amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nota: Ao final da reunião, normalmente escolhemos um restaurante próximo e fazemos um jantar em grupo para continuar o convívio e aproximar as pessoas. A participação é opcional.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;a-name-registo-registo-inscrição-a&#34;&gt;&lt;a name=&#34;registo&#34;&gt;Registo / Inscrição&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Para participar, basta &lt;a href=&#34;http://netponto-porto-marco-2010.eventbrite.com/&#34;&gt;efectuar a inscrição&lt;/a&gt; através do site &lt;a href=&#34;http://netponto-porto-marco-2010.eventbrite.com/&#34;&gt;http://netponto-porto-marco-2010.eventbrite.com/&lt;/a&gt;.&lt;br /&gt;
+A entrada é &lt;strong&gt;gratuita&lt;/strong&gt;.&lt;br /&gt;
+Qualquer dúvida / esclarecimento, &lt;a href=&#34;mailto:contacto@netponto.org?subject=Contacto&#34;&gt;entre em contacto&lt;/a&gt; connosco.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;a-name-local-local-a&#34;&gt;&lt;a name=&#34;local&#34;&gt;Local&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Universidade Portucalense (Porto)&lt;/strong&gt;&lt;br /&gt;
+R. Dr. António Bernardino de Almeida, 541, sala 201 (segundo piso)&lt;br /&gt;
+4200-072 Porto&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

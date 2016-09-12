@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web 2.0 Tools on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/web-2/index.0-tools/</link>
+    <description>Recent content in Web 2.0 Tools on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 25 Apr 2010 18:26:25 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/web-2.0-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter lança plataforma @anywhere</title>
+      <link>https://blog.tiagosalgado.com/2010/04/25/twitter-lana-plataforma-anywhere/</link>
+      <pubDate>Sun, 25 Apr 2010 18:26:25 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/25/twitter-lana-plataforma-anywhere/</guid>
+      <description>&lt;p&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px&#34; border=&#34;0&#34; src=&#34;http://img204.imageshack.us/img204/6919/twitteranywheren.png&#34; width=&#34;946&#34; height=&#34;320&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&#34;http://twitter.com&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; lançou uma nova plataforma, designada por @anywhere, que permite a integração do serviço no nosso site de uma forma rápida e simples.&lt;/p&gt;
+
+&lt;p&gt;A @anywhere possui funcionalidades como:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Auto-linkification of Twitter usernames&lt;/li&gt;
+&lt;li&gt;Hovercards&lt;/li&gt;
+&lt;li&gt;Follow Buttons&lt;/li&gt;
+&lt;li&gt;Tweet Box&lt;/li&gt;
+&lt;li&gt;User login &amp;amp; signup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Segue um exemplo rápido de como mostrar a informação de um utilizador quando se passa o rato em cima:&lt;/p&gt;
+
+&lt;pre style=&#34;background: #ffffff; color: #000000&#34;&gt;&lt;span style=&#34;color: #696969&#34;&gt;&amp;lt;!-- colocar entre &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; --&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color: #a65700&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold&#34;&gt;script src=&#34;http://platform.twitter.com/anywhere.js?id=YOUR_API_KEY&amp;v=1&#34; type=&#34;text/javascript&#34;&lt;/span&gt;&lt;span style=&#34;color: #a65700&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #a65700&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold&#34;&gt;script&lt;/span&gt;&lt;span style=&#34;color: #a65700&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color: #696969&#34;&gt;&amp;lt;!-- colocar entre &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; --&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color: #a65700&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold&#34;&gt;script type=&#34;text/javascript&#34;&lt;/span&gt;&lt;span style=&#34;color: #a65700&#34;&gt;&amp;gt;&lt;/span&gt;
+  twttr&lt;span style=&#34;color: #808030&#34;&gt;.&lt;/span&gt;anywhere&lt;span style=&#34;color: #808030&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color: #808030&#34;&gt;(&lt;/span&gt;T&lt;span style=&#34;color: #808030&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #800080&#34;&gt;{&lt;/span&gt;
+    T&lt;span style=&#34;color: #808030&#34;&gt;.&lt;/span&gt;hovercards&lt;span style=&#34;color: #808030&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080&#34;&gt;;&lt;/span&gt;
+  &lt;span style=&#34;color: #800080&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color: #808030&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color: #a65700&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold&#34;&gt;script&lt;/span&gt;&lt;span style=&#34;color: #a65700&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para terem a vossa API Key, precisam de &lt;a href=&#34;http://dev.twitter.com/anywhere/apps/new&#34; target=&#34;_blank&#34;&gt;registar a vossa aplicação&lt;/a&gt; e só depois estão prontos para utilizar a plataforma.&lt;/p&gt;
+
+&lt;p&gt;Para ver o que o código acima faz, passem o rato sobre o meu utilizador: @TiagoSalgado&lt;/p&gt;
+
+&lt;p&gt;A documentação a explicar o funcionamente da plataforma, e com exemplos de como integra-la no nosso site, pode ser encontrada &lt;a href=&#34;http://dev.twitter.com/anywhere/begin&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forms Authentication on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/forms-authentication/</link>
+    <description>Recent content in Forms Authentication on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 09 Mar 2009 23:04:16 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/forms-authentication/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Autenticação e Autorização nas Aplicações Web</title>
+      <link>https://blog.tiagosalgado.com/2009/03/09/autenticao-e-autorizao-nas-aplicaes-web/</link>
+      <pubDate>Mon, 09 Mar 2009 23:04:16 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/03/09/autenticao-e-autorizao-nas-aplicaes-web/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/&#34; target=&#34;_blank&#34;&gt;Israel Aéce&lt;/a&gt; publicou uma série de posts sobre como gerir a autenticação e a autorização nas aplicações web. A leitura está muito acessivel e qualquer dúvida que tenham certamente que terão uma resposta por parte dele para vos ajudar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28809.aspx&#34;&gt;DBAuthorization – Parte 1 – O Problema&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28814.aspx&#34;&gt;DBAuthorization – Parte 2 – A possível solução&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28815.aspx&#34;&gt;DBAuthorization – Parte 3 – Estrutura do Banco de Dados&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28817.aspx&#34;&gt;DBAuthorization – Parte 4 – Estrutura dos Tipos&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28822.aspx&#34;&gt;DBAuthorization – Parte 5 – Provider&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28826.aspx&#34;&gt;DBAuthorization – Parte 6 – Caching&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28837.aspx&#34;&gt;DBAuthorization – Parte 7 – DBAuthorizationModule&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28841.aspx&#34;&gt;DBAuthorization – Parte 8 – Configuração do arquivo Web.config&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28845.aspx&#34;&gt;DBAuthorization – Parte 9 – Interface de Administração&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28856.aspx&#34;&gt;DBAuthorization – Parte 10 – Conclusão&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

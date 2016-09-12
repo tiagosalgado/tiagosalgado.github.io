@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codeplex on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/codeplex/</link>
+    <description>Recent content in Codeplex on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 21 Sep 2011 19:29:01 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/codeplex/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mishra Reader</title>
+      <link>https://blog.tiagosalgado.com/2011/09/21/mishra-reader/</link>
+      <pubDate>Wed, 21 Sep 2011 19:29:01 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/09/21/mishra-reader/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;alignnone&#34; title=&#34;Mishra_Reader &#34; src=&#34;http://img171.imageshack.us/img171/6066/screen01wi.png&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&#34;http://mishrareader.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Mishra Reader&lt;/a&gt;, é um cliente do &lt;a href=&#34;http://www.google.com/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt; desenvolvido em &lt;a href=&#34;http://pt.wikipedia.org/wiki/Windows_Presentation_Foundation&#34; target=&#34;_blank&#34;&gt;WPF&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O projecto está alojado no &lt;a href=&#34;http://www.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Codeplex&lt;/a&gt;, e pode ser feito o download &lt;a href=&#34;http://mishrareader.codeplex.com/releases/view/71161&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SpecExpress : A Fluent Validation Framework</title>
+      <link>https://blog.tiagosalgado.com/2011/09/11/specexpress-a-fluent-validation-framework/</link>
+      <pubDate>Sun, 11 Sep 2011 15:44:49 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/09/11/specexpress-a-fluent-validation-framework/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Project Description&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;SpecExpress is a fluent validation framework and container for .Net that makes it easier to write validation rules and validate your objects. SpecExpress also offers integration with ASP.NET WebForms, eliminating duplication of your validation rules.&lt;/p&gt;
+
+&lt;h4 id=&#34;features&#34;&gt;Features&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The SpecExpress DSL provides developers with a Fluent Interface for quickly composing rules that are also easy to read. See a &lt;a href=&#34;http://specexpress.codeplex.com/wikipage?title=Quick%20Start&amp;amp;referringTitle=Home&#34;&gt;Sample&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generates error message from your validation rules, but allows for easy overriding and customization of individual messages. Support for localization of error messages.&lt;/li&gt;
+&lt;li&gt;Validation Catalog allows:
+
+&lt;ul&gt;
+&lt;li&gt;Auto discovery of specifications means the developer isn&amp;#8217;t required to resolve which validation rules to use&lt;/li&gt;
+&lt;li&gt;Programatically add or change validation rules at runtime&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://specexpress.codeplex.com/wikipage?title=ValidationContexts&amp;amp;referringTitle=Home&#34;&gt;Validation Contexts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Support for rich, complex object types and graphs&lt;/li&gt;
+&lt;li&gt;Built with extension and customization in mind&lt;/li&gt;
+&lt;li&gt;Easy to integrate into your existing code because there are no Base Classes or Attributes to inject into your code&lt;/li&gt;
+&lt;li&gt;ASP.NET WebForms support&lt;/li&gt;
+&lt;li&gt;ASP.NET MVC support&lt;/li&gt;
+&lt;li&gt;Silverlight support&lt;/li&gt;
+&lt;li&gt;A rich set of &lt;a href=&#34;http://specexpress.codeplex.com/wikipage?title=Validators&amp;amp;referringTitle=Home&#34;&gt;Validators&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Página do projecto no Codeplex em &lt;a href=&#34;http://specexpress.codeplex.com/&#34;&gt;http://specexpress.codeplex.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projectos porreiros no CodePlex</title>
+      <link>https://blog.tiagosalgado.com/2011/03/14/projectos-porreiros-no-codeplex/</link>
+      <pubDate>Mon, 14 Mar 2011 22:57:15 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/14/projectos-porreiros-no-codeplex/</guid>
+      <description>
+
+&lt;p&gt;Existe um número bastante consideraval de projectos no &lt;a href=&#34;http://www.codeplex.com&#34;&gt;Codeplex&lt;/a&gt; que vão de encontro com algumas das nossas necessidades.&lt;/p&gt;
+
+&lt;p&gt;Como tal, deixo aqui dois que já me foram uteis.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-href-http-de-codeplex-com-target-blank-droid-explorer-a&#34;&gt;&lt;a href=&#34;http://de.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Droid Explorer&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Tal como o nome indica, permite-nos explorar um dispositivo com Android e tem funcionalidades como:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Copy local files to device&lt;/li&gt;
+&lt;li&gt;Reboot device&lt;/li&gt;
+&lt;li&gt;Reboot device in to recovery mode&lt;/li&gt;
+&lt;li&gt;Open files for viewing / execution &lt;strong&gt;locally&lt;/strong&gt; with the default file type executable&lt;/li&gt;
+&lt;li&gt;Package Manager (Install &amp;amp; Uninstall)&lt;/li&gt;
+&lt;li&gt;Take a Screen Shot (landscape or portrait)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://de.codeplex.com/wikipage?title=Features&amp;referringTitle=Home&#34; target=&#34;_blank&#34;&gt;etc&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;virtual-router-wifi-hot-spot-windows-7-2008-r2-http-virtualrouter-codeplex-com&#34;&gt;&lt;a href=&#34;http://virtualrouter.codeplex.com/&#34;&gt;Virtual Router – Wifi Hot Spot (Windows 7 / 2008 R2)&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Permite criar um ponto de acesso, partilhando a ligação à Internet local, com outros dispositivos por wireless. É sem duvida uma aplicação a ter sempre instalada pela simplicidade que nos fornecede em criar um recurso com este.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NBlog : ASP.NET MVC 3.0 Blog Engine</title>
+      <link>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</link>
+      <pubDate>Sat, 26 Feb 2011 15:54:09 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nblog.codeplex.com/&#34; target=&#34;_blank&#34;&gt;NLog&lt;/a&gt; é um sistema de blogs desenvolvido em ASP.NET MVC 3, Razor, JQuery e C#.&lt;/p&gt;
+
+&lt;p&gt;Podem ver em funcionamento em &lt;a href=&#34;http://chrisfulstow.com/&#34; title=&#34;http://chrisfulstow.com/&#34;&gt;http://chrisfulstow.com/&lt;/a&gt; ou &lt;a href=&#34;http://blog.appharbor.com/&#34; title=&#34;http://blog.appharbor.com/&#34;&gt;http://blog.appharbor.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Este projecto está disponivel para download no &lt;a href=&#34;http://www.codeplex.com/&#34; target=&#34;_blank&#34;&gt;CodePlex&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Laharsub: a message server for real time web applications</title>
+      <link>https://blog.tiagosalgado.com/2010/10/26/laharsub-a-message-server-for-real-time-web-applications/</link>
+      <pubDate>Tue, 26 Oct 2010 22:31:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/10/26/laharsub-a-message-server-for-real-time-web-applications/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Laharsub is an open source messaging server designed for real time communication in web applications. Laharsub supports a publish/subscribe message exchange pattern many modern, real time web applications use. Online chat and collaboration, multiplayer online gaming, news or stock quote updates, and many more types of web applications created today require real time data transfer from the server to the web client, and between web clients. Laharsub server is implemented in .NET and ships with support for several client technologies: jQuery, Silverlight, and .NET. The protocol is based on HTTP long polling and exposed through a set of REST APIs. Laharsub server can be used from any environment that supports HTTP, including JavaScript running in a web browser. Laharsub enables adding support for a variety of backend technologies to support scale out to a large number of concurrent users. The memory based backend implementation included in Laharsub does not support scale-out but offers high performance in small deployments (several thousand users).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Para mais detalhes acerca do projecto cliquem &lt;a href=&#34;http://laharsub.codeplex.com/&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VS 2008 Snippet Designer</title>
+      <link>https://blog.tiagosalgado.com/2008/10/26/vs-2008-snippet-designer/</link>
+      <pubDate>Sun, 26 Oct 2008 19:25:43 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/10/26/vs-2008-snippet-designer/</guid>
+      <description>&lt;p&gt;Mathew Manela disponibilizou no &lt;a href=&#34;http://www.codeplex.com&#34; target=&#34;_blank&#34;&gt;CodePlex&lt;/a&gt; uma ferramenta para o &lt;a href=&#34;http://www.microsoft.com/vstudio&#34; target=&#34;_blank&#34;&gt;Visual Studio&lt;/a&gt; que nos permite criar snippets do nosso código, o &lt;a href=&#34;http://www.codeplex.com/SnippetDesigner&#34; target=&#34;_blank&#34;&gt;Snippet Designer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fica integrado no IDE e podemos exportar um pedaço de código para um snippet recorrendo ao botao direito do rato escolhendo a opção &amp;#8220;Export as Snippet&amp;#8221;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

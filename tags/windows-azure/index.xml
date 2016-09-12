@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Azure on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/windows-azure/</link>
+    <description>Recent content in Windows Azure on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 14 Nov 2013 09:29:18 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/windows-azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visual Studio 2013 Launch</title>
+      <link>https://blog.tiagosalgado.com/2013/11/14/visual-studio-2013-launch/</link>
+      <pubDate>Thu, 14 Nov 2013 09:29:18 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/11/14/visual-studio-2013-launch/</guid>
+      <description>&lt;p&gt;Yesterday was another great day for .NET Developers and really nice news from the best IDE (feel free to disagree), Visual Studio 2013.&lt;/p&gt;
+
+&lt;p&gt;Please find some useful links below:&lt;/p&gt;
+
+&lt;p&gt;VS Online “Monaco”&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; &lt;a href=&#34;http://weblogs.asp.net/jgalloway/archive/2013/11/13/a-quick-look-at-the-new-visual-studio-online-quot-monaco-quot-code-editor.aspx&#34;&gt;http://weblogs.asp.net/jgalloway/archive/2013/11/13/a-quick-look-at-the-new-visual-studio-online-quot-monaco-quot-code-editor.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; &lt;a href=&#34;http://gunnarpeipman.com/2013/11/first-look-at-visual-studio-online-monaco/&#34;&gt;http://gunnarpeipman.com/2013/11/first-look-at-visual-studio-online-monaco/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; &lt;a href=&#34;http://blogs.msdn.com/b/somasegar/archive/2013/11/13/visual-studio-2013-launch-announcing-visual-studio-online.aspx&#34;&gt;http://blogs.msdn.com/b/somasegar/archive/2013/11/13/visual-studio-2013-launch-announcing-visual-studio-online.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; &lt;a href=&#34;http://www.visualstudio.com/en-us/news/2013-nov-13-vso&#34;&gt;http://www.visualstudio.com/en-us/news/2013-nov-13-vso&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;PCL and .NET NuGet Libraries are now enabled for Xamarin &amp;#8211; &lt;a href=&#34;http://blogs.msdn.com/b/dotnet/archive/2013/11/13/pcl-and-net-nuget-libraries-are-now-enabled-for-xamarin.aspx&#34;&gt;http://blogs.msdn.com/b/dotnet/archive/2013/11/13/pcl-and-net-nuget-libraries-are-now-enabled-for-xamarin.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;VS Launch videos &amp;#8211; &lt;a href=&#34;http://channel9.msdn.com/Events/Visual-Studio/Launch-2013&#34;&gt;http://channel9.msdn.com/Events/Visual-Studio/Launch-2013&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

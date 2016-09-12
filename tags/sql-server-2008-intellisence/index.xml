@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql Server 2008 Intellisence on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/sql-server-2008-intellisence/</link>
+    <description>Recent content in Sql Server 2008 Intellisence on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 13 May 2009 20:40:36 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/sql-server-2008-intellisence/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Actualizar a cache do Intellisence do SQL Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/05/13/actualizar-a-cache-do-intellisence-do-sql-server-2008/</link>
+      <pubDate>Wed, 13 May 2009 20:40:36 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/13/actualizar-a-cache-do-intellisence-do-sql-server-2008/</guid>
+      <description>&lt;p&gt;No &lt;a href=&#34;http://www.microsoft.com/sqlserver/2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;SQL Server 2008&lt;/a&gt;, quando criamos uma nova tabela, um Stored Procedure, etc … o Intellisence (no SQL Server Management Studio) não fica de imediato actualizado para acedermos rapidamente a esse objecto que criamos.&lt;/p&gt;
+
+&lt;p&gt;Para resolver isso, podemos actualizar a cache do Intellisence usando uma das duas formas:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Menu Edit &amp;gt; Intellisence &amp;gt; Refresh Local Cache&lt;/li&gt;
+&lt;li&gt;Pelo atalho CTRL + SHIFT + R&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

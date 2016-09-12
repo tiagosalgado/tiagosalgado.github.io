@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sem Categoria on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/categories/sem-categoria/</link>
+    <description>Recent content in Sem Categoria on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 16 Jun 2011 10:51:05 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/categories/sem-categoria/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTML5 Boilerplate</title>
+      <link>https://blog.tiagosalgado.com/2011/06/16/html5-boilerplate/</link>
+      <pubDate>Thu, 16 Jun 2011 10:51:05 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/06/16/html5-boilerplate/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;HTML5 Boilerplate é o modelo profissional HTML/CSS/JS para um site rápido, robusto e preparado para o futuro.&lt;br /&gt;
+Depois de mais de dois anos de desenvolvimento iterativo, temos o melhor das melhores práticas em normalização cross-browser, optimizações de performance, e até recursos opcionais como Ajax cross-domain e Flash. Um arquivo de configurações apache .htaccess prevê as regras de caching mais úteis e prepara o site para disponibilizar vídeo HTML5, usar @font-face, e aprimorar sua performance com gzip.&lt;br /&gt;
+Boilerplate não é um framework, nem prescreve nenhuma filosofia de desenvolvimento, é só uma colecção de truques para fazer seu projecto começar mais rápido e com o pé-direito.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Podem ler mais sobre o HTML5Boilerplate no &lt;a href=&#34;http://html5boilerplate.com/&#34; target=&#34;_blank&#34;&gt;website do projecto&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Uma boa forma de se iniciar com o HTML5Boilerplate pode ser encontrado no blog do Dan Wahlin neste &lt;a href=&#34;http://weblogs.asp.net/dwahlin/archive/2011/06/05/getting-started-using-html5-boilerplate.aspx&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jQuery Menubar e web.sitemap</title>
+      <link>https://blog.tiagosalgado.com/2011/05/11/jquery-menubar-e-web-sitemap/</link>
+      <pubDate>Wed, 11 May 2011 22:37:16 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/05/11/jquery-menubar-e-web-sitemap/</guid>
+      <description>&lt;p&gt;Após o HTML 5 Microsoft WebCamp Portugal, surgiu-me algum interesse em explorar o plugin &lt;a href=&#34;http://wiki.jqueryui.com/w/page/38666403/Menubar&#34;&gt;Menubar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Este plugin transforma uma lista num menu bastante agradável, e como tal, gostava de o implementar num projecto em que utilizo o web.sitemap.&lt;/p&gt;
+
+&lt;p&gt;Para tal, precisei de recorrer a um XLST para transformar o web.sitemap, que não é mais que um XML, numa lista no formato que o Menubar necessita.&lt;/p&gt;
+
+&lt;p&gt;Segue então um exemplo do web.sitemap:&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;utf-8&amp;rdquo;?&amp;gt;&lt;br /&gt;
+&lt;siteMap xmlns=&#34;&lt;http://schemas.microsoft.com/AspNet/SiteMap-File-1.0&#34;&gt;&amp;gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; &lt;siteMapNode url=&#34;~/&#34; title=&#34;Home&#34; description=&#34;Home&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;siteMapNode url=&#34;&#34; title=&#34;Menu 1&#34; description=&#34;Menu 1&#34; &gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;siteMapNode url=&#34;&lt;http://www.google.pt&#34;&gt; title=&amp;ldquo;Submenu 1&amp;rdquo; description=&amp;ldquo;Submenu 1&amp;rdquo; /&amp;gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/siteMapNode&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;siteMapNode url=&#34;&#34; title=&#34;Menu 2&#34; description=&#34;Menu 2&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;siteMapNode url=&#34;&lt;http://www.microsoft.com&#34;&gt; title=&amp;ldquo;Submenu 2&amp;rdquo; description=&amp;ldquo;Submenu 2&amp;rdquo; /&amp;gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;siteMapNode url=&#34;&lt;http://www.apple.com&#34;&gt; title=&amp;ldquo;Submenu 3&amp;rdquo; description=&amp;ldquo;Submenu&amp;#160; 3&amp;rdquo; /&amp;gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/siteMapNode&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; &lt;/siteMapNode&gt;&lt;br /&gt;
+&lt;/siteMap&gt;&lt;/p&gt;
+
+&lt;p&gt;Para transformar o XML numa lista, usei o seguinte XSLT&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;utf-8&amp;rdquo;?&amp;gt;&lt;br /&gt;
+&lt;xsl:stylesheet version=&#34;1.0&#34; xmlns:xsl=&#34;&lt;http://www.w3.org/1999/XSL/Transform&#34;&gt; xmlns:map=&amp;rdquo;&lt;http://schemas.microsoft.com/AspNet/SiteMap-File-1.0&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; exclude-result-prefixes=&amp;ldquo;map&amp;rdquo;&amp;gt;&lt;br /&gt;
+&amp;#160; &lt;xsl:output method=&#34;xml&#34; encoding=&#34;utf-8&#34; indent=&#34;yes&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160; &lt;xsl:template match=&#34;map:siteMapNode&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; &lt;li&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;a href=&#34;{@url}&#34; title=&#34;{@description}&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;xsl:value-of select=&#34;@title&#34;/&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/a&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;xsl:if test=&#34;map:siteMapNode&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;ul&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;xsl:call-template name=&#34;mapNode&#34;/&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/ul&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;a href=&#34;https://blog.tiagosalgado.com/xsl:if&#34;&gt;/xsl:if&lt;/a&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; &lt;/li&gt;&lt;br /&gt;
+&amp;#160; &lt;a href=&#34;https://blog.tiagosalgado.com/xsl:template&#34;&gt;/xsl:template&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160; &lt;xsl:template name=&#34;mapNode&#34; match=&#34;/\*/\*&#34;&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; &lt;a href=&#34;xsl:apply-templates/&#34;&gt;xsl:apply-templates/&lt;/a&gt;&lt;br /&gt;
+&amp;#160; &lt;a href=&#34;https://blog.tiagosalgado.com/xsl:template&#34;&gt;/xsl:template&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://blog.tiagosalgado.com/xsl:stylesheet&#34;&gt;/xsl:stylesheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Desta forma, irei obter uma lista igual à seguinte:&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;utf-16&amp;rdquo; ?&amp;gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;li&gt;&lt;a href=&#34;&#34; title=&#34;Menu 1&#34;&gt;Menu 1&lt;/a&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;ul&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;li&gt;&lt;a href=&#34;&lt;http://www.google.pt&#34;&gt; title=&amp;ldquo;Submenu 1&amp;rdquo;&amp;gt;Submenu 1&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/ul&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/li&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;li&gt;&lt;a href=&#34;&#34; title=&#34;Menu 2&#34;&gt;Menu 2&lt;/a&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;ul&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;li&gt;&lt;a href=&#34;&lt;http://www.microsoft.com&#34;&gt; title=&amp;ldquo;Submenu 2&amp;rdquo;&amp;gt;Submenu 2&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;li&gt;&lt;a href=&#34;&lt;http://www.apple.com&#34;&gt; title=&amp;ldquo;Submenu&amp;#160; 3&amp;rdquo;&amp;gt;Submenu 3&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/ul&gt;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/li&gt;&lt;/p&gt;
+
+&lt;p&gt;Por fim, basta-nos adicionar um controlo XML que irá fazer o render da lista.&lt;/p&gt;
+
+&lt;ul id=&#34;bar1&#34; class=&#34;menubar&#34;&gt;   
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;asp:Xml runat=&#34;server&#34; ID=&#34;xmlSiteMapViewer&#34; DocumentSource=&#34;~/web.sitemap&#34; TransformSource=&#34;~/sitemap.xslt&#34; /&gt;   
+&amp;#160;&amp;#160;&amp;#160; &lt;/ul&gt;
+
+&lt;p&gt;A inserção do controlo entre uma “unordered list” foi propositado, pois só assim é que teremos o menu a funcionar correctamente e teremos um resultado identico ao que está no seguinte site:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://view.jqueryui.com/master/demos/menubar/default.html&#34;&gt;http://view.jqueryui.com/master/demos/menubar/default.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Application Name na ConnectionString</title>
+      <link>https://blog.tiagosalgado.com/2011/05/10/application-name-na-connectionstring/</link>
+      <pubDate>Tue, 10 May 2011 13:52:59 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/05/10/application-name-na-connectionstring/</guid>
+      <description>&lt;p&gt;Quando estou a desenolver algum projecto, é normal necessitar de analisar as querys que são executadas na base de dados para detectar um possivel bug ou algo que não esteja a bater certo com o que esperava.&lt;/p&gt;
+
+&lt;p&gt;Para isso, uso o Profiler do SQL Server que me dá rapidamente uma boa visão do que está a ser solicitado em cada ligação à base de dados.&lt;/p&gt;
+
+&lt;p&gt;O exemplo de um registo no profiler pode ser visto assim:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img841.imageshack.us/img841/8498/profiler1.png&#34; width=&#34;771&#34; height=&#34;30&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como se pode ver, a coluna Application Name tem o valor “.Net SqlClient Data Provider”, o que nos dificulta bastante a filtragem para apenas a aplicação que pretendemos analisar os dados.&lt;/p&gt;
+
+&lt;p&gt;Para resolver isso, basta-nos indicar na ConnectionString, o nome da nossa aplicação, e tudo fica mais fácil.&lt;/p&gt;
+
+&lt;pre&gt;&#34;Data Source=localhost;Initial Catalog=MyDatabase;Integrated Security=True;Application Name=MyAppName&#34;&lt;/pre&gt;
+
+&lt;p&gt;Após isto,, já teremos algo mais amigável como:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img148.imageshack.us/img148/2063/profiler2.png&#34; width=&#34;714&#34; height=&#34;19&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET Membership Lock User</title>
+      <link>https://blog.tiagosalgado.com/2011/05/02/asp-net-membership-lock-user/</link>
+      <pubDate>Mon, 02 May 2011 13:58:23 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/05/02/asp-net-membership-lock-user/</guid>
+      <description>&lt;p&gt;Visto que não temos uma forma directa de indicar que determinado utilizador irá estar bloqueado, a única forma que arranjei para o fazer foi forçar o erro no login múltiplas vezes, até atingir o valor máximo de tentativas definidas no atributo “maxInvalidPasswordAttempts”.&lt;/p&gt;
+
+&lt;p&gt;Quando usamos o Membership do ASP.NET, no web.config teremos algo como:&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;add name=&amp;ldquo;AspNetSqlMembershipProvider&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;type=&amp;ldquo;System.Web.Security.SqlMembershipProvider&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;connectionStringName=&amp;ldquo;MyAppConnectionString&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;enablePasswordRetrieval=&amp;ldquo;false&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;enablePasswordReset=&amp;ldquo;true&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;requiresQuestionAndAnswer=&amp;ldquo;false&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;requiresUniqueEmail=&amp;ldquo;false&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;maxInvalidPasswordAttempts=&amp;ldquo;5&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;minRequiredPasswordLength=&amp;ldquo;6&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;minRequiredNonalphanumericCharacters=&amp;ldquo;0&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;passwordAttemptWindow=&amp;ldquo;10&amp;rdquo; applicationName=&amp;ldquo;MyAppName&amp;rdquo; /&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;O código que utilizo é então o seguinte:&lt;/p&gt;
+
+&lt;div style=&#34;padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px&#34; id=&#34;scid:812469c5-0cb0-4c63-8c15-c81123a09de7:7b992993-3bdb-4e84-a36b-2b56774e9723&#34; class=&#34;wlWriterEditableSmartContent&#34;&gt;
+  &lt;pre name=&#34;code&#34; class=&#34;c#&#34;&gt;public static bool LockUser(MembershipUser user)
+{
+    try
+    {
+        for (int i = 0; i &amp;lt; Membership.MaxInvalidPasswordAttempts; i++)
+            Membership.ValidateUser(user.UserName, &#34;thisisandummypasswordonlytolocktheuser&#34;);
+
+        return user.IsLockedOut;
+    }
+    catch (Exception)
+    {
+        throw;
+    }
+            
+}&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Espero que seja util.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Project Silk</title>
+      <link>https://blog.tiagosalgado.com/2011/04/29/project-silk/</link>
+      <pubDate>Fri, 29 Apr 2011 14:48:03 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/29/project-silk/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://silk.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Project Silk&lt;/a&gt; provides guidance for building cross-browser web applications with a focus on client-side interactivity. These applications take advantage of the latest web standards like HTML5, CSS3 and ECMAScript 5 along with modern web technologies such as jQuery, Internet Explorer 9, and ASP.NET MVC3.&lt;/p&gt;
+
+&lt;p&gt;To illustrate this guidance, the project includes a reference implementation called Mileage Stats that enables its users to track various metrics about their vehicles and fill-ups. Much of the effort in building Mileage Stats was applied to the usability and interactivity of the experience. Animations were included to enhance the enjoyment of the site and AJAX is used to keep the interface responsive and immersive. A great deal of care was also taken to ensure the client-side JavaScript facilitates modularity and maintainability. To accomplish these design goals, the JavaScript code was structured into “widgets” that benefit from the jQuery UI Widget Factory.&lt;/p&gt;
+
+&lt;p&gt;Mais informações em &lt;a href=&#34;http://silk.codeplex.com/&#34; title=&#34;http://silk.codeplex.com/&#34;&gt;http://silk.codeplex.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JustTrace e JustDecompile</title>
+      <link>https://blog.tiagosalgado.com/2011/04/29/justtrace-e-justdecompile/</link>
+      <pubDate>Fri, 29 Apr 2011 10:11:38 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/29/justtrace-e-justdecompile/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.telerik.com/&#34; target=&#34;_blank&#34;&gt;Telerik&lt;/a&gt; disponibilizou duas ferramentas, ainda em fase Beta, para download. O &lt;a href=&#34;http://www.telerik.com/products/memory-performance-profiler.aspx&#34; target=&#34;_blank&#34;&gt;JustTrace&lt;/a&gt; e o &lt;a href=&#34;http://www.telerik.com/products/decompiling.aspx&#34; target=&#34;_blank&#34;&gt;JustDecompile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.telerik.com/products/memory-performance-profiler.aspx&#34;&gt;JustTrace&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Profiler Types&lt;/li&gt;
+&lt;li&gt;Live Data&lt;/li&gt;
+&lt;li&gt;Attach to Running Process&lt;/li&gt;
+&lt;li&gt;Visual Studio Integration&lt;/li&gt;
+&lt;li&gt;Profiling Child Processes&lt;/li&gt;
+&lt;li&gt;Profiling Performance&lt;/li&gt;
+&lt;li&gt;RadControls in Action&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.telerik.com/products/decompiling.aspx&#34;&gt;JustDecompile&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fast Code Navigation&lt;/li&gt;
+&lt;li&gt;Side-by-Side Assemblies&lt;/li&gt;
+&lt;li&gt;Easy Assembly Management&lt;/li&gt;
+&lt;li&gt;Rich, WPF UI&lt;/li&gt;
+&lt;li&gt;Universal Find Usages&lt;/li&gt;
+&lt;li&gt;Decompiled Code Quality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Download &lt;a href=&#34;http://www.telerik.com/account/your-products/trial-product-versions/download-trial-file.aspx?pid=844&#34;&gt;JustTrace&lt;/a&gt; and &lt;a href=&#34;http://www.telerik.com/community/license-agreement.aspx?pId=845&#34;&gt;JustDecompile&lt;/a&gt; Betas&lt;br /&gt;
+&lt;a href=&#34;http://www.telerik.com/community/forums/justtrace.aspx&#34;&gt;JustTrace Official Feedback Forum&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.telerik.com/community/forums/justdecompile.aspx&#34;&gt;JustDecompile Official Feedback Forum&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Controlar Menus visiveis com o web.sitemap</title>
+      <link>https://blog.tiagosalgado.com/2011/04/14/controlar-menus-visiveis-com-o-web-sitemap/</link>
+      <pubDate>Thu, 14 Apr 2011 13:52:21 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/14/controlar-menus-visiveis-com-o-web-sitemap/</guid>
+      <description>&lt;p&gt;Uma maneira rápida de ter um menu a funcionar no nosso website, é recorrer ao controlo Menu e associá-lo a um web.sitemap usando o SiteMapDataSource.&lt;/p&gt;
+
+&lt;p&gt;Exemplo do ficheiro web.sitemap:&lt;/p&gt;
+
+&lt;pre&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; ?&amp;gt;
+&amp;lt;siteMap xmlns=&#34;http://schemas.microsoft.com/AspNet/SiteMap-File-1.0&#34; &amp;gt;
+    &amp;lt;siteMapNode  url=&#34;~/&#34; title=&#34;Home&#34;  description=&#34;Home&#34; &amp;gt;
+        &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 1&#34; title=&#34;Menu 1&#34;&amp;gt;
+            &amp;lt;siteMapNode url=&#34;&#34; description=&#34;SubMenu 1&#34; title=&#34;Sub Menu 1&#34;/&amp;gt;
+        &amp;lt;/siteMapNode&amp;gt;
+        &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 2&#34; title=&#34;Menu 2&#34;/&amp;gt;
+        &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 3&#34; title=&#34;Menu 3&#34;/&amp;gt;
+    &amp;lt;/siteMapNode&amp;gt;
+&amp;lt;/siteMap&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;Exemplo do código para adicionar na página o menu:&lt;/p&gt;
+
+&lt;pre&gt;&lt;pre&gt;&amp;lt;asp:Menu ID=&#34;NavigationMenu&#34; runat=&#34;server&#34; CssClass=&#34;menu&#34; 
+    EnableViewState=&#34;False&#34; IncludeStyleBlock=&#34;False&#34; Orientation=&#34;Horizontal&#34; 
+    DataSourceID=&#34;SiteMapDataSource1&#34; onmenuitemdatabound=&#34;NavigationMenu_MenuItemDataBound&#34;&amp;gt;
+&amp;lt;/asp:Menu&amp;gt;
+&amp;lt;asp:SiteMapDataSource ID=&#34;SiteMapDataSource1&#34; runat=&#34;server&#34;  ShowStartingNode=&#34;false&#34; /&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+  Correndo a aplicação, iremos ter algo como a próxima imagem:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img src=&#34;http://img576.imageshack.us/img576/1593/menu1rc.png&#34; alt=&#34;&#34; width=&#34;454&#34; height=&#34;143&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Para mostrar ou esconder os menus, consoante o tipo de acesso de cada utilizador, podemos definir as Roles em cada SiteMapNode.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Outra forma de controlar os menus visiveis, é adicionar um atributo em cada SiteMapNode e consoante o seu valor, irá ou não mostrar cada um dos menus.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Para isso, o web.sitemap será algo como:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;siteMap xmlns=&#34;http://schemas.microsoft.com/AspNet/SiteMap-File-1.0&#34;&amp;gt;
+  &amp;lt;siteMapNode url=&#34;~/&#34; title=&#34;Home&#34; description=&#34;Home&#34; visible=&#34;true&#34;&amp;gt;
+    &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 1&#34; title=&#34;Menu 1&#34; visible=&#34;true&#34;&amp;gt;
+      &amp;lt;siteMapNode url=&#34;&#34; description=&#34;SubMenu 1&#34; title=&#34;Sub Menu 1&#34; visible=&#34;true&#34; /&amp;gt;
+    &amp;lt;/siteMapNode&amp;gt;
+    &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 2&#34; title=&#34;Menu 2&#34; visible=&#34;False&#34; /&amp;gt;
+    &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 3&#34; title=&#34;Menu 3&#34; visible=&#34;true&#34; /&amp;gt;
+  &amp;lt;/siteMapNode&amp;gt;
+&amp;lt;/siteMap&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+  O atributo “visible” é que nos vai indicar se o menu é ou não mostrado, e para isso vamos adicionar ao evento MenuItemDataBound do Menu o seguinte código:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void NavigationMenu_MenuItemDataBound(object sender, MenuEventArgs e)
+{
+    SiteMapNode node = e.Item.DataItem as SiteMapNode;
+    if (!string.IsNullOrEmpty(node[&#34;visible&#34;]))
+    {
+        bool isVisible;
+        if (bool.TryParse(node[&#34;visible&#34;], out isVisible))
+        {
+            if (!isVisible)
+            {
+                if (e.Item.Parent != null)
+                    e.Item.Parent.ChildItems.Remove(e.Item);
+                else
+                    ((Menu)sender).Items.Remove(e.Item);
+            }
+        }
+    }
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  Desta forma, teremos o nosso menu a mostrar todos os nós cujo valor do atributo Visible seja igual a True.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Para podermos controlar directamente os menus que irão estar ou não visiveis, utilizei uma Treeview para carregar o ficheiro web.sitemap, definir que todos os items mostrarão uma checkbox, que irá indicar o estado do atributo Visible.
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;&amp;lt;asp:TreeView runat=&#34;server&#34; ID=&#34;tvMenus&#34; AutoGenerateDataBindings=&#34;False&#34; DataSourceID=&#34;XmlDsSiteMap&#34;
+    OnTreeNodeCheckChanged=&#34;tvMenus_TreeNodeCheckChanged&#34; ShowCheckBoxes=&#34;All&#34; ShowLines=&#34;True&#34;
+    OnTreeNodeDataBound=&#34;tvMenus_TreeNodeDataBound&#34;&amp;gt;
+    &amp;lt;DataBindings&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMapNode&#34; SelectAction=&#34;None&#34; ShowCheckBox=&#34;True&#34;
+            TextField=&#34;title&#34; /&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMapNode&#34; TextField=&#34;title&#34; /&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMapNode&#34; TextField=&#34;title&#34; /&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMap&#34; /&amp;gt;
+    &amp;lt;/DataBindings&amp;gt;
+&amp;lt;/asp:TreeView&amp;gt;
+&amp;lt;asp:XmlDataSource ID=&#34;XmlDsSiteMap&#34; runat=&#34;server&#34; DataFile=&#34;~/Web.sitemap&#34; XPath=&#34;/*/*/*&#34;&amp;gt;
+&amp;lt;/asp:XmlDataSource&amp;gt;
+    &amp;lt;p&amp;gt;
+        &amp;lt;asp:Button runat=&#34;server&#34; ID=&#34;btn&#34; Text=&#34;gravar&#34; OnClick=&#34;btn_Click&#34; /&amp;gt;&amp;lt;/p&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+  &amp;nbsp;
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void tvMenus_TreeNodeDataBound(object sender, TreeNodeEventArgs e)
+{
+    XmlElement node = e.Node.DataItem as XmlElement;
+    if (node.Attributes[&#34;visible&#34;] != null)
+    {
+        if (!string.IsNullOrEmpty(node.Attributes[&#34;visible&#34;].Value))
+        {
+            bool isVisible;
+            if (bool.TryParse(node.Attributes[&#34;visible&#34;].Value, out isVisible))
+            {
+                e.Node.Checked = isVisible;
+            }
+            else
+                e.Node.Checked = true;
+        }
+        else
+            e.Node.Checked = true;
+    }
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  &lt;img src=&#34;http://img828.imageshack.us/img828/8241/menu2f.png&#34; alt=&#34;&#34; width=&#34;396&#34; height=&#34;276&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Por fim, para gravarmos as alterações do atributo consoante o estado da checkbox, adicionamos ao evento TreeNodeCheckChanged da Treeview o seguinte código:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void tvMenus_TreeNodeCheckChanged(object sender, TreeNodeEventArgs e)
+{
+    XmlDsSiteMap.GetXmlDocument().SelectSingleNode(e.Node.DataPath).Attributes[&#34;visible&#34;].Value = e.Node.Checked.ToString();
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  E ao botão que adicionamos para gravar as alterações o seguinte código:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void btn_Click(object sender, EventArgs e)
+{
+    XmlDsSiteMap.Save();
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  Agora é só activar e desactivar os items ao nosso gosto.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img src=&#34;http://img828.imageshack.us/img828/543/menu3x.png&#34; alt=&#34;&#34; width=&#34;356&#34; height=&#34;271&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Concurso Reach the Cloud</title>
+      <link>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</link>
+      <pubDate>Tue, 12 Apr 2011 14:02:12 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://img718.imageshack.us/img718/9763/reachthecloudcontest.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; border=&#34;0&#34; src=&#34;http://img718.imageshack.us/img718/9763/reachthecloudcontest.png&#34; width=&#34;510&#34; height=&#34;176&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;grande-prémio&#34;&gt;Grande prémio&lt;/h4&gt;
+
+&lt;p&gt;Um voo de 25 min. num caça de combate L-39 Albatros. A experiência inclui manobras de voo como loopings, subidas e descidas a pique. ATENÇÃO: o prémio só é concedido a pessoas sem problemas de saúde sendo exigida a apresentação de electrocardiograma. Caso o vencedor não preencha os requisitos médicos, ser-lhe-á atribuído um prémio alternativo (por exemplo, viagem em balão). O prémio inclui uma viagem de fim-de-semana para uma pessoa a Usedom, Alemanha, com estadia em hotel, aluguer de automóvel e voo (valor total aprox. de 10,000 USD).&lt;/p&gt;
+
+&lt;h4 id=&#34;prémios-regionais&#34;&gt;Prémios regionais&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;1º:&lt;/strong&gt; uma XBOX 360 com televisor de topo e uma Kinect&lt;br /&gt;
+&lt;strong&gt;2º:&lt;/strong&gt; um portátil com Windows 7&lt;br /&gt;
+&lt;strong&gt;3º:&lt;/strong&gt; um telemóvel Windows Phone 7 (sem contrato de comunicações)&lt;/p&gt;
+
+&lt;h4 id=&#34;prémio-especial&#34;&gt;Prémio especial&lt;/h4&gt;
+
+&lt;p&gt;Os primeiros 250 participantes que se registem no desafio receberão um helicóptero R/C.&lt;/p&gt;
+
+&lt;p&gt;Todas as informações em &lt;a href=&#34;https://www.microsoft.com/emea/reachthecloud/pt-pt/Default.aspx#/Home&#34; target=&#34;_blank&#34;&gt;Reach the Cloud&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Orleans &amp;#8211; software framework for cloud applications</title>
+      <link>https://blog.tiagosalgado.com/2011/04/12/orleans-software-framework-for-cloud-applications/</link>
+      <pubDate>Tue, 12 Apr 2011 10:47:54 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/12/orleans-software-framework-for-cloud-applications/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Client + cloud computing is a disruptive, new computing platform, combining diverse client devices – PCs, smartphones, sensors, and single-function and embedded devices – with the unlimited, on-demand computation and data storage offered by cloud computing services such as Amazon’s AWS or Microsoft’s Windows Azure. As with every advance in computing, programming is a fundamental challenge as client + cloud computing combines many difficult aspects of software development.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Orleans is a software framework for building client + cloud applications. Orleans encourages use of simple concurrency patterns that are easy to understand and implement correctly, building on an actor-like model with declarative specification of persistence, replication, and consistency and using lightweight transactions to support the development of reliable and scalable client + cloud software.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://research.microsoft.com/apps/pubs/?id=141999&#34; target=&#34;_blank&#34;&gt;Orleans on Microsoft Research&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&#34;http://blog.agafonov.net.ua/post/2011/04/12/Orleans-software-framework-for-cloud-applications.aspx&#34; title=&#34;http://blog.agafonov.net.ua/post/2011/04/12/Orleans-software-framework-for-cloud-applications.aspx&#34;&gt;http://blog.agafonov.net.ua/post/2011/04/12/Orleans-software-framework-for-cloud-applications.aspx&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How-to Index for Windows Azure</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</link>
+      <pubDate>Mon, 11 Apr 2011 13:02:22 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How to: Build a Windows Azure Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee814754.aspx&#34;&gt;How to Configure Virtual Machine Sizes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee758697.aspx&#34;&gt;How to Configure Connection Strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee907419.aspx&#34;&gt;How to Configure Operating System Versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee758708.aspx&#34;&gt;How to Configure Local Storage Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432987.aspx&#34;&gt;How to Create a Certificate for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433063.aspx&#34;&gt;How to Create a Remote Desktop Protocol File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432991.aspx&#34;&gt;How to Define Environment Variables Before a Role Starts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433020.aspx&#34;&gt;How to Define Input Endpoints for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432980.aspx&#34;&gt;How to Define Internal Endpoints for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456327.aspx&#34;&gt;How to Define Startup Tasks for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432965.aspx&#34;&gt;How to Encrypt a Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433115.aspx&#34;&gt;How to Restrict Communication Between Roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433051.aspx&#34;&gt;How to Retrieve Role Instance Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432963.aspx&#34;&gt;How to Use the RoleEnvironment.Changing Event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433023.aspx&#34;&gt;How to Use the RoleEnvironment.Changed Event&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Use the Windows Azure SDK Tools to Package and Deploy an Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433136.aspx&#34;&gt;How to Prepare the Windows Azure Compute Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433131.aspx&#34;&gt;How to Configure the Compute Emulator to Emulate Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433133.aspx&#34;&gt;How to Package an Application by Using the CSPack Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433130.aspx&#34;&gt;How to Run an Application in the Compute Emulator by Using the CSRun Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433132.aspx&#34;&gt;How to Initialize the Storage Emulator by Using the DSInit Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432970.aspx&#34;&gt;How to Change the Configuration of a Running Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432961.aspx&#34;&gt;How to Attach a Debugger to New Role Instances&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432969.aspx&#34;&gt;How to View Trace Information in the Compute Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433134.aspx&#34;&gt;How to Configure SQL Server for the Storage Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Configure a Web Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433110.aspx&#34;&gt;How to Configure a Web Role for Multiple Web Sites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432956.aspx&#34;&gt;How to Configure the Virtual Directory Location&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433064.aspx&#34;&gt;How to Configure a Windows Azure Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433080.aspx&#34;&gt;How to Configure the Site Entry in the Service Definition File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433059.aspx&#34;&gt;How to Configure IIS Components in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433113.aspx&#34;&gt;How to Configure a Service to Use a Legacy Web Role&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Windows Azure VM Roles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465391.aspx&#34;&gt;How to Create the Base VHD for a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465409.aspx&#34;&gt;How to Install the Windows Azure Integration Components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg697584.aspx&#34;&gt;How to Enable Windows Azure Connect for a VM Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg466226.aspx&#34;&gt;How to Develop an Adapter for a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465407.aspx&#34;&gt;How to Prepare the Server Image for Uploading to Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465385.aspx&#34;&gt;How to Upload a VHD to Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465379.aspx&#34;&gt;How to Create and Deploy the VM Role Service Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg697586.aspx&#34;&gt;How to Use Certificates With a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465406.aspx&#34;&gt;How to Change a Server Image for a VM Role by Using a Differencing VHD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465392.aspx&#34;&gt;How to Change the Configuration of a VM role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg466230.aspx&#34;&gt;How to Manage the Lifecycle of VM Role Instances in Windows Azure&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Administering Windows Azure Hosted Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433024.aspx&#34;&gt;How to Setup a Windows Azure Subscription&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456328.aspx&#34;&gt;How to Setup Multiple Administrator Accounts&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Deploy a Windows Azure Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456329.aspx&#34;&gt;How to Package your Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/dd179441.aspx&#34;&gt;How to Deploy a Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433118.aspx&#34;&gt;How to Create a Hosted Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433066.aspx&#34;&gt;How to Create a Storage Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee871996.aspx&#34;&gt;How to Configure the Service Topology&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Upgrade a Service&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee517255.aspx&#34;&gt;How to Perform In-Place Upgrades&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee517253.aspx&#34;&gt;How to Swap a Service&amp;#8217;s VIPs&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Upgrades to the Windows Azure Guest OS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456325.aspx&#34;&gt;How to Determine the Current Guest OS of your Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433101.aspx&#34;&gt;How to Upgrade the Guest OS in the Management Portal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456324.aspx&#34;&gt;How to Upgrade the Guest OS in the Service Configuration File&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Management Certificates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551722.aspx&#34;&gt;How to Create a Management Certificate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551726.aspx&#34;&gt;How to Add a Management Certificate to a Windows Azure Subscription&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Service Certificates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465712.aspx&#34;&gt;How to Add a New Certificate to the Certificate Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465718.aspx&#34;&gt;How to Associate a Certificate with a Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465711.aspx&#34;&gt;How to Update a Certificate in the Certificate Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ff795779.aspx&#34;&gt;How to Configure an HTTPS Endpoint in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551724.aspx&#34;&gt;How to Control Access to Certificates on a Virtual Machine&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Use Storage Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433066.aspx&#34;&gt;How to Create a Storage Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg494982.aspx&#34;&gt;How to Read Configuration Settings for the Storage Client Library and Handle Changed Settings&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Configure Windows Azure Connect&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433071.aspx&#34;&gt;How to Activate Windows Azure Roles for Windows Azure Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432964.aspx&#34;&gt;How to Install Local Endpoints with Windows Azure Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433031.aspx&#34;&gt;How to Create and Configure a Group of Endpoints in Windows Azure Connect&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage CDN on Windows Azure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680301.aspx&#34;&gt;How to Enable CDN for Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680307.aspx&#34;&gt;How to Map CDN Content to a Custom Domain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680303.aspx&#34;&gt;How to Remove Content from the CDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680306.aspx&#34;&gt;How to Manage Expiration of Blob Content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680299.aspx&#34;&gt;How to Manage Expiration of Hosted Service Content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;from: &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432998.aspx&#34; title=&#34;http://msdn.microsoft.com/en-us/library/gg432998.aspx&#34;&gt;http://msdn.microsoft.com/en-us/library/gg432998.aspx&lt;/a&gt; (via &lt;a href=&#34;http://blogs.msdn.com/b/otavio/&#34; title=&#34;http://blogs.msdn.com/b/otavio/&#34;&gt;http://blogs.msdn.com/b/otavio/&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gantter–Project Management tool</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</link>
+      <pubDate>Mon, 11 Apr 2011 09:14:10 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://gantter.com/&#34; target=&#34;_blank&#34;&gt;Gantter&lt;/a&gt;, é uma ferramenta de gestão de projectos totalmente “web-based” e gratuita.&lt;/p&gt;
+
+&lt;p&gt;Tem a integração com o Google Docs, permite a importação dos ficheiros MPP, e está disponivel em 11 idiomas.&lt;/p&gt;
+
+&lt;p&gt;Podem ver todas as funcionalidades &lt;a href=&#34;http://gantter.com/gantter-overview&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img824.imageshack.us/img824/3198/examplegantter1.png&#34; width=&#34;499&#34; height=&#34;441&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;URL: &lt;a href=&#34;http://gantter.com/&#34; title=&#34;http://gantter.com/&#34;&gt;http://gantter.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Verificar disponibilidade de username nas redes sociais</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/verificar-disponibilidade-de-username-nas-redes-sociais/</link>
+      <pubDate>Mon, 11 Apr 2011 01:20:52 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/verificar-disponibilidade-de-username-nas-redes-sociais/</guid>
+      <description>&lt;p&gt;Querem ver se determinado username está disponivel nas redes sociais mais conhecidas?&lt;br /&gt;
+É exactamente isso que o site &lt;a href=&#34;http://namechk.com/&#34;&gt;http://namechk.com/&lt;/a&gt; faz. Basta indicarem o username e rapidamente saberão a sua disponiblidade em 160 redes sociais.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img196.imageshack.us/img196/2237/20110411012141.jpg&#34; width=&#34;196&#34; height=&#34;60&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instaladores Habilitados de TDT por Código Postal (JSON &#43; C#)</title>
+      <link>https://blog.tiagosalgado.com/2011/04/01/instaladores-habilitados-de-tdt-por-cdigo-postal-json-c/</link>
+      <pubDate>Fri, 01 Apr 2011 18:30:00 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/01/instaladores-habilitados-de-tdt-por-cdigo-postal-json-c/</guid>
+      <description>&lt;p&gt;Pois é, a TDT já anda aí, e por razões que não interessam, precisei de retornar todos os instaladores por cada código postal, cuja PT indica como sendo um instalador habilitado.&lt;/p&gt;
+
+&lt;p&gt;Para tal, fiz uma pequena aplicação que enviada um pedido com o código postal, e interpretava o resultado retornado em JSON.&lt;/p&gt;
+
+&lt;p&gt;Primeiro tive que criar um ficheiro de texto com todos os códigos postais. Podem fazer download do que usei &lt;a href=&#34;http://www.box.net/shared/hn52rj4h38&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O código poderá não ser o melhor, mas fez o que pretendia e não precisei de me chatear mais com o assunto.&lt;/p&gt;
+
+&lt;div style=&#34;padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px&#34; id=&#34;scid:812469c5-0cb0-4c63-8c15-c81123a09de7:d60490cc-6ec5-4f42-a36b-2621f06e335e&#34; class=&#34;wlWriterEditableSmartContent&#34;&gt;
+  &lt;pre name=&#34;code&#34; class=&#34;c&#34;&gt;using System;
+using System.Collections.Generic;
+using System.Net;
+using System.IO;
+using System.Web.Script.Serialization;
+
+namespace WebApplication1
+{
+    public class CPs
+    {
+        public string cp4 { get; set; }
+        public string cp3 { get; set; }
+    }
+
+    public partial class _Default : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            GetData();
+        }
+
+        private void GetData()
+        {
+            List&amp;lt;CPs&amp;gt; cps = new List&amp;lt;CPs&amp;gt;();
+            
+            TextReader t = new StreamReader(@&#34;C:cps.txt&#34;);
+            string line = &#34;&#34;;
+            t.ReadLine();
+            while (t.Peek() &amp;gt; 0)
+            {
+                line = t.ReadLine();
+                cps.Add(new CPs() { cp4 = line.Split(&#39;-&#39;)[0].ToString(), cp3 = line.Split(&#39;-&#39;)[1].ToString() });
+            }
+
+            HttpWebRequest request = null;
+
+            foreach (CPs cp in cps)
+            {
+                try
+                {
+                    request = (HttpWebRequest)HttpWebRequest.Create(@&#34;http://tdt.telecom.pt/handlers/installerSearch.ashx?cp4=&#34; + cp.cp4 + &#34;&amp;cp3=&#34; + cp.cp3);
+                    request.ContentType = &#34;application/json; charset=utf-8&#34;;
+                    request.Accept = &#34;application/json, text/javascript, */*&#34;;
+                    WebResponse response = request.GetResponse();
+
+                    Stream stream = response.GetResponseStream();
+                    string json = &#34;&#34;;
+
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        while (!reader.EndOfStream)
+                        {
+                            json += reader.ReadLine();
+                        }
+                    }
+
+                    JavaScriptSerializer serializer = new JavaScriptSerializer();
+                    Dictionary&amp;lt;string, object&amp;gt; x = (Dictionary&amp;lt;string, object&amp;gt;)serializer.DeserializeObject(json);
+
+                    if (x.Count &amp;gt; 0)
+                        Response.Write(cp.cp4 + &#34;;&#34; + cp.cp3 + &#34;;&#34; + x[&#34;name&#34;].ToString() + &#34;;&#34; + x[&#34;phoneNumber1&#34;].ToString() + &#34;;&#34; + x[&#34;phoneNumber2&#34;].ToString() + &#34;&amp;lt;br /&amp;gt;&#34;);
+
+
+                }
+                catch (Exception)
+                {
+
+                }
+
+            }
+        }
+
+   
+    }
+
+    
+}&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;!-- Start block. Created with Code4Blog for Microsoft Visual Studio 2010. Copyright (c)2010 Vitaly Zayko http://zayko.net --&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a31515&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a31515&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;!-- End block --&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Virtual Academy</title>
+      <link>https://blog.tiagosalgado.com/2011/03/29/microsoft-virtual-academy/</link>
+      <pubDate>Tue, 29 Mar 2011 13:47:36 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/29/microsoft-virtual-academy/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Microsoft Virtual Academy – MVA is a fully cloud-based learning experience focusing on Microsoft Cloud Technologies. You can access a variety of training content online and become one of the renowned experts in the IT Pro community around the world. MVA provides its users with a virtual university experience: the student can select a course and study the material and then do the self-assessment. By doing so, he will collect points that will promote him to a Bronze, Silver, Gold or Platinum Level. Students on MVA can get access to all the information, statistics and advancements of their training career, allowing them to maintain a long-term relationship with Microsoft. Learning through MVA is free of charge, and you can study the contents at any time and at your own pace.&lt;br /&gt;
+The MVA platform is hosted on the latest Microsoft Azure technology, which guarantees that your learning experience will flow uninterruptedly for the best online learning experience ever!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.microsoftvirtualacademy.com&#34; title=&#34;https://www.microsoftvirtualacademy.com&#34;&gt;https://www.microsoftvirtualacademy.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encriptar e desencriptar um Stored Procedure</title>
+      <link>https://blog.tiagosalgado.com/2011/03/27/encriptar-e-desencriptar-um-stored-procedure/</link>
+      <pubDate>Sun, 27 Mar 2011 00:57:53 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/27/encriptar-e-desencriptar-um-stored-procedure/</guid>
+      <description>&lt;p&gt;Quando não queremos que tenham acesso ao código dos Stored Procedures, Triggers ou Views, que implementamos numa base de dados, podemos criar e encriptar facilmente, bastando para isso adicionar um “WITH ENCRYPTION”.&lt;/p&gt;
+
+&lt;p&gt;Segue um exemplo para a criação de um Stored Procedure:&lt;/p&gt;
+
+&lt;div style=&#34;padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px&#34; id=&#34;scid:812469c5-0cb0-4c63-8c15-c81123a09de7:cf553843-dc71-42fa-aac0-86cfbe39a808&#34; class=&#34;wlWriterEditableSmartContent&#34;&gt;
+  &lt;pre name=&#34;code&#34; class=&#34;sql&#34;&gt;CREATE PROCEDURE encrypted_SP(@var varchar(10))
+WITH ENCRYPTION
+AS
+    -- this is an encrypted stored procedure
+    print @var&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Desta forma, o nosso SP aparecerá no Object Explorer da seguinte forma:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img694.imageshack.us/img694/3120/sqlobjectexplorer.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como podem ver, é muito simples criar um stored procedure encriptado.&lt;/p&gt;
+
+&lt;p&gt;Mas por vezes, até dava (mesmo) jeito conseguirmos ver o código, e para isso é necessário recorrer a ferramentas de terceiros.&lt;/p&gt;
+
+&lt;p&gt;É aqui que entra o &lt;a href=&#34;http://optillect.com/products/sqldecryptor/overview.html&#34; target=&#34;_blank&#34;&gt;SQL Decryptor&lt;/a&gt; da &lt;a href=&#34;http://optillect.com&#34; target=&#34;_blank&#34;&gt;Optillect&lt;/a&gt;. Acedendo à nossa base de dados por esta aplicação, com apenas um duplo clique sobre o Stored Procedure que está encriptado, rapidamente conseguimos ver o código que tanto pretendemos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img22.imageshack.us/img22/7672/decryptsp.png&#34; width=&#34;640&#34; height=&#34;480&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lightswitch on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/lightswitch/</link>
+    <description>Recent content in Lightswitch on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 16 Oct 2011 21:46:34 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/lightswitch/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Developing real-world applications with LightSwitch</title>
+      <link>https://blog.tiagosalgado.com/2011/10/16/developing-real-world-applications-with-lightswitch/</link>
+      <pubDate>Sun, 16 Oct 2011 21:46:34 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/10/16/developing-real-world-applications-with-lightswitch/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://www.snowball.be/&#34; target=&#34;_blank&#34;&gt;Gill Cleeren&lt;/a&gt; fez uma série de 8 artigos que explica como desenvolver uma aplicação com o &lt;a href=&#34;http://www.microsoft.com/visualstudio/en-us/lightswitch&#34; target=&#34;_blank&#34;&gt;Lightswitch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-1.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-2-Everything-starts-with-data.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 2: Everything starts with data&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-3-Going-visual-with-screens.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 3: Going visual with screens&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-4-To-query-or-to-code-that-is-the-question.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 4: To query or to code, that is the question!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-5-Security-and-deployment-in-LightSwitch-applications-.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 5: Security and deployment in LightSwitch applications&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-6-First-steps-in-LightSwitch-Extensibility.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 6: First steps in LightSwitch Extensibility&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-7-Building-control-extensions-with-the-extensibility-toolkit.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 7: Building control extensions with the extensibility toolkit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.silverlightshow.net/items/Looking-at-LightSwitch-Part-8-More-extensibility-with-the-toolkit.aspx&#34; target=&#34;_blank&#34;&gt;Developing real-world applications with LightSwitch &amp;#8211; Part 8: More extensibility with the toolkit&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

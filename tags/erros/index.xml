@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erros on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/erros/</link>
+    <description>Recent content in Erros on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 13 May 2009 21:12:21 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/erros/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problemas na conectividade do Windows Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/05/13/problemas-na-conectividade-do-windows-server-2008/</link>
+      <pubDate>Wed, 13 May 2009 21:12:21 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/13/problemas-na-conectividade-do-windows-server-2008/</guid>
+      <description>&lt;p&gt;Já há algum tempo que tenho problemas na ligação à rede no meu PC. Andei a ver os logs e nunca encontrei razão aparente para a ligação se desligar e voltar logo de seguida.&lt;/p&gt;
+
+&lt;p&gt;Hoje andei a investigar um bocado e fui várias vezes de encontro de que desactivando na placa de rede o IPv6 me iria resolver o problema. A maioria dos casos eram em sistemas com o Windows Vista instalado, mas vi outros que relatavam o problema no Windows Server 2008, que é o meu caso.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image.png&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb.png&#34; width=&#34;377&#34; height=&#34;472&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Resta-me aguardar algum tempo e ver se isto resolve de vez, mas se entretanto alguem tiver tido o mesmo problema e se o resolveu, indiquem sff 😀&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Crash do Internet Explorar ao executar uma tarefa agendada</title>
+      <link>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</link>
+      <pubDate>Mon, 27 Apr 2009 23:33:13 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</guid>
+      <description>&lt;p&gt;Ao criar uma nova tarefa agendada no Windows Server 2008, fui confrontado com um crash do Internet Explorer no momento em que esta foi executada.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/erro-ie-st.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;Erro_IE_ST&#34; border=&#34;0&#34; alt=&#34;Erro_IE_ST&#34; src=&#34;http://oito.files.wordpress.com/2009/04/erro-ie-st-thumb.jpg&#34; width=&#34;240&#34; height=&#34;168&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/ie-crash-scheduletask.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;ie_crash_scheduletask&#34; border=&#34;0&#34; alt=&#34;ie_crash_scheduletask&#34; src=&#34;http://oito.files.wordpress.com/2009/04/ie-crash-scheduletask-thumb.jpg&#34; width=&#34;240&#34; height=&#34;106&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Para o contornar, tive que activar a opção “Executar com os privilégios mais elevados”. Não tive grande tempo para explorar a razão do crash do IE sem esta opção activa, por isso se alguem souber até me pouparia o trabalho 😀&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/04/win2k8-schedule-tasks.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;win2k8_schedule_tasks&#34; border=&#34;0&#34; alt=&#34;win2k8_schedule_tasks&#34; src=&#34;http://oito.files.wordpress.com/2009/04/win2k8-schedule-tasks-thumb.jpg&#34; width=&#34;240&#34; height=&#34;178&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

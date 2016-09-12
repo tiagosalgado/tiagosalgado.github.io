@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gallery on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/gallery/</link>
+    <description>Recent content in Gallery on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 07 Mar 2008 13:49:51 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visual Studio Gallery</title>
+      <link>https://blog.tiagosalgado.com/2008/03/07/visual-studio-gallery/</link>
+      <pubDate>Fri, 07 Mar 2008 13:49:51 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/03/07/visual-studio-gallery/</guid>
+      <description>&lt;p&gt;Vejam &lt;a target=&#34;_blank&#34; href=&#34;http://visualstudiogallery.com/&#34; title=&#34;Visual Studio Gallery&#34;&gt;aqui&lt;/a&gt; algumas extensões para o &lt;a target=&#34;_blank&#34; href=&#34;http://www.microsoft.com/vstudio&#34; title=&#34;Visual Studio&#34;&gt;Visual Studio&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

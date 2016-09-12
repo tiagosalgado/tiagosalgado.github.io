@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macros on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/macros/</link>
+    <description>Recent content in Macros on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 22 May 2009 13:22:43 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/macros/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Excel &amp;#8211; Converter Texto para Número automáticamente</title>
+      <link>https://blog.tiagosalgado.com/2009/05/22/excel-converter-texto-para-numero-automaticamente/</link>
+      <pubDate>Fri, 22 May 2009 13:22:43 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/22/excel-converter-texto-para-numero-automaticamente/</guid>
+      <description>&lt;p&gt;Já por várias vezes me aconteceu ter que importar um ficheiro em Excel para uma tabela no SQL Server e perder dados na importação devido a células que deveriam ser números, estarem assumidas como texto.&lt;/p&gt;
+
+&lt;p&gt;Quando isto acontece, o Excel dá-nos essa indicação e permite-nos converter esse mesmo texto para número.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/excel_numero_para_texto.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-397&#34; title=&#34;Excel_Numero_Para_Texto&#34; src=&#34;http://oito.files.wordpress.com/2009/05/excel_numero_para_texto.png&#34; alt=&#34;Excel_Numero_Para_Texto&#34; width=&#34;356&#34; height=&#34;282&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Quando temos poucos dados, esta correcção torna-se fácil e não perdemos muito tempo. O problema é quando temos um ficheiro com milhares de linhas e dezenas de colunas e temos que andar à procura de todas as células que possam ter esse erro.&lt;/p&gt;
+
+&lt;p&gt;Para me resolver esse problema, criei uma Macro que vai percorrer todas as células no intervalo definido e verificar se existe este erro, e caso exista vai corrigi-lo.&lt;/p&gt;
+
+&lt;p&gt;Para saber que determinada célula está neste estado, as funções IsText() e IsNumeric() terão que retornar um valor verdadeiro, e para corrigir basta alterar o valor da célula para o valor actual 🙂&lt;/p&gt;
+
+&lt;p&gt;A Macro pode ser algo como isto:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Sub ConverterTextoParaNumero()&lt;/p&gt;
+
+&lt;p&gt;On Error GoTo Erro&lt;/p&gt;
+
+&lt;p&gt;For Each celula In Range(&amp;#8220;A:A&amp;#8221;)&lt;/p&gt;
+
+&lt;p&gt;If IsNumeric(Range(celula.Address)) And Application.WorksheetFunction.IsText(Range(celula.Address)) Then&lt;/p&gt;
+
+&lt;p&gt;celula.Interior.ColorIndex = 36&lt;/p&gt;
+
+&lt;p&gt;celula.Value = celula.Value&lt;/p&gt;
+
+&lt;p&gt;End If&lt;/p&gt;
+
+&lt;p&gt;Next celula&lt;/p&gt;
+
+&lt;p&gt;MsgBox &amp;#8220;Processo terminado&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Exit Sub&lt;/p&gt;
+
+&lt;p&gt;Erro:&lt;/p&gt;
+
+&lt;p&gt;MsgBox &amp;#8220;Erro no processo&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;End Sub&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Este código vai percorrer todo o intervalo definido e alterar todas as células no estado de &amp;#8220;Número copiado como texto&amp;#8221; para um fundo amarelo e corrigir o erro.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

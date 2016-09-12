@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/software/</link>
+    <description>Recent content in Software on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 29 Apr 2011 14:48:03 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Project Silk</title>
+      <link>https://blog.tiagosalgado.com/2011/04/29/project-silk/</link>
+      <pubDate>Fri, 29 Apr 2011 14:48:03 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/29/project-silk/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://silk.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Project Silk&lt;/a&gt; provides guidance for building cross-browser web applications with a focus on client-side interactivity. These applications take advantage of the latest web standards like HTML5, CSS3 and ECMAScript 5 along with modern web technologies such as jQuery, Internet Explorer 9, and ASP.NET MVC3.&lt;/p&gt;
+
+&lt;p&gt;To illustrate this guidance, the project includes a reference implementation called Mileage Stats that enables its users to track various metrics about their vehicles and fill-ups. Much of the effort in building Mileage Stats was applied to the usability and interactivity of the experience. Animations were included to enhance the enjoyment of the site and AJAX is used to keep the interface responsive and immersive. A great deal of care was also taken to ensure the client-side JavaScript facilitates modularity and maintainability. To accomplish these design goals, the JavaScript code was structured into “widgets” that benefit from the jQuery UI Widget Factory.&lt;/p&gt;
+
+&lt;p&gt;Mais informações em &lt;a href=&#34;http://silk.codeplex.com/&#34; title=&#34;http://silk.codeplex.com/&#34;&gt;http://silk.codeplex.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JustTrace e JustDecompile</title>
+      <link>https://blog.tiagosalgado.com/2011/04/29/justtrace-e-justdecompile/</link>
+      <pubDate>Fri, 29 Apr 2011 10:11:38 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/29/justtrace-e-justdecompile/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.telerik.com/&#34; target=&#34;_blank&#34;&gt;Telerik&lt;/a&gt; disponibilizou duas ferramentas, ainda em fase Beta, para download. O &lt;a href=&#34;http://www.telerik.com/products/memory-performance-profiler.aspx&#34; target=&#34;_blank&#34;&gt;JustTrace&lt;/a&gt; e o &lt;a href=&#34;http://www.telerik.com/products/decompiling.aspx&#34; target=&#34;_blank&#34;&gt;JustDecompile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.telerik.com/products/memory-performance-profiler.aspx&#34;&gt;JustTrace&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Profiler Types&lt;/li&gt;
+&lt;li&gt;Live Data&lt;/li&gt;
+&lt;li&gt;Attach to Running Process&lt;/li&gt;
+&lt;li&gt;Visual Studio Integration&lt;/li&gt;
+&lt;li&gt;Profiling Child Processes&lt;/li&gt;
+&lt;li&gt;Profiling Performance&lt;/li&gt;
+&lt;li&gt;RadControls in Action&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.telerik.com/products/decompiling.aspx&#34;&gt;JustDecompile&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fast Code Navigation&lt;/li&gt;
+&lt;li&gt;Side-by-Side Assemblies&lt;/li&gt;
+&lt;li&gt;Easy Assembly Management&lt;/li&gt;
+&lt;li&gt;Rich, WPF UI&lt;/li&gt;
+&lt;li&gt;Universal Find Usages&lt;/li&gt;
+&lt;li&gt;Decompiled Code Quality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Download &lt;a href=&#34;http://www.telerik.com/account/your-products/trial-product-versions/download-trial-file.aspx?pid=844&#34;&gt;JustTrace&lt;/a&gt; and &lt;a href=&#34;http://www.telerik.com/community/license-agreement.aspx?pId=845&#34;&gt;JustDecompile&lt;/a&gt; Betas&lt;br /&gt;
+&lt;a href=&#34;http://www.telerik.com/community/forums/justtrace.aspx&#34;&gt;JustTrace Official Feedback Forum&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.telerik.com/community/forums/justdecompile.aspx&#34;&gt;JustDecompile Official Feedback Forum&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gantter–Project Management tool</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</link>
+      <pubDate>Mon, 11 Apr 2011 09:14:10 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://gantter.com/&#34; target=&#34;_blank&#34;&gt;Gantter&lt;/a&gt;, é uma ferramenta de gestão de projectos totalmente “web-based” e gratuita.&lt;/p&gt;
+
+&lt;p&gt;Tem a integração com o Google Docs, permite a importação dos ficheiros MPP, e está disponivel em 11 idiomas.&lt;/p&gt;
+
+&lt;p&gt;Podem ver todas as funcionalidades &lt;a href=&#34;http://gantter.com/gantter-overview&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img824.imageshack.us/img824/3198/examplegantter1.png&#34; width=&#34;499&#34; height=&#34;441&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;URL: &lt;a href=&#34;http://gantter.com/&#34; title=&#34;http://gantter.com/&#34;&gt;http://gantter.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rubular &amp;#8211; web based regular expression editor</title>
+      <link>https://blog.tiagosalgado.com/2011/01/18/rubular-web-based-regular-expression-editor/</link>
+      <pubDate>Tue, 18 Jan 2011 10:22:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/01/18/rubular-web-based-regular-expression-editor/</guid>
+      <description>&lt;p&gt;Criado por &lt;a href=&#34;http://lovitt.net/&#34;&gt;Michael Lovitt&lt;/a&gt;, o Rubular é um editor de expressões regulares desenvolvido em Ruby.&lt;/p&gt;
+
+&lt;p&gt;Basta aceder a &lt;a href=&#34;http://www.rubular.com/&#34;&gt;http://www.rubular.com/&lt;/a&gt; e começar a testar 🙂&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Telerik JustMock Free Edition</title>
+      <link>https://blog.tiagosalgado.com/2011/01/18/telerik-justmock-free-edition/</link>
+      <pubDate>Tue, 18 Jan 2011 10:21:27 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/01/18/telerik-justmock-free-edition/</guid>
+      <description>&lt;p&gt;JustMock Free Edition is a developer productivity tool designed to make&lt;/p&gt;
+
+&lt;p&gt;it easy to create mock objects. JustMock Free Edition cuts your&lt;/p&gt;
+
+&lt;p&gt;development time and helps you create better unit tests without&lt;/p&gt;
+
+&lt;p&gt;requiring you to change your code. It allows you to perform fast and&lt;/p&gt;
+
+&lt;p&gt;controlled tests that are independent of external dependencies like&lt;/p&gt;
+
+&lt;p&gt;databases, web services, or proprietary code._&lt;/p&gt;
+
+&lt;p&gt;Mais informação e download em &lt;a href=&#34;http://www.telerik.com/products/mocking/free.aspx&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.telerik.com/products/mocking/free.aspx&#34;&gt;http://www.telerik.com/products/mocking/free.aspx&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alterar as definiões da Data Execution Prevention</title>
+      <link>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</link>
+      <pubDate>Sun, 23 Aug 2009 14:27:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</guid>
+      <description>&lt;p&gt;Ao tentar instalar o &lt;a href=&#34;http://www.mymobiler.com/&#34; target=&#34;_blank&#34;&gt;My Mobiler&lt;/a&gt; no &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt;, fui impedido de continuar e fazer a ligação com o PDA devido às definições da &lt;a href=&#34;http://en.wikipedia.org/wiki/Data_Execution_Prevention&#34; target=&#34;_blank&#34;&gt;DEP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para contornar isto, é necessário indicar quais os programas que serão considerados como excepção e assim conseguir avançar na instalação.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Control Panel &amp;gt; System &amp;gt; Advanced System Settings&lt;/li&gt;
+&lt;li&gt;Performance Settings&lt;/li&gt;
+&lt;li&gt;Data Execution Prevention e escolher a opção “Turn on DEP for all programs and services except those I select”&lt;/li&gt;
+&lt;li&gt;Por fim seleccionar os programas que queremos definir como excepção&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image_thumb.png&#34; width=&#34;377&#34; height=&#34;539&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 Deep Dive</title>
+      <link>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</link>
+      <pubDate>Wed, 12 Aug 2009 12:59:53 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</guid>
+      <description>&lt;p style=&#34;text-align:center;&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image0011.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-449&#34; title=&#34;sqlserver2k8deepdive&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image0011.jpg&#34; alt=&#34;sqlserver2k8deepdive&#34; width=&#34;590&#34; height=&#34;168&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Vai-se realizar dia 10 e 15 de Setembro, em Lisboa e no Porto respectivamente, um evento que aborda principalmente as novas funcionalidades presentes no SQL Server 2008.
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Resource Governor, Partitioning, Auditing, X-Events são alguns dos temas que irão ser abordados neste evento, mas o programa completo pode ser visto &lt;a href=&#34;http://www.microsoft.com/portugal/sqlserver2008deepdive/default.mspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Podem fazer a inscrição nos seguintes links:
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423084&amp;Culture=pt-PT&#34; target=&#34;_blank&#34;&gt;Lisboa&lt;/a&gt; &amp;#8211; 10 de Setembro no Auditório Microsoft (TagusPark)
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423086&amp;Culture=pt-PT&#34; target=&#34;_blank&#34;&gt;Porto&lt;/a&gt; &amp;#8211; 15 de Setembro na Fundação Dr. António Cupertino de Miranda
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://www.microsoft.com/portugal/sqlserver2008deepdive/default.mspx&#34; target=&#34;_blank&#34;&gt;Programa do Evento&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Source Configuration Wizard não lista os datasources disponiveis</title>
+      <link>https://blog.tiagosalgado.com/2009/07/22/data-source-configuration-wizard-nao-lista-os-datasources-disponiveis/</link>
+      <pubDate>Wed, 22 Jul 2009 12:27:58 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/07/22/data-source-configuration-wizard-nao-lista-os-datasources-disponiveis/</guid>
+      <description>&lt;p&gt;Há uns tempos atrás &lt;a href=&#34;http://forums.asp.net/p/1347741/3304057.aspx#3304057&#34; target=&#34;_blank&#34;&gt;tive um problema&lt;/a&gt; com o meu Visual Studio que, devido ao tempo disponivel para solucionar o problema ter-se esgotado, levou-me a formatar a máquina para voltar tudo à normalidade.&lt;/p&gt;
+
+&lt;p&gt;Ao utilizar o Wizard para criar um Data Source, a listagem dos tipos que teria disponiveis não me estava a aparecer&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/07/data-source-config-wizard-dialog1.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-442&#34; title=&#34;data-source-config-wizard-dialog[1]&#34; src=&#34;http://oito.files.wordpress.com/2009/07/data-source-config-wizard-dialog1.jpg&#34; alt=&#34;data-source-config-wizard-dialog[1]&#34; width=&#34;499&#34; height=&#34;387&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pelos vistos apareceu mais alguem com o mesmo problema e conseguiu resolver sem a trabalheira de formatar e instalar tudo novamente como podem ver &lt;a href=&#34;http://forums.asp.net/p/1371172/2866696.aspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 Resource Governor</title>
+      <link>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</link>
+      <pubDate>Tue, 21 Jul 2009 12:24:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/07/ee151608-image001en-us1.gif&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-438&#34; title=&#34;sql_server_2008_logo&#34; src=&#34;http://oito.files.wordpress.com/2009/07/ee151608-image001en-us1.gif&#34; alt=&#34;sql_server_2008_logo&#34; width=&#34;363&#34; height=&#34;75&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;O Resource Governor é uma funcionalidade adicionado ao SQL Server 2008 que permite-nos gerir a carga e os recursos que irão ser usados em determinada base de dados.&lt;/p&gt;
+
+&lt;p&gt;Muitas vezes, devido a querys mal construidas ou até mesmo por se tratar de operações bastante pesadas, pretendiamos que apenas utiliza-se uma percentagem dos recursos do servidor e deixasse os restantes recursos para outras operações que fossem solicitadas.&lt;/p&gt;
+
+&lt;p&gt;Esta funcionalidade veio resolver isto mesmo, ou seja, podemos agora definir que determinada operação irá apenas usar X% dos recursos e até mesmo indicar quais serão as querys prioritárias.&lt;/p&gt;
+
+&lt;p&gt;Para perceberem melhor como funciona e como configurar, deixo os seguintes links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb934084.aspx&#34; target=&#34;_blank&#34;&gt;Resource Governor Concepts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb933866.aspx&#34; target=&#34;_blank&#34;&gt;Managing SQL Server Workloads with Resource Governor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee151608.aspx&#34; target=&#34;_blank&#34;&gt;Using Resource Governor&lt;/a&gt; (&lt;a href=&#34;http://download.microsoft.com/download/D/B/D/DBDE7972-1EB9-470A-BA18-58849DB3EB3B/ResourceGov.docx&#34; target=&#34;_blank&#34;&gt;download white-paper&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RunAs Different User no Windows Vista / Windows Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/06/19/runas-different-user-no-windows-vista-windows-server-2008/</link>
+      <pubDate>Fri, 19 Jun 2009 12:59:42 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/06/19/runas-different-user-no-windows-vista-windows-server-2008/</guid>
+      <description>&lt;p&gt;Desde o Windows Vista, que a opção para correr uma aplicação com um utilizador diferente do actualmente logado deixou de existir.&lt;/p&gt;
+
+&lt;p&gt;Isto causa alguns constrangimentos quando temos o UAC desactivado, pois mesmo recorrendo à opção &amp;#8220;Run as Administrator&amp;#8221;, não conseguimos elevar correctamente os previlégios necessários em determinadas situações.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/06/runas_administrator.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-419&#34; title=&#34;runas_administrator&#34; src=&#34;http://oito.files.wordpress.com/2009/06/runas_administrator.jpg&#34; alt=&#34;runas_administrator&#34; width=&#34;275&#34; height=&#34;353&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Para trazer de volta esta opção, a suite do &lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Sysinternals&lt;/a&gt; inclui um utilitário chamado &lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/cc300361.aspx&#34; target=&#34;_blank&#34;&gt;ShellRunas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para adicionar ao menu de contexto, basta executarmos o comando &amp;#8220;shellrunas /reg&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/06/runas_differentuser.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-420&#34; title=&#34;runas_differentuser&#34; src=&#34;http://oito.files.wordpress.com/2009/06/runas_differentuser.jpg&#34; alt=&#34;runas_differentuser&#34; width=&#34;272&#34; height=&#34;146&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SP2 para Windows Server 2008 e Windows Vista</title>
+      <link>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</link>
+      <pubDate>Wed, 03 Jun 2009 20:51:30 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</guid>
+      <description>&lt;p&gt;Já lá vai mais de uma semana mas deixo aqui os links para o SP2 do &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt; e &lt;a href=&#34;http://www.microsoft.com/windows/windows-vista/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Vista&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=9f073285-b6ef-4297-85ce-f4463d06d6cb&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;Download ISO&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd537674.aspx&#34; target=&#34;_blank&#34;&gt;Release Notes Windows Vista w/ SP2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd540765.aspx&#34; target=&#34;_blank&#34;&gt;Release Notes Windows Server 2008 w/ SP2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/windows/dd300591.aspx&#34; target=&#34;_blank&#34;&gt;Things to know&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd335038.aspx&#34; target=&#34;_blank&#34;&gt;FAQ&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SSMS 2008 &#43; Alterar nr de registos a retornar nas opções SELECT e EDIT do menu de contexto da tabela</title>
+      <link>https://blog.tiagosalgado.com/2009/05/28/ssms-2008-alterar-nr-de-registos-a-retornar-nas-opes-select-e-edit-do-menu-de-contexto-da-tabela/</link>
+      <pubDate>Thu, 28 May 2009 22:48:35 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/28/ssms-2008-alterar-nr-de-registos-a-retornar-nas-opes-select-e-edit-do-menu-de-contexto-da-tabela/</guid>
+      <description>&lt;p&gt;Na ultima versão do SQL Server Management Studio (SSMS), ao abrirmos o menu de contexto de uma tabela na nossa base de dados, as opções de SELECT e EDIT têm um limite de registos que irão ser retornados definido por defeito, 1000 e 200 respectivamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/sql_server_2k8_select_edit_rows_limits.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;sql_server_2k8_select_edit_rows_limits&#34; border=&#34;0&#34; alt=&#34;sql_server_2k8_select_edit_rows_limits&#34; src=&#34;http://oito.files.wordpress.com/2009/05/sql_server_2k8_select_edit_rows_limits_thumb.jpg&#34; width=&#34;777&#34; height=&#34;696&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Isto faz com que sempre que quisermos retornar os resultados de uma tabela com mais de 200 (EDIT) e 1000 (SELECT), temos que ir à query gerada e retirar/alterar o “TOP N”.&lt;/p&gt;
+
+&lt;p&gt;Se para nós estes valores não são suficientes e queremos alterá-los, ou até mesmo ignora-los e retornarmos todos os registos da tabela, podemos fazê-lo no menu &lt;strong&gt;Tools &amp;gt; Options &amp;gt; SQL Server Object Explorer &amp;gt; Commands&lt;/strong&gt; e alterar os valores lá definidos ou simplesmente atribuir o valor 0 (zero) fazendo com que não seja incluida a expressão TOP N.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image7.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb6.png&#34; width=&#34;747&#34; height=&#34;428&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Após esta alteração, já podem usar ambas opções com os novos valores definidos.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instalar plugin do Windows Media Player para o Firefox no Windows Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/05/23/instalar-plugin-do-windows-media-player-para-o-firefox-no-windows-server-2008/</link>
+      <pubDate>Sat, 23 May 2009 20:13:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/23/instalar-plugin-do-windows-media-player-para-o-firefox-no-windows-server-2008/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://port25.technet.com/pages/windows-media-player-firefox-plugin-download.aspx&#34; target=&#34;_blank&#34;&gt;plugin do Media Player para o Firefox&lt;/a&gt; não é suportado no Windows Server 2008. Ao tentar instalar é indicado o seguinte erro:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image4.png&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb3.png&#34; width=&#34;366&#34; height=&#34;166&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Para contonar isto é necessário editarmos o .MSI e remover esta validação.&lt;/p&gt;
+
+&lt;p&gt;Para termos acesso ao .MSI é necessário extrair o plugin no formato que é disponibilizado com o Winrar. De seguida com o &lt;a href=&#34;http://www.technipages.com/wp-content/uploads/2007/11/orca.Msi&#34; target=&#34;_blank&#34;&gt;Orca&lt;/a&gt; abrimos o .MSI, removemos tabela “Launch Condition” a linha “MsiNTProductType = 1” e por fim gravamos o .MSI.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image6.png&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb5.png&#34; width=&#34;640&#34; height=&#34;436&#34; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Está pronto para ser executado e instalar correctamente o plugin. 🙂&lt;/p&gt;
+
+&lt;p&gt;Vi esta dica &lt;a href=&#34;http://arnoutboer.nl/weblog/?p=24&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; 😀&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Excel &amp;#8211; Converter Texto para Número automáticamente</title>
+      <link>https://blog.tiagosalgado.com/2009/05/22/excel-converter-texto-para-numero-automaticamente/</link>
+      <pubDate>Fri, 22 May 2009 13:22:43 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/22/excel-converter-texto-para-numero-automaticamente/</guid>
+      <description>&lt;p&gt;Já por várias vezes me aconteceu ter que importar um ficheiro em Excel para uma tabela no SQL Server e perder dados na importação devido a células que deveriam ser números, estarem assumidas como texto.&lt;/p&gt;
+
+&lt;p&gt;Quando isto acontece, o Excel dá-nos essa indicação e permite-nos converter esse mesmo texto para número.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/excel_numero_para_texto.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-397&#34; title=&#34;Excel_Numero_Para_Texto&#34; src=&#34;http://oito.files.wordpress.com/2009/05/excel_numero_para_texto.png&#34; alt=&#34;Excel_Numero_Para_Texto&#34; width=&#34;356&#34; height=&#34;282&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Quando temos poucos dados, esta correcção torna-se fácil e não perdemos muito tempo. O problema é quando temos um ficheiro com milhares de linhas e dezenas de colunas e temos que andar à procura de todas as células que possam ter esse erro.&lt;/p&gt;
+
+&lt;p&gt;Para me resolver esse problema, criei uma Macro que vai percorrer todas as células no intervalo definido e verificar se existe este erro, e caso exista vai corrigi-lo.&lt;/p&gt;
+
+&lt;p&gt;Para saber que determinada célula está neste estado, as funções IsText() e IsNumeric() terão que retornar um valor verdadeiro, e para corrigir basta alterar o valor da célula para o valor actual 🙂&lt;/p&gt;
+
+&lt;p&gt;A Macro pode ser algo como isto:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Sub ConverterTextoParaNumero()&lt;/p&gt;
+
+&lt;p&gt;On Error GoTo Erro&lt;/p&gt;
+
+&lt;p&gt;For Each celula In Range(&amp;#8220;A:A&amp;#8221;)&lt;/p&gt;
+
+&lt;p&gt;If IsNumeric(Range(celula.Address)) And Application.WorksheetFunction.IsText(Range(celula.Address)) Then&lt;/p&gt;
+
+&lt;p&gt;celula.Interior.ColorIndex = 36&lt;/p&gt;
+
+&lt;p&gt;celula.Value = celula.Value&lt;/p&gt;
+
+&lt;p&gt;End If&lt;/p&gt;
+
+&lt;p&gt;Next celula&lt;/p&gt;
+
+&lt;p&gt;MsgBox &amp;#8220;Processo terminado&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Exit Sub&lt;/p&gt;
+
+&lt;p&gt;Erro:&lt;/p&gt;
+
+&lt;p&gt;MsgBox &amp;#8220;Erro no processo&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;End Sub&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Este código vai percorrer todo o intervalo definido e alterar todas as células no estado de &amp;#8220;Número copiado como texto&amp;#8221; para um fundo amarelo e corrigir o erro.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET Bundle</title>
+      <link>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</link>
+      <pubDate>Tue, 19 May 2009 12:55:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</guid>
+      <description>&lt;p&gt;O ASP.NET Bundle é o novo produto da &lt;a href=&#34;http://www.typemock.com/&#34; target=&#34;_blank&#34;&gt;TypeMock&lt;/a&gt;. É uma ferramanta para testes unitários em aplicações &lt;a href=&#34;http://msdn.microsoft.com/asp.net/&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt;. Para o lançamento deste produto, a &lt;a href=&#34;http://www.typemock.com&#34; target=&#34;_blank&#34;&gt;TypeMock &lt;/a&gt;está a oferecer licenças. Para ganhar uma basta seguirem as instruções &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;Begin&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.typemock.com/&#34;&gt;Unit Testing&lt;/a&gt; ASP.NET? &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET unit testing&lt;/a&gt; has never been this easy.&lt;/p&gt;
+
+&lt;p&gt;Typemock is launching a new product for ASP.NET developers – the &lt;strong&gt;ASP.NET Bundle&lt;/strong&gt; &amp;#8211; and for the launch will be giving out &lt;span style=&#34;color:#006600;&#34;&gt;&lt;strong&gt;FREE licenses&lt;/strong&gt;&lt;/span&gt; to bloggers and their readers.&lt;/p&gt;
+
+&lt;p&gt;The ASP.NET Bundle is the ultimate ASP.NET unit testing solution, and offers both &lt;a href=&#34;http://www.typemock.com/&#34;&gt;Typemock Isolator&lt;/a&gt;, a &lt;a href=&#34;http://www.typemock.com/&#34;&gt;unit test&lt;/a&gt; tool and &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;Ivonna&lt;/a&gt;, the Isolator add-on for &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;ASP.NET unit testing&lt;/a&gt;, for a bargain price.&lt;/p&gt;
+
+&lt;p&gt;Typemock Isolator is a leading &lt;a href=&#34;http://www.typemock.com/&#34;&gt;.NET unit testing&lt;/a&gt; tool (C# and VB.NET) for many ‘hard to test’ technologies such as &lt;a href=&#34;http://typemock.com/sharepointpage.php&#34;&gt;SharePoint&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;MVC&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/wcfpage.php&#34;&gt;WCF&lt;/a&gt;, WPF, &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;Silverlight&lt;/a&gt; and more. Note that for &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;unit testing Silverlight&lt;/a&gt; there is an open source Isolator add-on called &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;SilverUnit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first 60 bloggers who will blog this text in their blog and &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;tell us about it&lt;/a&gt;, will get a Free Isolator ASP.NET Bundle license (Typemock Isolator + Ivonna). If you post this in an ASP.NET &lt;strong&gt;dedicated&lt;/strong&gt; blog, you&amp;#8217;ll get a license automatically (even if more than 60 submit) during the first week of this announcement.&lt;/p&gt;
+
+&lt;p&gt;Also 8 bloggers will get an &lt;strong&gt;additional 2 licenses&lt;/strong&gt; (each) to give away to their readers / friends.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, click the following link for [O ASP.NET Bundle é o novo produto da &lt;a href=&#34;http://www.typemock.com/&#34; target=&#34;_blank&#34;&gt;TypeMock&lt;/a&gt;. É uma ferramanta para testes unitários em aplicações &lt;a href=&#34;http://msdn.microsoft.com/asp.net/&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt;. Para o lançamento deste produto, a &lt;a href=&#34;http://www.typemock.com&#34; target=&#34;_blank&#34;&gt;TypeMock &lt;/a&gt;está a oferecer licenças. Para ganhar uma basta seguirem as instruções &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;Begin&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.typemock.com/&#34;&gt;Unit Testing&lt;/a&gt; ASP.NET? &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET unit testing&lt;/a&gt; has never been this easy.&lt;/p&gt;
+
+&lt;p&gt;Typemock is launching a new product for ASP.NET developers – the &lt;strong&gt;ASP.NET Bundle&lt;/strong&gt; &amp;#8211; and for the launch will be giving out &lt;span style=&#34;color:#006600;&#34;&gt;&lt;strong&gt;FREE licenses&lt;/strong&gt;&lt;/span&gt; to bloggers and their readers.&lt;/p&gt;
+
+&lt;p&gt;The ASP.NET Bundle is the ultimate ASP.NET unit testing solution, and offers both &lt;a href=&#34;http://www.typemock.com/&#34;&gt;Typemock Isolator&lt;/a&gt;, a &lt;a href=&#34;http://www.typemock.com/&#34;&gt;unit test&lt;/a&gt; tool and &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;Ivonna&lt;/a&gt;, the Isolator add-on for &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;ASP.NET unit testing&lt;/a&gt;, for a bargain price.&lt;/p&gt;
+
+&lt;p&gt;Typemock Isolator is a leading &lt;a href=&#34;http://www.typemock.com/&#34;&gt;.NET unit testing&lt;/a&gt; tool (C# and VB.NET) for many ‘hard to test’ technologies such as &lt;a href=&#34;http://typemock.com/sharepointpage.php&#34;&gt;SharePoint&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;MVC&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/wcfpage.php&#34;&gt;WCF&lt;/a&gt;, WPF, &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;Silverlight&lt;/a&gt; and more. Note that for &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;unit testing Silverlight&lt;/a&gt; there is an open source Isolator add-on called &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;SilverUnit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first 60 bloggers who will blog this text in their blog and &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;tell us about it&lt;/a&gt;, will get a Free Isolator ASP.NET Bundle license (Typemock Isolator + Ivonna). If you post this in an ASP.NET &lt;strong&gt;dedicated&lt;/strong&gt; blog, you&amp;#8217;ll get a license automatically (even if more than 60 submit) during the first week of this announcement.&lt;/p&gt;
+
+&lt;p&gt;Also 8 bloggers will get an &lt;strong&gt;additional 2 licenses&lt;/strong&gt; (each) to give away to their readers / friends.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, click the following link for](&lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&lt;/a&gt;) on how to get your free license.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;End&lt;/em&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extension Methods on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/extension-methods/</link>
+    <description>Recent content in Extension Methods on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 22 Sep 2008 22:50:39 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/extension-methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Apagar items de uma dropdownlist e manter um default</title>
+      <link>https://blog.tiagosalgado.com/2008/09/22/apagar-items-de-uma-dropdownlist-e-manter-um-default/</link>
+      <pubDate>Mon, 22 Sep 2008 22:50:39 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/22/apagar-items-de-uma-dropdownlist-e-manter-um-default/</guid>
+      <description>&lt;p&gt;Uma situação vulgar é termos uma &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.aspx&#34; target=&#34;_blank&#34;&gt;DropDownList&lt;/a&gt; com uma lista de opções retornadas da base de dados para o utilizador poder seleccionar uma delas.&lt;/p&gt;
+
+&lt;p&gt;Para evitar que uma das opções está seleccionada por defeito, recorre-se normalmente à opção &amp;#8220;&amp;#8211; Seleccione &amp;#8211;&amp;#8221; ou &amp;#8220;&amp;#8211; Escolha uma opção &amp;#8211;&amp;#8220;, etc etc etc.&lt;/p&gt;
+
+&lt;p&gt;Para evitar que tenhamos um &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms180026.aspx&#34; target=&#34;_blank&#34;&gt;UNION&lt;/a&gt; na nossa query que retorna essas mesmas opções ou mesmo um registo na tabela para tal, adicionando ao output a tal opção &amp;#8220;default&amp;#8221;, podemos adicionar esse mesmo item à &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.aspx&#34; target=&#34;_blank&#34;&gt;DropDownList&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2008/09/image.png&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;81&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2008/09/image-thumb.png&#34; width=&#34;512&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Para actualizar os dados, recorrendo ao metodo &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.databind.aspx&#34; target=&#34;_blank&#34;&gt;DataBind()&lt;/a&gt;, fará com que sejam adicionados os items retornados aos que já lá estão. Ou seja, antes de fazer o &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.databind.aspx&#34; target=&#34;_blank&#34;&gt;DataBind()&lt;/a&gt; é necessário apagar todos os items (usando o xpto.Items.Clear()) e só depois então faremos o &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.databind.aspx&#34; target=&#34;_blank&#34;&gt;DataBind()&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nesta altura, a opção &amp;#8220;&amp;#8211; Seleccione &amp;#8211;&amp;#8221; foi à vida e temos que adiciona-la novamente à dropdownlist.&lt;/p&gt;
+
+&lt;p&gt;Uma forma de evitar isto é adicionar um método (recorrendo aos &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb383977.aspx&#34; target=&#34;_blank&#34;&gt;Extension Methods&lt;/a&gt;) para apagar os items e preservar o item que queremos que apareça sempre por defeito.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2008/09/image1.png&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;194&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2008/09/image-thumb1.png&#34; width=&#34;512&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Desta forma, o método &lt;strong&gt;ClearItems&lt;/strong&gt; aparece agora no Intellisence e basta passar o parâmetro &lt;strong&gt;preserveDefaultItem&lt;/strong&gt; a &lt;em&gt;true&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2008/09/image2.png&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;168&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2008/09/image-thumb2.png&#34; width=&#34;512&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.box.net/shared/nilatrupmx&#34; target=&#34;_blank&#34;&gt;Exemplo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

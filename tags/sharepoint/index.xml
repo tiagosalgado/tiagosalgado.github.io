@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sharepoint on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/sharepoint/</link>
+    <description>Recent content in Sharepoint on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 16 Mar 2009 00:04:07 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/sharepoint/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Webcast4Share – Sharepoint e Enterprise Search</title>
+      <link>https://blog.tiagosalgado.com/2009/03/16/webcast4share-sharepoint-e-enterprise-search/</link>
+      <pubDate>Mon, 16 Mar 2009 00:04:07 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/03/16/webcast4share-sharepoint-e-enterprise-search/</guid>
+      <description>&lt;p&gt;Durante esta semana vai decorrer mais um ciclo de &lt;a href=&#34;http://www.microsoft.com/portugal/msdn/webcasts4share/default.mspx&#34; target=&#34;_blank&#34;&gt;webcast4share&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;18 de Março, 15h (Ricardo Calejo) – Como disponibilizar componentes de mapping com Sharepoint&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Como mostrar informação georeferenciada no Sharepoint&lt;/li&gt;
+&lt;li&gt;Como utilizar o Sharepoint e o Virtual Earth para georeferenciar conteudos&lt;/li&gt;
+&lt;li&gt;Como construir um componente de apresentação para estas funcionalidades&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;19 de Março, 15h (Luis Calado) – Sharepoint em cenários Internet&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Descrição das boas práticas de desenvolvimento&lt;/li&gt;
+&lt;li&gt;Como responder a requisitos de compilance do HTML produzido no MOSS&lt;/li&gt;
+&lt;li&gt;Como integrar componentes de Silverlight em websites Sharepoint&lt;/li&gt;
+&lt;li&gt;Como deve ser desenhado o processo de deployment das soluções desenvolvidas para Sharepoint e como devem ser asseguradas as passagens de desenvolvimento a produção&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;20 de Março, 15 (Luis Calado e Nuno Leitão) – Microsoft Enterprise Search&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Enquadramento da plataforma Fast ESP na oferta de Enterprise Search da Microsoft&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Informações e registo no site &lt;a href=&#34;http://www.microsoft.com/portugal/msdn/webcasts4share/default.mspx&#34; target=&#34;_blank&#34;&gt;webcast4share&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

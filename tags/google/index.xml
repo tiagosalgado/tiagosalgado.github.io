@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/google/</link>
+    <description>Recent content in Google on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 11 Apr 2011 09:14:10 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Gantter–Project Management tool</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</link>
+      <pubDate>Mon, 11 Apr 2011 09:14:10 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://gantter.com/&#34; target=&#34;_blank&#34;&gt;Gantter&lt;/a&gt;, é uma ferramenta de gestão de projectos totalmente “web-based” e gratuita.&lt;/p&gt;
+
+&lt;p&gt;Tem a integração com o Google Docs, permite a importação dos ficheiros MPP, e está disponivel em 11 idiomas.&lt;/p&gt;
+
+&lt;p&gt;Podem ver todas as funcionalidades &lt;a href=&#34;http://gantter.com/gantter-overview&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img824.imageshack.us/img824/3198/examplegantter1.png&#34; width=&#34;499&#34; height=&#34;441&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;URL: &lt;a href=&#34;http://gantter.com/&#34; title=&#34;http://gantter.com/&#34;&gt;http://gantter.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Reader &#43; RSS Bandit</title>
+      <link>https://blog.tiagosalgado.com/2008/09/08/google-reader-rss-bandit/</link>
+      <pubDate>Mon, 08 Sep 2008 21:07:51 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/08/google-reader-rss-bandit/</guid>
+      <description>&lt;p&gt;As aplicações web são sem dúvida o futuro, e desde que fiz &lt;a href=&#34;http://blog.tiagosalgado.com/2008/01/06/rss-reader-web-based/&#34; target=&#34;_blank&#34;&gt;esta análise&lt;/a&gt; que nunca mais troquei de leitor.&lt;/p&gt;
+
+&lt;p&gt;Mas ok, dá jeito para acedermos de qualquer sitio às nossas leituras mas uma aplicação &amp;#8220;local&amp;#8221; é sempre melhor no que respeita a rapidez na disponibilização dos conteúdos.&lt;/p&gt;
+
+&lt;p&gt;Foi então que me lembrei se existiria algum leitor offline que permitisse fazer a sincronização com o &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt;, e foi aí que encontrei o &lt;a href=&#34;http://www.rssbandit.org/&#34; target=&#34;_blank&#34;&gt;RSS Bandit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-logo.jpg&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;118&#34; alt=&#34;rssbandit_logo&#34; src=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-logo-thumb.jpg&#34; width=&#34;154&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Foi adicionada à nova versão (ainda em BETA) esta opção e que para já está a funcionar muito bem.&lt;/p&gt;
+
+&lt;p&gt;Podem fazer o download &lt;a href=&#34;http://sourceforge.net/forum/forum.php?forum_id=852844&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;, e para sincronizarem com o &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt; basta irem ao menu File &amp;gt; Sincronize Feeds. Alem do &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt;, ainda poderão optar por sincronizar com o &lt;a href=&#34;http://www.newsgator.com/&#34; target=&#34;_blank&#34;&gt;Newsgator Online&lt;/a&gt; e com o &lt;a href=&#34;http://www.microsoft.com/windows/products/winfamily/ie/default.mspx&#34; target=&#34;_blank&#34;&gt;Internet Explorer&lt;/a&gt; ou &lt;a href=&#34;http://office.microsoft.com/pt-pt/outlook/default.aspx&#34; target=&#34;_blank&#34;&gt;Outlook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-sync1.jpg&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;188&#34; alt=&#34;rssbandit_sync1&#34; src=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-sync1-thumb.jpg&#34; width=&#34;244&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Basta indicarem o username/password da vossa conta e em poucos minutos tá a sincronização feita. O bom disto tudo é que as alterações que façam no &lt;a href=&#34;http://www.rssbandit.org/&#34; target=&#34;_blank&#34;&gt;RSS Bandit&lt;/a&gt; é reflectido no &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt; 🙂&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome</title>
+      <link>https://blog.tiagosalgado.com/2008/09/02/google-chrome/</link>
+      <pubDate>Tue, 02 Sep 2008 22:45:45 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/02/google-chrome/</guid>
+      <description>&lt;p&gt;Para quê ser diferente dos outros e não dizer que já está disponível o download do &lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Google Chrome&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;Pelo que estive a ler no &lt;a href=&#34;http://lifehacker.com/&#34; target=&#34;_blank&#34;&gt;Lifehacker&lt;/a&gt;, o que me saltou mais à vista neste browser foi:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recently Closed Tabs&lt;/strong&gt; &amp;#8211; para mim é sem dúvida um &amp;#8220;must-have&amp;#8221; em qualquer browser, e vir de base é uma mais valia.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;strike&gt;Porn Mode&lt;/strike&gt; Incognito Mode&lt;/strong&gt; &amp;#8211; É sem dúvida a opção que muita gente irá usar e abusar (lol). Acabaram-se as preocupações em esconder todas as páginas dúvidosas por onde andaram 🙂&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inspector&lt;/strong&gt; &amp;#8211; Analisar em detalhe o código das nossas páginas.&lt;/p&gt;
+
+&lt;p&gt;Não tenho hipotese de tar o testar para ver que mais funcionalidades dispomos, mas podem ve-las mais ao detalhe na página principal do &lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Google Chrome&lt;/a&gt; assim como fazer o download.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summer Of Code 2008</title>
+      <link>https://blog.tiagosalgado.com/2008/03/18/summer-of-code-2008/</link>
+      <pubDate>Tue, 18 Mar 2008 21:46:03 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/03/18/summer-of-code-2008/</guid>
+      <description>&lt;p&gt;Mais um ano e cá temos novamente o &lt;a href=&#34;http://code.google.com/soc/2008/&#34; target=&#34;_blank&#34;&gt;Summer Of Code&lt;/a&gt;. Consultem a página com a &lt;a href=&#34;http://code.google.com/soc/2008/?projectlist&#34; target=&#34;_blank&#34;&gt;lista dos projectos&lt;/a&gt; e inscrevam-se até dia 24 caso encontrem algum do vosso interesse.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

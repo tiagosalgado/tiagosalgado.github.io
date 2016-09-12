@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Membership on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/membership/</link>
+    <description>Recent content in Membership on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 03 Sep 2008 12:58:01 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/membership/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ASP.NET Membership &#43; Location Paths</title>
+      <link>https://blog.tiagosalgado.com/2008/09/03/aspnet-membership-location-paths/</link>
+      <pubDate>Wed, 03 Sep 2008 12:58:01 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/03/aspnet-membership-location-paths/</guid>
+      <description>&lt;p&gt;Quando recorremos ao &lt;a title=&#34;Membership&#34; href=&#34;http://msdn.microsoft.com/en-us/library/yh26yfzy.aspx&#34; target=&#34;_blank&#34;&gt;Membership&lt;/a&gt; para implementarmos a segurança da nossa aplicação, um dos problemas que podemos ter é quando definimos que determinada pasta será acedida apenas por utilizadores previamente autenticados e nela contemos ficheiros que usamos noutras páginas que não precisam desta mesma autenticação para serem acedidas, como ficheiros de estilos (&lt;a title=&#34;CSS&#34; href=&#34;http://en.wikipedia.org/wiki/Cascading_Style_Sheets&#34; target=&#34;_blank&#34;&gt;CSS&lt;/a&gt;), imagens, etc.&lt;/p&gt;
+
+&lt;p&gt;Se tivermos por exemplo a seguinte estrutura:&lt;/p&gt;
+
+&lt;p&gt;/ (root)&lt;/p&gt;
+
+&lt;p&gt;/Imagens&lt;/p&gt;
+
+&lt;p&gt;/Imagens/usericon.png&lt;/p&gt;
+
+&lt;p&gt;/Estilos&lt;/p&gt;
+
+&lt;p&gt;/Estilos/estilos.css&lt;/p&gt;
+
+&lt;p&gt;/Login.aspx&lt;/p&gt;
+
+&lt;p&gt;/MinhaPaginaProtegida.aspx&lt;/p&gt;
+
+&lt;p&gt;/OutraPaginaProtegida.aspx&lt;/p&gt;
+
+&lt;p&gt;E no &lt;a title=&#34;web.config&#34; href=&#34;http://en.wikipedia.org/wiki/Web.config&#34; target=&#34;_blank&#34;&gt;web.config&lt;/a&gt; definirmos que, para aceder a qualquer página  na aplicação temos que estar autenticados,&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;authorization&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&amp;gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;deny&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;users&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;=&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt; /&amp;gt;&lt;br /&gt; &amp;lt;/&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;authorization&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;se usarmos o ficheiro de estilos ( /Estilos/estilos.css ) na nossa página de login, ao ser carregada no browser irá aparecer sem qualquer personalização feita. Isto porque na página Login.aspx teremos algo do tipo&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;link&lt;/span&gt;&lt;/span&gt; &lt;span style=&#34;font-size:x-small;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;type&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;=&amp;#8221;text/css&amp;#8221;&lt;/span&gt;&lt;/span&gt; &lt;span style=&#34;font-size:x-small;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;rel&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;=&amp;#8221;Stylesheet&amp;#8221;&lt;/span&gt;&lt;/span&gt; &lt;span style=&#34;font-size:x-small;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;href&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;=&amp;#8221;Estilos/estilos.css&amp;#8221;&lt;/span&gt;&lt;/span&gt; &lt;span style=&#34;font-size:x-small;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  e como este ficheiro está numa pasta dentro da zona protegida, o browser não vai conseguir carregar os estilos definidos na página.
+&lt;/div&gt;
+
+&lt;p&gt;Para podermos contornar isso temos que indicar no &lt;a title=&#34;web.config&#34; href=&#34;http://en.wikipedia.org/wiki/Web.config&#34; target=&#34;_blank&#34;&gt;web.config&lt;/a&gt; que o ficheiro poderá ser acedido mesmo não sendo feita a autenticação na aplicação. Para isso usamos o elemento &lt;a title=&#34;Element Location&#34; href=&#34;http://msdn.microsoft.com/en-us/library/b6x6shw7.aspx&#34; target=&#34;_blank&#34;&gt;&lt;location&gt;&lt;/a&gt; e no atributo path indicamos onde está o ficheiro. Por fim, indicamos que todos os utilizadores (incluindo os anónimos) poderão aceder a ele, fazendo assim com que a nossa página de login consiga ir buscar os estilos a serem carregados.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;location&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;path&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;=&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;estilos.css&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&gt;&lt;br /&gt; &lt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;system.web&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&gt;&lt;br /&gt; &lt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;authorization&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&gt;&lt;br /&gt; &lt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;allow&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#ff0000;&#34;&gt;users&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;=&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;/&gt;&lt;br /&gt; &lt;/&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;authorization&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&gt;&lt;br /&gt; &lt;/&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;system.web&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&gt;&lt;br /&gt; &lt;/&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#a31515;&#34;&gt;location&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&lt;span style=&#34;font-size:x-small;color:#0000ff;&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

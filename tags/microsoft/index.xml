@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/microsoft/</link>
+    <description>Recent content in Microsoft on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 01 Jul 2013 08:36:44 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Build 2013 &amp;#8211; Sessions available</title>
+      <link>https://blog.tiagosalgado.com/2013/07/01/build-2013-sessions-available/</link>
+      <pubDate>Mon, 01 Jul 2013 08:36:44 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/07/01/build-2013-sessions-available/</guid>
+      <description>&lt;p&gt;Build 2013 is over, and now is time to see some sessions we couldn&amp;#8217;t watch live.&lt;/p&gt;
+
+&lt;p&gt;All sessions are now available on Channel9 to download and watch when you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://channel9.msdn.com/Events/Build/2013?direction=asc#tab_sortBy_day&#34; target=&#34;_blank&#34;&gt;Channel9 &amp;#8211; Build 2013 Sessions List&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio 2012 Update 2</title>
+      <link>https://blog.tiagosalgado.com/2013/04/05/visual-studio-2012-update-2/</link>
+      <pubDate>Fri, 05 Apr 2013 10:12:51 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/04/05/visual-studio-2012-update-2/</guid>
+      <description>&lt;p&gt;It&amp;#8217;s available a new update for Visual Studio 2012. You can read the announcement on &lt;a href=&#34;http://blogs.msdn.com/b/somasegar/archive/2013/04/04/visual-studio-2012-update-2-now-available.aspx&#34; target=&#34;_blank&#34;&gt;Somasegar blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can download it from &lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=38188&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, and if you need to make an offline install or just distribute, you can do it running the following command: &amp;#8220;&lt;strong&gt;VS2012.2.exe /layout&lt;/strong&gt;&amp;#8221; and select the folder where do you want to download all files.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET and Web Tools 2012.2 Update</title>
+      <link>https://blog.tiagosalgado.com/2013/02/19/asp-net-and-web-tools-2012-2-update/</link>
+      <pubDate>Tue, 19 Feb 2013 09:45:52 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/02/19/asp-net-and-web-tools-2012-2-update/</guid>
+      <description>&lt;p&gt;The final release is &lt;a href=&#34;http://go.microsoft.com/fwlink/?LinkId=282650&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; 🙂&lt;/p&gt;
+
+&lt;p&gt;You can find a lot of new features and enhancements  on ASP.NET Web API, ASP.NET SignalR, ASP.NET Webforms and MVC and of course Windows Azure.&lt;/p&gt;
+
+&lt;p&gt;You can found some blog posts covering this new updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://weblogs.asp.net/scottgu/archive/2013/02/18/announcing-release-of-asp-net-and-web-tools-2012-2-update.aspx&#34; target=&#34;_blank&#34;&gt;Announcing release of ASP.NET and Web Tools 2012.2 Update&lt;/a&gt; &amp;#8211; by &lt;a href=&#34;http://weblogs.asp.net/scottgu/&#34; target=&#34;_blank&#34;&gt;Scott Gu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.hanselman.com/blog/ReleasedASPNETAndWebTools20122InContext.aspx&#34; target=&#34;_blank&#34;&gt;Released: ASP.NET and Web Tools 2012.2 in Context&lt;/a&gt; &amp;#8211; by &lt;a href=&#34;http://www.hanselman.com/&#34; target=&#34;_blank&#34;&gt;Scott Hanselman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://weblogs.asp.net/jgalloway/archive/2013/02/18/announcing-the-asp-net-and-web-tools-2012-2-release.aspx&#34; target=&#34;_blank&#34;&gt;Announcing the ASP.NET and Web Tools 2012.2 Release!&lt;/a&gt; &amp;#8211; By &lt;a href=&#34;http://weblogs.asp.net/jgalloway/&#34; target=&#34;_blank&#34;&gt;Jon Galloway&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Outlook &amp;#8211; there are no items to show in this view error</title>
+      <link>https://blog.tiagosalgado.com/2013/01/11/outlook-there-are-no-items-to-show-in-this-view-error/</link>
+      <pubDate>Fri, 11 Jan 2013 18:00:01 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/01/11/outlook-there-are-no-items-to-show-in-this-view-error/</guid>
+      <description>&lt;p&gt;This message was annoying me several times in last days. After a quick search on Google I&amp;#8217;ve found a support article from Microsoft saying that is a know issue.&lt;/p&gt;
+
+&lt;p&gt;There is an &lt;a href=&#34;http://support.microsoft.com/kb/2559926?wa=wsignin1.0&#34; target=&#34;_blank&#34;&gt;hotfix&lt;/a&gt; for this, or you each time you&amp;#8217;ll get this message you can go to View &amp;gt; Expand / Collapse Groups &amp;gt; Expand All Groups.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft new logo</title>
+      <link>https://blog.tiagosalgado.com/2012/08/23/microsoft-new-logo/</link>
+      <pubDate>Thu, 23 Aug 2012 16:32:48 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2012/08/23/microsoft-new-logo/</guid>
+      <description>&lt;p&gt;After 25 years, Microsoft has a new look.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Productivity Future Vision by Microsoft</title>
+      <link>https://blog.tiagosalgado.com/2011/10/28/productivity-future-vision-by-microsoft/</link>
+      <pubDate>Fri, 28 Oct 2011 14:38:11 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/10/28/productivity-future-vision-by-microsoft/</guid>
+      <description>&lt;p&gt;Watch how future technology will help people make better use of their time, focus their attention, and strengthen relationships while getting things done at work, home, and on the go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Concurso Reach the Cloud</title>
+      <link>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</link>
+      <pubDate>Tue, 12 Apr 2011 14:02:12 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://img718.imageshack.us/img718/9763/reachthecloudcontest.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; border=&#34;0&#34; src=&#34;http://img718.imageshack.us/img718/9763/reachthecloudcontest.png&#34; width=&#34;510&#34; height=&#34;176&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;grande-prémio&#34;&gt;Grande prémio&lt;/h4&gt;
+
+&lt;p&gt;Um voo de 25 min. num caça de combate L-39 Albatros. A experiência inclui manobras de voo como loopings, subidas e descidas a pique. ATENÇÃO: o prémio só é concedido a pessoas sem problemas de saúde sendo exigida a apresentação de electrocardiograma. Caso o vencedor não preencha os requisitos médicos, ser-lhe-á atribuído um prémio alternativo (por exemplo, viagem em balão). O prémio inclui uma viagem de fim-de-semana para uma pessoa a Usedom, Alemanha, com estadia em hotel, aluguer de automóvel e voo (valor total aprox. de 10,000 USD).&lt;/p&gt;
+
+&lt;h4 id=&#34;prémios-regionais&#34;&gt;Prémios regionais&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;1º:&lt;/strong&gt; uma XBOX 360 com televisor de topo e uma Kinect&lt;br /&gt;
+&lt;strong&gt;2º:&lt;/strong&gt; um portátil com Windows 7&lt;br /&gt;
+&lt;strong&gt;3º:&lt;/strong&gt; um telemóvel Windows Phone 7 (sem contrato de comunicações)&lt;/p&gt;
+
+&lt;h4 id=&#34;prémio-especial&#34;&gt;Prémio especial&lt;/h4&gt;
+
+&lt;p&gt;Os primeiros 250 participantes que se registem no desafio receberão um helicóptero R/C.&lt;/p&gt;
+
+&lt;p&gt;Todas as informações em &lt;a href=&#34;https://www.microsoft.com/emea/reachthecloud/pt-pt/Default.aspx#/Home&#34; target=&#34;_blank&#34;&gt;Reach the Cloud&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How-to Index for Windows Azure</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</link>
+      <pubDate>Mon, 11 Apr 2011 13:02:22 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How to: Build a Windows Azure Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee814754.aspx&#34;&gt;How to Configure Virtual Machine Sizes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee758697.aspx&#34;&gt;How to Configure Connection Strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee907419.aspx&#34;&gt;How to Configure Operating System Versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee758708.aspx&#34;&gt;How to Configure Local Storage Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432987.aspx&#34;&gt;How to Create a Certificate for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433063.aspx&#34;&gt;How to Create a Remote Desktop Protocol File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432991.aspx&#34;&gt;How to Define Environment Variables Before a Role Starts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433020.aspx&#34;&gt;How to Define Input Endpoints for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432980.aspx&#34;&gt;How to Define Internal Endpoints for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456327.aspx&#34;&gt;How to Define Startup Tasks for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432965.aspx&#34;&gt;How to Encrypt a Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433115.aspx&#34;&gt;How to Restrict Communication Between Roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433051.aspx&#34;&gt;How to Retrieve Role Instance Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432963.aspx&#34;&gt;How to Use the RoleEnvironment.Changing Event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433023.aspx&#34;&gt;How to Use the RoleEnvironment.Changed Event&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Use the Windows Azure SDK Tools to Package and Deploy an Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433136.aspx&#34;&gt;How to Prepare the Windows Azure Compute Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433131.aspx&#34;&gt;How to Configure the Compute Emulator to Emulate Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433133.aspx&#34;&gt;How to Package an Application by Using the CSPack Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433130.aspx&#34;&gt;How to Run an Application in the Compute Emulator by Using the CSRun Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433132.aspx&#34;&gt;How to Initialize the Storage Emulator by Using the DSInit Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432970.aspx&#34;&gt;How to Change the Configuration of a Running Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432961.aspx&#34;&gt;How to Attach a Debugger to New Role Instances&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432969.aspx&#34;&gt;How to View Trace Information in the Compute Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433134.aspx&#34;&gt;How to Configure SQL Server for the Storage Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Configure a Web Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433110.aspx&#34;&gt;How to Configure a Web Role for Multiple Web Sites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432956.aspx&#34;&gt;How to Configure the Virtual Directory Location&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433064.aspx&#34;&gt;How to Configure a Windows Azure Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433080.aspx&#34;&gt;How to Configure the Site Entry in the Service Definition File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433059.aspx&#34;&gt;How to Configure IIS Components in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433113.aspx&#34;&gt;How to Configure a Service to Use a Legacy Web Role&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Windows Azure VM Roles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465391.aspx&#34;&gt;How to Create the Base VHD for a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465409.aspx&#34;&gt;How to Install the Windows Azure Integration Components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg697584.aspx&#34;&gt;How to Enable Windows Azure Connect for a VM Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg466226.aspx&#34;&gt;How to Develop an Adapter for a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465407.aspx&#34;&gt;How to Prepare the Server Image for Uploading to Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465385.aspx&#34;&gt;How to Upload a VHD to Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465379.aspx&#34;&gt;How to Create and Deploy the VM Role Service Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg697586.aspx&#34;&gt;How to Use Certificates With a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465406.aspx&#34;&gt;How to Change a Server Image for a VM Role by Using a Differencing VHD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465392.aspx&#34;&gt;How to Change the Configuration of a VM role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg466230.aspx&#34;&gt;How to Manage the Lifecycle of VM Role Instances in Windows Azure&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Administering Windows Azure Hosted Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433024.aspx&#34;&gt;How to Setup a Windows Azure Subscription&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456328.aspx&#34;&gt;How to Setup Multiple Administrator Accounts&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Deploy a Windows Azure Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456329.aspx&#34;&gt;How to Package your Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/dd179441.aspx&#34;&gt;How to Deploy a Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433118.aspx&#34;&gt;How to Create a Hosted Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433066.aspx&#34;&gt;How to Create a Storage Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee871996.aspx&#34;&gt;How to Configure the Service Topology&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Upgrade a Service&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee517255.aspx&#34;&gt;How to Perform In-Place Upgrades&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee517253.aspx&#34;&gt;How to Swap a Service&amp;#8217;s VIPs&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Upgrades to the Windows Azure Guest OS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456325.aspx&#34;&gt;How to Determine the Current Guest OS of your Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433101.aspx&#34;&gt;How to Upgrade the Guest OS in the Management Portal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456324.aspx&#34;&gt;How to Upgrade the Guest OS in the Service Configuration File&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Management Certificates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551722.aspx&#34;&gt;How to Create a Management Certificate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551726.aspx&#34;&gt;How to Add a Management Certificate to a Windows Azure Subscription&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Service Certificates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465712.aspx&#34;&gt;How to Add a New Certificate to the Certificate Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465718.aspx&#34;&gt;How to Associate a Certificate with a Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465711.aspx&#34;&gt;How to Update a Certificate in the Certificate Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ff795779.aspx&#34;&gt;How to Configure an HTTPS Endpoint in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551724.aspx&#34;&gt;How to Control Access to Certificates on a Virtual Machine&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Use Storage Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433066.aspx&#34;&gt;How to Create a Storage Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg494982.aspx&#34;&gt;How to Read Configuration Settings for the Storage Client Library and Handle Changed Settings&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Configure Windows Azure Connect&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433071.aspx&#34;&gt;How to Activate Windows Azure Roles for Windows Azure Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432964.aspx&#34;&gt;How to Install Local Endpoints with Windows Azure Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433031.aspx&#34;&gt;How to Create and Configure a Group of Endpoints in Windows Azure Connect&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage CDN on Windows Azure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680301.aspx&#34;&gt;How to Enable CDN for Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680307.aspx&#34;&gt;How to Map CDN Content to a Custom Domain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680303.aspx&#34;&gt;How to Remove Content from the CDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680306.aspx&#34;&gt;How to Manage Expiration of Blob Content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680299.aspx&#34;&gt;How to Manage Expiration of Hosted Service Content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;from: &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432998.aspx&#34; title=&#34;http://msdn.microsoft.com/en-us/library/gg432998.aspx&#34;&gt;http://msdn.microsoft.com/en-us/library/gg432998.aspx&lt;/a&gt; (via &lt;a href=&#34;http://blogs.msdn.com/b/otavio/&#34; title=&#34;http://blogs.msdn.com/b/otavio/&#34;&gt;http://blogs.msdn.com/b/otavio/&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Virtual Academy</title>
+      <link>https://blog.tiagosalgado.com/2011/03/29/microsoft-virtual-academy/</link>
+      <pubDate>Tue, 29 Mar 2011 13:47:36 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/29/microsoft-virtual-academy/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Microsoft Virtual Academy – MVA is a fully cloud-based learning experience focusing on Microsoft Cloud Technologies. You can access a variety of training content online and become one of the renowned experts in the IT Pro community around the world. MVA provides its users with a virtual university experience: the student can select a course and study the material and then do the self-assessment. By doing so, he will collect points that will promote him to a Bronze, Silver, Gold or Platinum Level. Students on MVA can get access to all the information, statistics and advancements of their training career, allowing them to maintain a long-term relationship with Microsoft. Learning through MVA is free of charge, and you can study the contents at any time and at your own pace.&lt;br /&gt;
+The MVA platform is hosted on the latest Microsoft Azure technology, which guarantees that your learning experience will flow uninterruptedly for the best online learning experience ever!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.microsoftvirtualacademy.com&#34; title=&#34;https://www.microsoftvirtualacademy.com&#34;&gt;https://www.microsoftvirtualacademy.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Asynchronous Programming for C# and Visual Basic</title>
+      <link>https://blog.tiagosalgado.com/2010/11/01/asynchronous-programming-for-c-and-visual-basic/</link>
+      <pubDate>Mon, 01 Nov 2010 18:56:08 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/11/01/asynchronous-programming-for-c-and-visual-basic/</guid>
+      <description>&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl02&#34; title=&#34;Visual Studio Async CTP&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl02&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=203690&#34;&gt;&lt;strong&gt;Visual Studio Async CTP&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Download a CTP with new syntax and APIs for asynchronous development.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl04&#34; title=&#34;Whitepaper: Asynchrony in .NET&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl04&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=204844&#34;&gt;&lt;strong&gt;Whitepaper: Asynchrony in .NET&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Get an overview of the new asynchronous features being developed for C#, Visual Basic and the .NET Framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl06&#34; title=&#34;Walkthrough: Getting Started with Async&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl06&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=203988&#34;&gt;&lt;strong&gt;Walkthrough: Getting Started with Async&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow step-by-step instructions for converting a synchronous solution in Visual Basic or C# to an asynchronous one by using the new asynchronous features.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl08&#34; title=&#34;Iterators in Visual Basic&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl08&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=204549&#34;&gt;&lt;strong&gt;Iterators in Visual Basic&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn about the iterators that this CTP introduces in Visual Basic. An iterator function or get accessor performs a custom iteration over a collection, and uses the Yield statement to return each element in turn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;101 Samples in C# and Visual Basic&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Download the CTP and then use the 101 samples (in DocumentsMicrosoft Visual Studio Async CTPSamples) to try the new Async CTP features yourself. Check back for an online version coming soon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2008 R2 Hyper-V Poster</title>
+      <link>https://blog.tiagosalgado.com/2010/05/29/windows-server-2008-r2-hyper-v-poster/</link>
+      <pubDate>Sat, 29 May 2010 19:41:13 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/05/29/windows-server-2008-r2-hyper-v-poster/</guid>
+      <description>&lt;div class=&#34;wlWriterHeaderFooter&#34; style=&#34;float:none; margin:0px; padding:4px 0px 4px 0px;&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=5567b22a-8c47-4840-a88d-23146fd93151&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px&#34; border=&#34;0&#34; src=&#34;http://img338.imageshack.us/img338/1189/win2k8hyperv.png&#34; width=&#34;645&#34; height=&#34;557&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A imagem em cima é apenas uma parte do poster. Arquitectura, snapshots, “live migration” e mais no &lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=5567b22a-8c47-4840-a88d-23146fd93151&#34; target=&#34;_blank&#34;&gt;poster completo&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Live Writer plugins</title>
+      <link>https://blog.tiagosalgado.com/2010/03/14/windows-live-writer-plugins/</link>
+      <pubDate>Sun, 14 Mar 2010 18:47:51 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/03/14/windows-live-writer-plugins/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img363.imageshack.us/img363/4915/windowslivewriterjpg.png&#34; width=&#34;240&#34; height=&#34;156&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Já uso há bastante tempo o &lt;a href=&#34;http://download.live.com/writer&#34; target=&#34;_blank&#34;&gt;Windows Live Writer&lt;/a&gt; como ferramenta de publicação nos meus blogs, e vou sempre procurando plugins que me possam facilitar a tarefa de criação de posts.&lt;/p&gt;
+
+&lt;p&gt;Faço este post não só para divulgação de alguns plugins, mas também para ficar como minha referência no caso de me esquecer de algum quando precisar de reinstalar o PC.&lt;/p&gt;
+
+&lt;p&gt;Seguem então alguns plugins sem qualquer ordem de importância:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=07c1dabd-accc-411f-bae0-ddef160067a9&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Facebook Live Writer Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=d9449418-e352-4850-8398-458edece8e74&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;On the fly Zip and attach Live Writer Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=bbb14b2a-0250-4513-a942-cb99a3459ab9&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Tag Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=e5a2ba98-e2a9-4083-a86f-c20a87e9253d&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Imtech MSDN Reference Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=6ba7122b-56aa-4651-a7ab-613359a31986&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;SnagIt Screen Capture Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=f5eb0e56-0132-4d3e-95c8-d43cd2c62688&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;SkyDrive Attachment plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveitemdetail.aspx?li=1f57bd9b-a692-4593-9e9e-e2962d9c0eee&amp;l=8&#34; target=&#34;_blank&#34;&gt;Insert Code for Windows Live Writer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/imageshackwriterplugin/&#34; target=&#34;_blank&#34;&gt;ImageShack&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;Podem encontrar mais plugins na &lt;a href=&#34;http://gallery.live.com/results.aspx?bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Windows Live Gallery&lt;/a&gt;, e caso tenham algum para recomendar é só indicar nos comentários.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alterar as definiões da Data Execution Prevention</title>
+      <link>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</link>
+      <pubDate>Sun, 23 Aug 2009 14:27:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</guid>
+      <description>&lt;p&gt;Ao tentar instalar o &lt;a href=&#34;http://www.mymobiler.com/&#34; target=&#34;_blank&#34;&gt;My Mobiler&lt;/a&gt; no &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt;, fui impedido de continuar e fazer a ligação com o PDA devido às definições da &lt;a href=&#34;http://en.wikipedia.org/wiki/Data_Execution_Prevention&#34; target=&#34;_blank&#34;&gt;DEP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para contornar isto, é necessário indicar quais os programas que serão considerados como excepção e assim conseguir avançar na instalação.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Control Panel &amp;gt; System &amp;gt; Advanced System Settings&lt;/li&gt;
+&lt;li&gt;Performance Settings&lt;/li&gt;
+&lt;li&gt;Data Execution Prevention e escolher a opção “Turn on DEP for all programs and services except those I select”&lt;/li&gt;
+&lt;li&gt;Por fim seleccionar os programas que queremos definir como excepção&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image_thumb.png&#34; width=&#34;377&#34; height=&#34;539&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 Deep Dive</title>
+      <link>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</link>
+      <pubDate>Wed, 12 Aug 2009 12:59:53 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</guid>
+      <description>&lt;p style=&#34;text-align:center;&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image0011.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-449&#34; title=&#34;sqlserver2k8deepdive&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image0011.jpg&#34; alt=&#34;sqlserver2k8deepdive&#34; width=&#34;590&#34; height=&#34;168&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Vai-se realizar dia 10 e 15 de Setembro, em Lisboa e no Porto respectivamente, um evento que aborda principalmente as novas funcionalidades presentes no SQL Server 2008.
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Resource Governor, Partitioning, Auditing, X-Events são alguns dos temas que irão ser abordados neste evento, mas o programa completo pode ser visto &lt;a href=&#34;http://www.microsoft.com/portugal/sqlserver2008deepdive/default.mspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Podem fazer a inscrição nos seguintes links:
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423084&amp;Culture=pt-PT&#34; target=&#34;_blank&#34;&gt;Lisboa&lt;/a&gt; &amp;#8211; 10 de Setembro no Auditório Microsoft (TagusPark)
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423086&amp;Culture=pt-PT&#34; target=&#34;_blank&#34;&gt;Porto&lt;/a&gt; &amp;#8211; 15 de Setembro na Fundação Dr. António Cupertino de Miranda
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://www.microsoft.com/portugal/sqlserver2008deepdive/default.mspx&#34; target=&#34;_blank&#34;&gt;Programa do Evento&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Source Configuration Wizard não lista os datasources disponiveis</title>
+      <link>https://blog.tiagosalgado.com/2009/07/22/data-source-configuration-wizard-nao-lista-os-datasources-disponiveis/</link>
+      <pubDate>Wed, 22 Jul 2009 12:27:58 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/07/22/data-source-configuration-wizard-nao-lista-os-datasources-disponiveis/</guid>
+      <description>&lt;p&gt;Há uns tempos atrás &lt;a href=&#34;http://forums.asp.net/p/1347741/3304057.aspx#3304057&#34; target=&#34;_blank&#34;&gt;tive um problema&lt;/a&gt; com o meu Visual Studio que, devido ao tempo disponivel para solucionar o problema ter-se esgotado, levou-me a formatar a máquina para voltar tudo à normalidade.&lt;/p&gt;
+
+&lt;p&gt;Ao utilizar o Wizard para criar um Data Source, a listagem dos tipos que teria disponiveis não me estava a aparecer&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/07/data-source-config-wizard-dialog1.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-442&#34; title=&#34;data-source-config-wizard-dialog[1]&#34; src=&#34;http://oito.files.wordpress.com/2009/07/data-source-config-wizard-dialog1.jpg&#34; alt=&#34;data-source-config-wizard-dialog[1]&#34; width=&#34;499&#34; height=&#34;387&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pelos vistos apareceu mais alguem com o mesmo problema e conseguiu resolver sem a trabalheira de formatar e instalar tudo novamente como podem ver &lt;a href=&#34;http://forums.asp.net/p/1371172/2866696.aspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

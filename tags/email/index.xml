@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/email/</link>
+    <description>Recent content in Email on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 31 Aug 2008 17:37:49 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Outlook 2007 &amp;#8211; Email Prioritizer</title>
+      <link>https://blog.tiagosalgado.com/2008/08/31/outlook-2007-email-prioritizer/</link>
+      <pubDate>Sun, 31 Aug 2008 17:37:49 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/08/31/outlook-2007-email-prioritizer/</guid>
+      <description>&lt;p&gt;Saiu do &lt;a href=&#34;http://www.officelabs.com/Pages/Default.aspx&#34; target=&#34;_blank&#34;&gt;Office Labs&lt;/a&gt; um add-in para o Outlook 2007 que nos adiciona um &amp;#8220;Do not disturb button&amp;#8221;, o &lt;a href=&#34;http://www.officelabs.com/projects/emailprioritizer/Pages/default.aspx&#34; target=&#34;_blank&#34;&gt;Email Prioritizer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Email Prioritizer is a plug-in for Microsoft Office Outlook 2007 (running on Exchange Server) that helps you manage email overload. This concept test provides a “do not disturb” button that temporarily pauses new email arrival, and prioritizes email with a 0-3 star rating system. We hope this prototype helps you focus on the emails that are most important to you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Consultem a &lt;a href=&#34;http://www.officelabs.com/projects/emailprioritizer/Pages/FAQ.aspx&#34; target=&#34;_blank&#34;&gt;FAQ&lt;/a&gt; para mais informação sobre este add-in e façam o download &lt;a href=&#34;http://msofficelb.vo.llnwd.net/o25/eaf1b138-dea9-4e3f-8270-1a94bad31f3d/1.0.820.0/EmailPrioritizerSetup.exe&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

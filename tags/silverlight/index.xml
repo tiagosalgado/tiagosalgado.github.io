@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Silverlight on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/silverlight/</link>
+    <description>Recent content in Silverlight on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 17 Sep 2009 13:14:23 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/silverlight/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Free AJAX and Silverlight Automated Testing by Telerik</title>
+      <link>https://blog.tiagosalgado.com/2009/09/17/free-ajax-and-silverlight-automated-testing-by-telerik/</link>
+      <pubDate>Thu, 17 Sep 2009 13:14:23 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/09/17/free-ajax-and-silverlight-automated-testing-by-telerik/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.telerik.com/products/webaii-testing-framework.aspx&#34; target=&#34;_blank&#34;&gt;WebAii Testing Framework&lt;/a&gt; helps developers build automated unit tests, functional tests and end to end scenario tests for both AJAX- and Silverlight-powered applications. From automating complex UI actions, waiting on DOM changes to imitating the complete list of UI XAML elements in Silverlight – it’s all in here for free!&lt;/p&gt;
+
+&lt;p&gt;Website: &lt;a href=&#34;http://www.telerik.com/products/webaii-testing-framework.aspx&#34; target=&#34;_blank&#34;&gt;WebAii Testing Framework&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

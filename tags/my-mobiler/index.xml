@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Mobiler on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/my-mobiler/</link>
+    <description>Recent content in My Mobiler on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 23 Aug 2009 14:27:26 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/my-mobiler/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Alterar as definiões da Data Execution Prevention</title>
+      <link>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</link>
+      <pubDate>Sun, 23 Aug 2009 14:27:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</guid>
+      <description>&lt;p&gt;Ao tentar instalar o &lt;a href=&#34;http://www.mymobiler.com/&#34; target=&#34;_blank&#34;&gt;My Mobiler&lt;/a&gt; no &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt;, fui impedido de continuar e fazer a ligação com o PDA devido às definições da &lt;a href=&#34;http://en.wikipedia.org/wiki/Data_Execution_Prevention&#34; target=&#34;_blank&#34;&gt;DEP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para contornar isto, é necessário indicar quais os programas que serão considerados como excepção e assim conseguir avançar na instalação.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Control Panel &amp;gt; System &amp;gt; Advanced System Settings&lt;/li&gt;
+&lt;li&gt;Performance Settings&lt;/li&gt;
+&lt;li&gt;Data Execution Prevention e escolher a opção “Turn on DEP for all programs and services except those I select”&lt;/li&gt;
+&lt;li&gt;Por fim seleccionar os programas que queremos definir como excepção&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image_thumb.png&#34; width=&#34;377&#34; height=&#34;539&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charts on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/charts/</link>
+    <description>Recent content in Charts on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 26 Oct 2008 23:20:13 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/charts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ASP.NET e Windows Forms Charts Controls gratis</title>
+      <link>https://blog.tiagosalgado.com/2008/10/26/aspnet-e-windows-forms-charts-controls-gratis/</link>
+      <pubDate>Sun, 26 Oct 2008 23:20:13 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/10/26/aspnet-e-windows-forms-charts-controls-gratis/</guid>
+      <description>&lt;p&gt;Foram disponibilizados o controlo de gráficos para ASP.NET e Windows Forms pela equipa de SQL Server Reporting Services e pelo grupo de Data Visualization gratuitamente.&lt;/p&gt;
+
+&lt;p&gt;Podem ser usados no Visual Studio 2008, e são bastante identicos aos disponibilizados no SQL Server Reporting Services 2008.&lt;/p&gt;
+
+&lt;p&gt;O download para a .NET Framework 3.5 SP1 está disponivel &lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=130F7986-BF49-4FE5-9CA8-910AE6EA442C&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;. Podem ainda fazer o download do addon &lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;, que adiciona o controlo à toolbox e ao intellisence do Visual Studio 2008.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

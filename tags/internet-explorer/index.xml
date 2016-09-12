@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet Explorer on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/internet-explorer/</link>
+    <description>Recent content in Internet Explorer on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 21 Apr 2010 23:46:19 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Abrir Tabs no PC que estão abertas noutro com o Xmarks</title>
+      <link>https://blog.tiagosalgado.com/2010/04/21/abrir-tabs-no-pc-que-esto-abertas-noutro-com-o-xmarks/</link>
+      <pubDate>Wed, 21 Apr 2010 23:46:19 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/21/abrir-tabs-no-pc-que-esto-abertas-noutro-com-o-xmarks/</guid>
+      <description>&lt;p&gt;Há &lt;a href=&#34;http://blog.tiagosalgado.com/sincronizar-favoritos-entre-diferentes-browsers/&#34; target=&#34;_blank&#34;&gt;pouco tempo atrás&lt;/a&gt;, instalei o &lt;a href=&#34;http://www.xmarks.com&#34; target=&#34;_blank&#34;&gt;Xmarks&lt;/a&gt; para me sincronizar os favoritos entre os browsers e PCs que utilizo. A solução funciona bastante bem, e faz realmente o que quero que ela faça.&lt;/p&gt;
+
+&lt;p&gt;Hoje fiz a actualização do plugin, e vi que adicionaram uma funcionalidade engraçada, que é permitir abrir os sites num PC que estavamos a consultar noutro.&lt;/p&gt;
+
+&lt;p&gt;Imaginem que estão em casa, e estão a ver alguns sites, e decidem ir tomar um café, para aquela esplanada que até tem acesso à net gratuita, e querem levar o portatil para continuar a fazer o que estavam.&lt;/p&gt;
+
+&lt;p&gt;Ora, a solução normal é ir para o café, ligar o portatil e tornar a abrir tudo que tinham aberto em casa certo?&lt;/p&gt;
+
+&lt;p&gt;É aqui que entra o xMarks, com esta nova funcionalidade, a Tab Sync.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img227.imageshack.us/img227/4392/xmarkstabsyncie.png&#34; width=&#34;403&#34; height=&#34;473&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rapidamente, podemos ter acesso aos sites que estavamos a ver, e abri-los com um clique. Podem ver uma descrição completa no &lt;a href=&#34;http://blog.xmarks.com/?p=1623&#34; target=&#34;_blank&#34;&gt;blog do xMarks&lt;/a&gt; (&lt;a href=&#34;http://blog.xmarks.com/?p=1534&#34; target=&#34;_blank&#34;&gt;e aqui também&lt;/a&gt;) e também como activar esta funcionalidade.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IE &#43; Firefox HTML 5 test</title>
+      <link>https://blog.tiagosalgado.com/2010/04/11/ie-firefox-html-5-test/</link>
+      <pubDate>Sun, 11 Apr 2010 23:00:35 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/11/ie-firefox-html-5-test/</guid>
+      <description>&lt;p&gt;A diferença entre o &lt;a href=&#34;http://www.microsoft.com/ie&#34; target=&#34;_blank&#34;&gt;IE&lt;/a&gt; e o &lt;a href=&#34;http://www.getfirefox.com&#34; target=&#34;_blank&#34;&gt;FF&lt;/a&gt; num &lt;a href=&#34;http://html5test.com/&#34; target=&#34;_blank&#34;&gt;teste ao HTML 5&lt;/a&gt;. Ouch!!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://img693.imageshack.us/img693/8231/ieffhtml5test.png&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img693.imageshack.us/img693/8231/ieffhtml5test.png&#34; width=&#34;240&#34; height=&#34;148&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desactivar o botão dos Aceleradores no IE8</title>
+      <link>https://blog.tiagosalgado.com/2009/05/15/desactivar-o-boto-dos-aceleradores-no-ie8/</link>
+      <pubDate>Fri, 15 May 2009 23:40:18 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/15/desactivar-o-boto-dos-aceleradores-no-ie8/</guid>
+      <description>&lt;p&gt;Para desactivar o botão dos Aceleradores no &lt;a href=&#34;http://www.microsoft.com/iexplorer&#34; target=&#34;_blank&#34;&gt;IE&lt;/a&gt; 8 (este aqui &lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image1.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb1.png&#34; width=&#34;21&#34; height=&#34;20&#34; /&gt;&lt;/a&gt; ) basta irem ao menu &lt;strong&gt;Tools &amp;gt; Internet Options &amp;gt; Advanced&lt;/strong&gt; e na secção &lt;strong&gt;Browsing&lt;/strong&gt; removerem o &lt;em&gt;check&lt;/em&gt; na opção &lt;strong&gt;“Display Accelerator button on Selection”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image2.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;&#34; border=&#34;0&#34; alt=&#34;&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb2.png&#34; width=&#34;413&#34; height=&#34;529&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Crash do Internet Explorar ao executar uma tarefa agendada</title>
+      <link>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</link>
+      <pubDate>Mon, 27 Apr 2009 23:33:13 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</guid>
+      <description>&lt;p&gt;Ao criar uma nova tarefa agendada no Windows Server 2008, fui confrontado com um crash do Internet Explorer no momento em que esta foi executada.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/erro-ie-st.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;Erro_IE_ST&#34; border=&#34;0&#34; alt=&#34;Erro_IE_ST&#34; src=&#34;http://oito.files.wordpress.com/2009/04/erro-ie-st-thumb.jpg&#34; width=&#34;240&#34; height=&#34;168&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/ie-crash-scheduletask.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;ie_crash_scheduletask&#34; border=&#34;0&#34; alt=&#34;ie_crash_scheduletask&#34; src=&#34;http://oito.files.wordpress.com/2009/04/ie-crash-scheduletask-thumb.jpg&#34; width=&#34;240&#34; height=&#34;106&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Para o contornar, tive que activar a opção “Executar com os privilégios mais elevados”. Não tive grande tempo para explorar a razão do crash do IE sem esta opção activa, por isso se alguem souber até me pouparia o trabalho 😀&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/04/win2k8-schedule-tasks.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;win2k8_schedule_tasks&#34; border=&#34;0&#34; alt=&#34;win2k8_schedule_tasks&#34; src=&#34;http://oito.files.wordpress.com/2009/04/win2k8-schedule-tasks-thumb.jpg&#34; width=&#34;240&#34; height=&#34;178&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

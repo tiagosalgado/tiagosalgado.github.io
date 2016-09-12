@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/windows/</link>
+    <description>Recent content in Windows on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 23 Aug 2009 14:27:26 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Alterar as definiões da Data Execution Prevention</title>
+      <link>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</link>
+      <pubDate>Sun, 23 Aug 2009 14:27:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</guid>
+      <description>&lt;p&gt;Ao tentar instalar o &lt;a href=&#34;http://www.mymobiler.com/&#34; target=&#34;_blank&#34;&gt;My Mobiler&lt;/a&gt; no &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt;, fui impedido de continuar e fazer a ligação com o PDA devido às definições da &lt;a href=&#34;http://en.wikipedia.org/wiki/Data_Execution_Prevention&#34; target=&#34;_blank&#34;&gt;DEP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para contornar isto, é necessário indicar quais os programas que serão considerados como excepção e assim conseguir avançar na instalação.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Control Panel &amp;gt; System &amp;gt; Advanced System Settings&lt;/li&gt;
+&lt;li&gt;Performance Settings&lt;/li&gt;
+&lt;li&gt;Data Execution Prevention e escolher a opção “Turn on DEP for all programs and services except those I select”&lt;/li&gt;
+&lt;li&gt;Por fim seleccionar os programas que queremos definir como excepção&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image_thumb.png&#34; width=&#34;377&#34; height=&#34;539&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RunAs Different User no Windows Vista / Windows Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/06/19/runas-different-user-no-windows-vista-windows-server-2008/</link>
+      <pubDate>Fri, 19 Jun 2009 12:59:42 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/06/19/runas-different-user-no-windows-vista-windows-server-2008/</guid>
+      <description>&lt;p&gt;Desde o Windows Vista, que a opção para correr uma aplicação com um utilizador diferente do actualmente logado deixou de existir.&lt;/p&gt;
+
+&lt;p&gt;Isto causa alguns constrangimentos quando temos o UAC desactivado, pois mesmo recorrendo à opção &amp;#8220;Run as Administrator&amp;#8221;, não conseguimos elevar correctamente os previlégios necessários em determinadas situações.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/06/runas_administrator.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-419&#34; title=&#34;runas_administrator&#34; src=&#34;http://oito.files.wordpress.com/2009/06/runas_administrator.jpg&#34; alt=&#34;runas_administrator&#34; width=&#34;275&#34; height=&#34;353&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Para trazer de volta esta opção, a suite do &lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Sysinternals&lt;/a&gt; inclui um utilitário chamado &lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/cc300361.aspx&#34; target=&#34;_blank&#34;&gt;ShellRunas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para adicionar ao menu de contexto, basta executarmos o comando &amp;#8220;shellrunas /reg&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/06/runas_differentuser.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-420&#34; title=&#34;runas_differentuser&#34; src=&#34;http://oito.files.wordpress.com/2009/06/runas_differentuser.jpg&#34; alt=&#34;runas_differentuser&#34; width=&#34;272&#34; height=&#34;146&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SP2 para Windows Server 2008 e Windows Vista</title>
+      <link>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</link>
+      <pubDate>Wed, 03 Jun 2009 20:51:30 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</guid>
+      <description>&lt;p&gt;Já lá vai mais de uma semana mas deixo aqui os links para o SP2 do &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt; e &lt;a href=&#34;http://www.microsoft.com/windows/windows-vista/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Vista&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=9f073285-b6ef-4297-85ce-f4463d06d6cb&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;Download ISO&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd537674.aspx&#34; target=&#34;_blank&#34;&gt;Release Notes Windows Vista w/ SP2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd540765.aspx&#34; target=&#34;_blank&#34;&gt;Release Notes Windows Server 2008 w/ SP2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/windows/dd300591.aspx&#34; target=&#34;_blank&#34;&gt;Things to know&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd335038.aspx&#34; target=&#34;_blank&#34;&gt;FAQ&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desactivar o botão dos Aceleradores no IE8</title>
+      <link>https://blog.tiagosalgado.com/2009/05/15/desactivar-o-boto-dos-aceleradores-no-ie8/</link>
+      <pubDate>Fri, 15 May 2009 23:40:18 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/15/desactivar-o-boto-dos-aceleradores-no-ie8/</guid>
+      <description>&lt;p&gt;Para desactivar o botão dos Aceleradores no &lt;a href=&#34;http://www.microsoft.com/iexplorer&#34; target=&#34;_blank&#34;&gt;IE&lt;/a&gt; 8 (este aqui &lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image1.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb1.png&#34; width=&#34;21&#34; height=&#34;20&#34; /&gt;&lt;/a&gt; ) basta irem ao menu &lt;strong&gt;Tools &amp;gt; Internet Options &amp;gt; Advanced&lt;/strong&gt; e na secção &lt;strong&gt;Browsing&lt;/strong&gt; removerem o &lt;em&gt;check&lt;/em&gt; na opção &lt;strong&gt;“Display Accelerator button on Selection”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image2.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;&#34; border=&#34;0&#34; alt=&#34;&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb2.png&#34; width=&#34;413&#34; height=&#34;529&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problemas na conectividade do Windows Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/05/13/problemas-na-conectividade-do-windows-server-2008/</link>
+      <pubDate>Wed, 13 May 2009 21:12:21 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/13/problemas-na-conectividade-do-windows-server-2008/</guid>
+      <description>&lt;p&gt;Já há algum tempo que tenho problemas na ligação à rede no meu PC. Andei a ver os logs e nunca encontrei razão aparente para a ligação se desligar e voltar logo de seguida.&lt;/p&gt;
+
+&lt;p&gt;Hoje andei a investigar um bocado e fui várias vezes de encontro de que desactivando na placa de rede o IPv6 me iria resolver o problema. A maioria dos casos eram em sistemas com o Windows Vista instalado, mas vi outros que relatavam o problema no Windows Server 2008, que é o meu caso.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image.png&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb.png&#34; width=&#34;377&#34; height=&#34;472&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Resta-me aguardar algum tempo e ver se isto resolve de vez, mas se entretanto alguem tiver tido o mesmo problema e se o resolveu, indiquem sff 😀&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Crash do Internet Explorar ao executar uma tarefa agendada</title>
+      <link>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</link>
+      <pubDate>Mon, 27 Apr 2009 23:33:13 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</guid>
+      <description>&lt;p&gt;Ao criar uma nova tarefa agendada no Windows Server 2008, fui confrontado com um crash do Internet Explorer no momento em que esta foi executada.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/erro-ie-st.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;Erro_IE_ST&#34; border=&#34;0&#34; alt=&#34;Erro_IE_ST&#34; src=&#34;http://oito.files.wordpress.com/2009/04/erro-ie-st-thumb.jpg&#34; width=&#34;240&#34; height=&#34;168&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/ie-crash-scheduletask.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;ie_crash_scheduletask&#34; border=&#34;0&#34; alt=&#34;ie_crash_scheduletask&#34; src=&#34;http://oito.files.wordpress.com/2009/04/ie-crash-scheduletask-thumb.jpg&#34; width=&#34;240&#34; height=&#34;106&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Para o contornar, tive que activar a opção “Executar com os privilégios mais elevados”. Não tive grande tempo para explorar a razão do crash do IE sem esta opção activa, por isso se alguem souber até me pouparia o trabalho 😀&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/04/win2k8-schedule-tasks.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:block;float:none;margin-left:auto;border-top:0;margin-right:auto;border-right:0;&#34; title=&#34;win2k8_schedule_tasks&#34; border=&#34;0&#34; alt=&#34;win2k8_schedule_tasks&#34; src=&#34;http://oito.files.wordpress.com/2009/04/win2k8-schedule-tasks-thumb.jpg&#34; width=&#34;240&#34; height=&#34;178&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problema ao aceder ao servidor devido ao limite de ligações simultaneas</title>
+      <link>https://blog.tiagosalgado.com/2009/04/23/problema-ao-aceder-ao-servidor-devido-ao-limite-de-ligacoes-simultaneas/</link>
+      <pubDate>Thu, 23 Apr 2009 13:28:33 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/23/problema-ao-aceder-ao-servidor-devido-ao-limite-de-ligacoes-simultaneas/</guid>
+      <description>&lt;p&gt;Onde trabalho já aconteceu mais que uma vez tentar aceder a um servidor e não conseguir por estarem ocupadas todas as ligações permitidas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/04/server_connections_exceeded.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-356&#34; title=&#34;server_connections_exceeded&#34; src=&#34;http://oito.files.wordpress.com/2009/04/server_connections_exceeded.jpg&#34; alt=&#34;server_connections_exceeded&#34; width=&#34;461&#34; height=&#34;117&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Em certos casos pode causar um grande transtorno pois é necessário fazer alguma intervenção e não é possivel deslocarmo-nos fisicamente ao servidor e fazer o login no mesmo.&lt;/p&gt;
+
+&lt;p&gt;Para contornar o problema, podemos pela linha de comandos terminar uma das sessões e conseguindo assim aceder com a nossa.&lt;/p&gt;
+
+&lt;p&gt;Para tal, basta ir à linha de comandos do Windows e fazer o seguinte:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;net-use /user:NOME_UTILIZADOR &lt;a href=&#34;//NOME_SERVIDOR&#34;&gt;NOME_SERVIDOR&lt;/a&gt; (abre a ligação remota em modo de consola)&lt;/li&gt;
+&lt;li&gt;query session /server:NOME_SERVIDOR (isto vai listar todas as sessões do servidor)&lt;/li&gt;
+&lt;li&gt;reset session [ID] /server:NOME_SERVIDOR (faz o reset da sessão com o ID indicado, ID este que é visto no output do comando anterior)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Por fim, já podemos aceder remotamente pelo utilitário de acesso remoto do windows.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Erro a instalar o SQL Server 2008 em PCs com o sistema operativo em PT</title>
+      <link>https://blog.tiagosalgado.com/2009/04/02/erro-a-instalar-o-sql-server-2008-em-pcs-com-o-sistema-operativo-em-pt/</link>
+      <pubDate>Thu, 02 Apr 2009 12:39:16 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/02/erro-a-instalar-o-sql-server-2008-em-pcs-com-o-sistema-operativo-em-pt/</guid>
+      <description>&lt;p&gt;Ao tentar instalar o &lt;a href=&#34;http://www.microsoft.com/sqlserver/2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;SQL Server 2008 &lt;/a&gt;(ou apenas o SQL Server Management Studio 2008) num PC que tem o sistema operativo em Português (confirmado o erro no &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008 &lt;/a&gt;e &lt;a href=&#34;http://www.microsoft.com/windows/windows-vista/default.aspx&#34; target=&#34;_blank&#34;&gt;Vista Business c/ SP1&lt;/a&gt;) é indicado um problema no registo do Windows.&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center;&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/04/sqlserver2k8_error_installing.png&#34; target=&#34;_blank&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-337&#34; title=&#34;sqlserver2k8_error_installing&#34; src=&#34;http://oito.files.wordpress.com/2009/04/sqlserver2k8_error_installing.png&#34; alt=&#34;sqlserver2k8_error_installing&#34; width=&#34;1144&#34; height=&#34;73&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;O setup vai ao registo e tenta localizar a entrada com o &lt;a href=&#34;http://technet.microsoft.com/en-us/library/cc939723.aspx&#34; target=&#34;_blank&#34;&gt;código da linguagem&lt;/a&gt; portuguesa (016) na &lt;a href=&#34;http://technet.microsoft.com/en-us/library/cc939658.aspx&#34; target=&#34;_blank&#34;&gt;Windows Performance Library&lt;/a&gt; mas apenas existe a entrada para Inglês (009).&lt;/p&gt;
+
+&lt;p&gt;Para contornar isto, temos que exportar o seguinte caminho &amp;#8220;HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionPerflib&amp;#92;009&amp;#8221;, depois editar o ficheiro que exportamos e alterar o &amp;#8220;009&amp;#8221; para &amp;#8220;016&amp;#8221; e importar novamente o ficheiro.&lt;/p&gt;
+
+&lt;p&gt;Após isto já vai ser possivel avançar com a instalação.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autenticação e Autorização nas Aplicações Web</title>
+      <link>https://blog.tiagosalgado.com/2009/03/09/autenticao-e-autorizao-nas-aplicaes-web/</link>
+      <pubDate>Mon, 09 Mar 2009 23:04:16 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/03/09/autenticao-e-autorizao-nas-aplicaes-web/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/&#34; target=&#34;_blank&#34;&gt;Israel Aéce&lt;/a&gt; publicou uma série de posts sobre como gerir a autenticação e a autorização nas aplicações web. A leitura está muito acessivel e qualquer dúvida que tenham certamente que terão uma resposta por parte dele para vos ajudar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28809.aspx&#34;&gt;DBAuthorization – Parte 1 – O Problema&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28814.aspx&#34;&gt;DBAuthorization – Parte 2 – A possível solução&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28815.aspx&#34;&gt;DBAuthorization – Parte 3 – Estrutura do Banco de Dados&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28817.aspx&#34;&gt;DBAuthorization – Parte 4 – Estrutura dos Tipos&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28822.aspx&#34;&gt;DBAuthorization – Parte 5 – Provider&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28826.aspx&#34;&gt;DBAuthorization – Parte 6 – Caching&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28837.aspx&#34;&gt;DBAuthorization – Parte 7 – DBAuthorizationModule&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28841.aspx&#34;&gt;DBAuthorization – Parte 8 – Configuração do arquivo Web.config&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28845.aspx&#34;&gt;DBAuthorization – Parte 9 – Interface de Administração&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://weblogs.pontonetpt.com/israelaece/posts/28856.aspx&#34;&gt;DBAuthorization – Parte 10 – Conclusão&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET MVC 1.0 RC</title>
+      <link>https://blog.tiagosalgado.com/2009/01/28/aspnet-mvc-10-rc/</link>
+      <pubDate>Wed, 28 Jan 2009 13:32:18 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/01/28/aspnet-mvc-10-rc/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.microsoft.com&#34; target=&#34;_blank&#34;&gt;Microsoft&lt;/a&gt; acabou de disponibilizar para download a ASP.NET MVC 1.0 Release Candidate (RC), apontando para o próximo mês o lançamento da versão final.&lt;/p&gt;
+
+&lt;p&gt;Nesta versão foram adicionadas algumas features tais como:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add Controller Command&lt;/li&gt;
+&lt;li&gt;Add View Command&lt;/li&gt;
+&lt;li&gt;Adding and Customizing Scaffold Templates&lt;/li&gt;
+&lt;li&gt;Go To Controller / Go To View&lt;/li&gt;
+&lt;li&gt;MSBuild Task for Compiling Views&lt;/li&gt;
+&lt;li&gt;&amp;#8230;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Podem ver o post do &lt;a href=&#34;http://weblogs.asp.net/scottgu&#34; target=&#34;_blank&#34;&gt;Scott Guthrie&lt;/a&gt; com todos os detalhes sobre este lançamento &lt;a href=&#34;http://weblogs.asp.net/scottgu/archive/2009/01/27/asp-net-mvc-1-0-release-candidate-now-available.aspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; e as notas de lançamento &lt;a href=&#34;http://go.microsoft.com/fwlink/?LinkID=137661&amp;clcid=0x409&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review ao Windows 7</title>
+      <link>https://blog.tiagosalgado.com/2008/11/06/review-ao-windows-7/</link>
+      <pubDate>Thu, 06 Nov 2008 13:53:18 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/11/06/review-ao-windows-7/</guid>
+      <description>&lt;p&gt;Para quem quer ir começando a conhecer a próxima versão do Windows (&lt;a title=&#34;Windows 7&#34; href=&#34;http://www.microsoft.com/windows/windows-7/&#34; target=&#34;_blank&#34;&gt;Windows 7&lt;/a&gt;) poderá ler a review disponibilizada na &lt;a title=&#34;ActiveWin&#34; href=&#34;http://www.activewin.com&#34; target=&#34;_blank&#34;&gt;ActiveWin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esta review foi feita com base na versão disponibilizada durante a &lt;a title=&#34;PDC 2008&#34; href=&#34;http://www.microsoftpdc.com/&#34; target=&#34;_blank&#34;&gt;PDC 2008&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&#34;Review Windows 7&#34; href=&#34;http://activewin.com/reviews/previews/windows7/&#34; target=&#34;_blank&#34;&gt;Review Windows 7&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Themes</title>
+      <link>https://blog.tiagosalgado.com/2008/09/22/visual-studio-themes-2/</link>
+      <pubDate>Mon, 22 Sep 2008 21:51:15 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/22/visual-studio-themes-2/</guid>
+      <description>&lt;p&gt;Já lá vão alguns dias que uso &lt;a href=&#34;http://blog.wekeroad.com/2007/10/17/textmate-theme-for-visual-studio-take-2/&#34; target=&#34;_blank&#34;&gt;um tema&lt;/a&gt; no &lt;a href=&#34;http://www.microsoft.com/vstudio&#34; target=&#34;_blank&#34;&gt;Visual Studio&lt;/a&gt; disponibilizado pelo &lt;a href=&#34;http://blog.wekeroad.com/&#34; target=&#34;_blank&#34;&gt;Rob Conery&lt;/a&gt; e hoje já não quero outra coisa. Sem dúvida que este tema com fundo preto e cores essencialmente escuras é uma enorme diferença (para melhor) em relação ao tema que vem por defeito.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/vs-theme2.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;147&#34; alt=&#34;vs_theme&#34; src=&#34;http://oito.files.wordpress.com/2008/09/vs-theme-thumb2.png&#34; width=&#34;244&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Na altura que andei a procura de um tema que fosse de encontro ao que pretendia encontrei outros sites com vários disponíveis e que podem servir-vos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.hanselman.com/blog/VisualStudioProgrammerThemesGallery.aspx&#34;&gt;Visual Studio Programmer Themes Gallery&lt;/a&gt; (Scott Hanselman&amp;#8217;s Blog)&lt;/li&gt;
+&lt;li&gt;[Já lá vão alguns dias que uso &lt;a href=&#34;http://blog.wekeroad.com/2007/10/17/textmate-theme-for-visual-studio-take-2/&#34; target=&#34;_blank&#34;&gt;um tema&lt;/a&gt; no &lt;a href=&#34;http://www.microsoft.com/vstudio&#34; target=&#34;_blank&#34;&gt;Visual Studio&lt;/a&gt; disponibilizado pelo &lt;a href=&#34;http://blog.wekeroad.com/&#34; target=&#34;_blank&#34;&gt;Rob Conery&lt;/a&gt; e hoje já não quero outra coisa. Sem dúvida que este tema com fundo preto e cores essencialmente escuras é uma enorme diferença (para melhor) em relação ao tema que vem por defeito.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/vs-theme2.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;147&#34; alt=&#34;vs_theme&#34; src=&#34;http://oito.files.wordpress.com/2008/09/vs-theme-thumb2.png&#34; width=&#34;244&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Na altura que andei a procura de um tema que fosse de encontro ao que pretendia encontrei outros sites com vários disponíveis e que podem servir-vos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.hanselman.com/blog/VisualStudioProgrammerThemesGallery.aspx&#34;&gt;Visual Studio Programmer Themes Gallery&lt;/a&gt; (Scott Hanselman&amp;#8217;s Blog)
+*](&lt;a href=&#34;http://simplesilverlight.wordpress.com/2008/03/18/visual-studio-2008-theme/&#34;&gt;http://simplesilverlight.wordpress.com/2008/03/18/visual-studio-2008-theme/&lt;/a&gt;) (Corey Schuman)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tipos de ficheiros bloqueados no MS Office 2003 apos instalar SP3</title>
+      <link>https://blog.tiagosalgado.com/2008/09/16/tipos-de-ficheiros-bloqueados-no-ms-office-2003-apos-instalar-sp3/</link>
+      <pubDate>Tue, 16 Sep 2008 13:01:40 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/16/tipos-de-ficheiros-bloqueados-no-ms-office-2003-apos-instalar-sp3/</guid>
+      <description>&lt;p&gt;Como &lt;a title=&#34;KB938810&#34; href=&#34;http://support.microsoft.com/kb/938810&#34; target=&#34;_blank&#34;&gt;este artigo&lt;/a&gt; diz, após instalar o SP3 do &lt;a title=&#34;Microsoft Office&#34; href=&#34;http://office.microsoft.com&#34; target=&#34;_blank&#34;&gt;MS Office 2003&lt;/a&gt;, alguns tipos de ficheiros ficam bloqueados, ficheiros estes que são referentes a versões antigas do &lt;a title=&#34;Microsoft Office&#34; href=&#34;http://office.microsoft.com&#34; target=&#34;_blank&#34;&gt;Office&lt;/a&gt; e que podem por em risco a segurança da máquina.&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center;&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/officefileblockerror.jpg&#34;&gt;&lt;img class=&#34;size-full wp-image-118 aligncenter&#34; title=&#34;officefileblockerror&#34; src=&#34;http://oito.files.wordpress.com/2008/09/officefileblockerror.jpg&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;61&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center;&#34;&gt;
+   
+&lt;/p&gt;
+
+&lt;p&gt;Para contornar o erro é necessário fazer algumas alterações no registo do Windows e para tal podem sacar este pack com os seguintes ficheiros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UnblockWord.reg&lt;/li&gt;
+&lt;li&gt;UnblockPowerPoint.reg&lt;/li&gt;
+&lt;li&gt;UnblockExcel.reg&lt;/li&gt;
+&lt;li&gt;RestoreBlockingWord.reg&lt;/li&gt;
+&lt;li&gt;RestoreBlockingPowerPoint.reg&lt;/li&gt;
+&lt;li&gt;RestoreBlockingExcel.reg&lt;/li&gt;
+&lt;li&gt;RestoreBlockingCDR.reg&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a title=&#34;Download Pack&#34; href=&#34;http://www.box.net/shared/giqfemojs9&#34; target=&#34;_blank&#34;&gt;Download Pack&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sysinternals Desktops v1.0</title>
+      <link>https://blog.tiagosalgado.com/2008/08/26/sysinternals-desktops-v10/</link>
+      <pubDate>Tue, 26 Aug 2008 20:59:42 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/08/26/sysinternals-desktops-v10/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/cc817881.aspx&#34; target=&#34;_blank&#34;&gt;Desktops&lt;/a&gt; é o mais recente utilitário adicionado à mais que conhecida &lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/default.aspx&#34; target=&#34;_blank&#34;&gt;Sysinternals Suite&lt;/a&gt;, permitindo-nos ter à disposição 4 desktops virtuais.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/cc817881.aspx&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Defraggler</title>
+      <link>https://blog.tiagosalgado.com/2008/08/25/defraggler/</link>
+      <pubDate>Mon, 25 Aug 2008 13:00:07 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/08/25/defraggler/</guid>
+      <description>&lt;p&gt;Mais um excelente produto lançado pela Piriform, empresa também detentora do CCleaner e do Recuva.&lt;/p&gt;
+
+&lt;p&gt;É um desfragmentador bastante leve (apenas 1MB) e que tem algumas features interessantes:&lt;/p&gt;
+
+&lt;p&gt;1º Defrag Individual Files &amp;#8211; podemos definir apenas as pastas e ficheiros que queremos desfragmentar em vez do disco na sua totalidade.&lt;/p&gt;
+
+&lt;p&gt;2º Portavel &amp;#8211; Podemos levar o executavel numa PEN ou noutro dispositivo que não necessita de instalação&lt;/p&gt;
+
+&lt;p&gt;3º Freeware &amp;#8211; gratis, de borla, a 0€ ou como lhe quiserem chamar, e tanto para uso comercial como pessoal.&lt;/p&gt;
+
+&lt;p&gt;Podem ver alguns &lt;a title=&#34;Screenshots&#34; href=&#34;http://www.defraggler.com/screenshots&#34; target=&#34;_blank&#34;&gt;screenshots&lt;/a&gt;, mais &lt;a title=&#34;Features&#34; href=&#34;http://www.defraggler.com/features&#34; target=&#34;_blank&#34;&gt;features&lt;/a&gt; e fazer o &lt;a title=&#34;Download&#34; href=&#34;http://www.defraggler.com/download&#34; target=&#34;_blank&#34;&gt;download&lt;/a&gt; para usarem.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

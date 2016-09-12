@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Summer Of Code on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/summer-of-code/</link>
+    <description>Recent content in Summer Of Code on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 18 Mar 2008 21:46:03 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/summer-of-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Summer Of Code 2008</title>
+      <link>https://blog.tiagosalgado.com/2008/03/18/summer-of-code-2008/</link>
+      <pubDate>Tue, 18 Mar 2008 21:46:03 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/03/18/summer-of-code-2008/</guid>
+      <description>&lt;p&gt;Mais um ano e cá temos novamente o &lt;a href=&#34;http://code.google.com/soc/2008/&#34; target=&#34;_blank&#34;&gt;Summer Of Code&lt;/a&gt;. Consultem a página com a &lt;a href=&#34;http://code.google.com/soc/2008/?projectlist&#34; target=&#34;_blank&#34;&gt;lista dos projectos&lt;/a&gt; e inscrevam-se até dia 24 caso encontrem algum do vosso interesse.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

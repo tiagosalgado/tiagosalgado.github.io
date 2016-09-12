@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pocketpc on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/pocketpc/</link>
+    <description>Recent content in Pocketpc on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 12 Nov 2008 14:02:16 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/pocketpc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Manter a ligação wireless activa quando o pocketpc entra em standby</title>
+      <link>https://blog.tiagosalgado.com/2008/11/12/manter-a-ligacao-wireless-activa-quando-o-pocketpc-entra-em-standby/</link>
+      <pubDate>Wed, 12 Nov 2008 14:02:16 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/11/12/manter-a-ligacao-wireless-activa-quando-o-pocketpc-entra-em-standby/</guid>
+      <description>&lt;p&gt;Pelas mais diversas razões preciso de ter a minha ligação à rede wireless activa e não ter que andar sempre a dar um sinal de actividade ao PDA para não me entrar em standby, pois caso entre, a ligação à rede vai à vida e é novamente estabelecida quando o volto a ligar.&lt;/p&gt;
+
+&lt;p&gt;Para manter a ligação activa mesmo em standby é necessário alterar uns valores no registo do windows mobile que são as seguintes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HKEY_LOCAL_MACHINESystemCurrentControlSetContro lPowerStateSuspend{98C5250D-C29A-4985-AE5F-AFE5367E5006} &amp;#8211; alterar o valor DWORD (default) para 1&lt;/li&gt;
+&lt;li&gt;HKEY_LOCAL_MACHINESystemCurrentControlSetContro lPowerStateResuming{98C5250D-C29A-4985-AE5F-AFE5367E5006} &amp;#8211; alterar o valor DWORD (default) para 1&lt;/li&gt;
+&lt;li&gt;HKEY_LOCAL_MACHINESystemCurrentControlSetContro lPowerStateUnattended{98C5250D-C29A-4985-AE5F-AFE5367E5006} &amp;#8211; alterar o valor DWORD (default) para 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;strong&gt;(Deverão fazer um backup do registo antes de qualquer alteração)&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Para aceder ao registo utilizo a aplicação gratuita &lt;a title=&#34;Task Manager&#34; href=&#34;http://www.dotfred.net/TaskMgr.htm&#34; target=&#34;_blank&#34;&gt;Task Manager&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Mobile e Live Mesh</title>
+      <link>https://blog.tiagosalgado.com/2008/11/05/windows-mobile-e-live-mesh/</link>
+      <pubDate>Wed, 05 Nov 2008 13:29:28 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/11/05/windows-mobile-e-live-mesh/</guid>
+      <description>&lt;p&gt;Para quem não sabe, o &lt;a title=&#34;Live Mesh&#34; href=&#34;https://www.mesh.com/Welcome/default.aspx&#34; target=&#34;_blank&#34;&gt;Live Mesh&lt;/a&gt; permite-nos fazer a sincronização de pastas/ficheiros entre vários dispositivos. Foi agora também disponibilizada uma aplicação para o Windows Mobile, idêntica à já disponivel para o PC, permitindo-nos assim adicionar o nosso PDA/Smartphone à nossa lista de dispositivos que irão ser sincronizados.&lt;/p&gt;
+
+&lt;p&gt;De momento ainda não está disponivel para todos, apenas para residentes no US e UK. Quem estiver nestas codições poderá encontrar o código promocional disponivel &lt;a href=&#34;http://blogs.msdn.com/livemesh/archive/2008/10/30/update-on-installation-of-live-mesh-for-mobile-fixed.aspx&#34; target=&#34;_blank&#34;&gt;neste post&lt;/a&gt; da equipa do Live Mesh.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://m.mesh.com/install/wm6/LiveMesh.cab&#34; target=&#34;_blank&#34;&gt;Download WM6 CAB File&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

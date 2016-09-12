@@ -2,13 +2,853 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tiagosalgado.github.io/</loc>
+    <loc>https://blog.tiagosalgado.com/</loc>
+    <lastmod>2016-08-22T22:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/about/</loc>
+    <lastmod>2016-08-22T22:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2014/09/02/chrome-dev-tools-dark-theme/</loc>
     <lastmod>2014-09-02T12:34:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tiagosalgado.github.io/2014/09/02/chrome-dev-tools-dark-theme/</loc>
-    <lastmod>2014-09-02T12:34:25+00:00</lastmod>
+    <loc>https://blog.tiagosalgado.com/2014/08/31/add-validation-rules-with-fluentvalidation/</loc>
+    <lastmod>2014-08-31T00:19:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2014/08/12/using-visual-studio-2013-with-tfs-and-git-repositories-on-same-project/</loc>
+    <lastmod>2014-08-12T15:17:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2014/06/21/dotnetconf-25th-and-26th-of-june-2014/</loc>
+    <lastmod>2014-06-21T01:54:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/11/14/visual-studio-2012-update-4/</loc>
+    <lastmod>2013-11-14T09:32:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/11/14/visual-studio-2013-launch/</loc>
+    <lastmod>2013-11-14T09:29:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/11/01/alert-users-when-they-have-lost-internet-connectivity/</loc>
+    <lastmod>2013-11-01T18:00:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/10/17/navigate-between-modules-on-dotnetnuke/</loc>
+    <lastmod>2013-10-17T12:21:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/10/17/asp-net-and-web-tools-for-visual-studio-2013-release-notes/</loc>
+    <lastmod>2013-10-17T12:11:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/10/17/visual-studio-2013-available/</loc>
+    <lastmod>2013-10-17T12:06:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/10/01/developing-asp-net-mvc-4-web-applications-jump-start/</loc>
+    <lastmod>2013-10-01T21:16:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/08/02/error-on-getskin-loading-a-dotnetnuke-website/</loc>
+    <lastmod>2013-08-02T23:36:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/07/01/build-2013-sessions-available/</loc>
+    <lastmod>2013-07-01T08:36:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/06/30/frontend-development-bookmarks/</loc>
+    <lastmod>2013-06-30T23:47:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/06/26/visual-studio-2013-and-aspnet-vnext/</loc>
+    <lastmod>2013-06-26T23:48:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/06/26/visual-studio-2013-and-git/</loc>
+    <lastmod>2013-06-26T23:44:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/06/17/essential-javascript-jquery-design-patterns/</loc>
+    <lastmod>2013-06-17T23:11:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/04/12/free-sql-server-training-videos-for-developers/</loc>
+    <lastmod>2013-04-12T08:19:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/04/05/visual-studio-2012-update-2/</loc>
+    <lastmod>2013-04-05T10:12:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/03/01/building-web-apps-with-asp-net-jump-start/</loc>
+    <lastmod>2013-03-01T13:39:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/02/19/asp-net-and-web-tools-2012-2-update/</loc>
+    <lastmod>2013-02-19T09:45:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/01/23/svcperf-e2e-etw-trace-analysis-tool/</loc>
+    <lastmod>2013-01-23T18:00:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/01/11/outlook-there-are-no-items-to-show-in-this-view-error/</loc>
+    <lastmod>2013-01-11T18:00:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2013/01/08/replace-filenames-to-avoid-overwrite-the-ones-already-saved/</loc>
+    <lastmod>2013-01-08T18:00:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2012/08/23/microsoft-new-logo/</loc>
+    <lastmod>2012-08-23T16:32:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2012/08/17/facebook-login-in-asp-net-web-application-with-visual-studio-2012/</loc>
+    <lastmod>2012-08-17T15:03:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2012/08/13/add-twitter-bootstrap-template-to-asp-net-mvc-project/</loc>
+    <lastmod>2012-08-13T14:14:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2012/08/07/koding-a-new-way-for-developers-to-work/</loc>
+    <lastmod>2012-08-07T22:46:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2012/05/22/github-para-windows/</loc>
+    <lastmod>2012-05-22T08:59:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/12/19/owasp-top-10-for-net-developers-ebook-gratuito/</loc>
+    <lastmod>2011-12-19T16:29:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/10/28/productivity-future-vision-by-microsoft/</loc>
+    <lastmod>2011-10-28T14:38:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/10/16/developing-real-world-applications-with-lightswitch/</loc>
+    <lastmod>2011-10-16T21:46:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/10/16/c-yellow-book-2011/</loc>
+    <lastmod>2011-10-16T21:38:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/09/29/ajax-control-toolkit-setembro-2011/</loc>
+    <lastmod>2011-09-29T11:32:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/09/21/mishra-reader/</loc>
+    <lastmod>2011-09-21T19:29:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/09/14/windows-developer-preview-guide/</loc>
+    <lastmod>2011-09-14T09:59:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/09/11/asp-net-mobile-framework/</loc>
+    <lastmod>2011-09-11T16:46:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/09/11/specexpress-a-fluent-validation-framework/</loc>
+    <lastmod>2011-09-11T15:44:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/07/21/dotnetnuke-6/</loc>
+    <lastmod>2011-07-21T16:02:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/07/20/sql-server-project-crescent/</loc>
+    <lastmod>2011-07-20T00:09:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/07/14/resharper-6/</loc>
+    <lastmod>2011-07-14T22:54:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/07/14/sentinel-a-lightweight-monitoring-system/</loc>
+    <lastmod>2011-07-14T22:18:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/07/14/asp-net-mvc-4-roadmap/</loc>
+    <lastmod>2011-07-14T14:00:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/06/16/html5-boilerplate/</loc>
+    <lastmod>2011-06-16T10:51:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/05/11/jquery-menubar-e-web-sitemap/</loc>
+    <lastmod>2011-05-11T22:37:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/05/10/application-name-na-connectionstring/</loc>
+    <lastmod>2011-05-10T13:52:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/05/02/asp-net-membership-lock-user/</loc>
+    <lastmod>2011-05-02T13:58:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/29/project-silk/</loc>
+    <lastmod>2011-04-29T14:48:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/29/justtrace-e-justdecompile/</loc>
+    <lastmod>2011-04-29T10:11:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/14/controlar-menus-visiveis-com-o-web-sitemap/</loc>
+    <lastmod>2011-04-14T13:52:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</loc>
+    <lastmod>2011-04-12T14:02:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/12/orleans-software-framework-for-cloud-applications/</loc>
+    <lastmod>2011-04-12T10:47:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</loc>
+    <lastmod>2011-04-11T13:02:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/11/gantterproject-management-tool/</loc>
+    <lastmod>2011-04-11T09:14:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/11/verificar-disponibilidade-de-username-nas-redes-sociais/</loc>
+    <lastmod>2011-04-11T01:20:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/04/01/instaladores-habilitados-de-tdt-por-cdigo-postal-json-c/</loc>
+    <lastmod>2011-04-01T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/29/microsoft-virtual-academy/</loc>
+    <lastmod>2011-03-29T13:47:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/27/encriptar-e-desencriptar-um-stored-procedure/</loc>
+    <lastmod>2011-03-27T00:57:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/26/gridview-showheaderwhenempty/</loc>
+    <lastmod>2011-03-26T17:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/14/projectos-porreiros-no-codeplex/</loc>
+    <lastmod>2011-03-14T22:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/03/sql-profiler-para-as-versoes-express-do-ms-sql-server/</loc>
+    <lastmod>2011-03-03T19:00:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/03/criar-um-ficheiro-zip-em-c/</loc>
+    <lastmod>2011-03-03T18:33:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/03/03/converter-dados-de-um-sqldatareader-para-uma-list-com-linq/</loc>
+    <lastmod>2011-03-03T10:36:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</loc>
+    <lastmod>2011-02-26T15:54:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/01/27/mvcconf-the-virtual-asp-net-mvc-conference/</loc>
+    <lastmod>2011-01-27T14:56:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/01/25/cheat-sheet-ado-net-entity-framework-object-relational-mapping-and-data-access/</loc>
+    <lastmod>2011-01-25T10:24:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/01/19/entity-framework-tutorials/</loc>
+    <lastmod>2011-01-19T00:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/01/18/rubular-web-based-regular-expression-editor/</loc>
+    <lastmod>2011-01-18T10:22:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2011/01/18/telerik-justmock-free-edition/</loc>
+    <lastmod>2011-01-18T10:21:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/11/01/asynchronous-programming-for-c-and-visual-basic/</loc>
+    <lastmod>2010-11-01T18:56:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/10/26/laharsub-a-message-server-for-real-time-web-applications/</loc>
+    <lastmod>2010-10-26T22:31:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/05/29/windows-server-2008-r2-hyper-v-poster/</loc>
+    <lastmod>2010-05-29T19:41:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/05/23/nlog-advanced-net-logging/</loc>
+    <lastmod>2010-05-23T21:06:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/05/18/netsparker-web-application-security-scanner/</loc>
+    <lastmod>2010-05-18T00:41:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/05/18/visual-studio-2010-technical-readiness-training/</loc>
+    <lastmod>2010-05-18T00:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/25/twitter-lana-plataforma-anywhere/</loc>
+    <lastmod>2010-04-25T18:26:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/24/utilizar-a-api-do-bit-ly-para-gerar-um-url-curto-em-c/</loc>
+    <lastmod>2010-04-24T00:33:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/22/atribuicao-do-3%C2%BA-premio-na-categoria-de-espacos-publicos-e-exteriores-de-equipamento-a-camara-municipal-de-guimaraes/</loc>
+    <lastmod>2010-04-22T13:59:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/21/abrir-tabs-no-pc-que-esto-abertas-noutro-com-o-xmarks/</loc>
+    <lastmod>2010-04-21T23:46:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/15/extrair-texto-entre-tags-html-linqregex/</loc>
+    <lastmod>2010-04-15T22:26:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/11/ie-firefox-html-5-test/</loc>
+    <lastmod>2010-04-11T23:00:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/04/10/t-sql-csv-para-linhas-udf-e-xml/</loc>
+    <lastmod>2010-04-10T18:19:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/03/28/the-new-dork-entrepreneur-state-of-mind/</loc>
+    <lastmod>2010-03-28T19:56:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/03/23/1-reunio-presencial-da-comunidade-netponto-no-porto/</loc>
+    <lastmod>2010-03-23T01:58:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/03/15/windows-7-logon-background-changer-em-wpf/</loc>
+    <lastmod>2010-03-15T01:12:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/03/14/sincronizar-favoritos-entre-diferentes-browsers/</loc>
+    <lastmod>2010-03-14T19:14:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2010/03/14/windows-live-writer-plugins/</loc>
+    <lastmod>2010-03-14T18:47:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/11/14/melhorar-a-performance-do-visual-studio/</loc>
+    <lastmod>2009-11-14T01:50:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/10/16/updatepanel-a-causar-um-full-page-postback-apos-converter-um-projecto-da-framework-1-1-para-a-3-5-devido-ao-elemento-xhtmlconformance/</loc>
+    <lastmod>2009-10-16T13:39:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/09/21/items-escondidos-no-send-to-menu-no-windows-7/</loc>
+    <lastmod>2009-09-21T22:09:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/09/17/free-ajax-and-silverlight-automated-testing-by-telerik/</loc>
+    <lastmod>2009-09-17T13:14:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/08/23/alterar-as-definies-da-data-execution-prevention/</loc>
+    <lastmod>2009-08-23T14:27:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</loc>
+    <lastmod>2009-08-12T12:59:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/07/22/data-source-configuration-wizard-nao-lista-os-datasources-disponiveis/</loc>
+    <lastmod>2009-07-22T12:27:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</loc>
+    <lastmod>2009-07-21T12:24:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/07/08/alterar-a-estrutura-de-um-userdefinedtable-type-no-sql-server-2008/</loc>
+    <lastmod>2009-07-08T13:19:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/06/19/runas-different-user-no-windows-vista-windows-server-2008/</loc>
+    <lastmod>2009-06-19T12:59:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/06/17/collection-was-modified-enumeration-operation-may-not-execute/</loc>
+    <lastmod>2009-06-17T12:38:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</loc>
+    <lastmod>2009-06-03T20:51:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/28/ssms-2008-alterar-nr-de-registos-a-retornar-nas-opes-select-e-edit-do-menu-de-contexto-da-tabela/</loc>
+    <lastmod>2009-05-28T22:48:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/23/instalar-plugin-do-windows-media-player-para-o-firefox-no-windows-server-2008/</loc>
+    <lastmod>2009-05-23T20:13:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/22/excel-converter-texto-para-numero-automaticamente/</loc>
+    <lastmod>2009-05-22T13:22:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/21/erro-ao-fazer-upload-em-asp-iis-7-operation-not-allowed/</loc>
+    <lastmod>2009-05-21T22:25:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</loc>
+    <lastmod>2009-05-19T12:55:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/16/novos-controlos-no-asp-net-ajax-control-toolkit/</loc>
+    <lastmod>2009-05-16T15:14:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/15/listagem-de-funes-do-excel-em-portugus-e-ingls/</loc>
+    <lastmod>2009-05-15T23:51:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/15/desactivar-o-boto-dos-aceleradores-no-ie8/</loc>
+    <lastmod>2009-05-15T23:40:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/13/problemas-na-conectividade-do-windows-server-2008/</loc>
+    <lastmod>2009-05-13T21:12:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/05/13/actualizar-a-cache-do-intellisence-do-sql-server-2008/</loc>
+    <lastmod>2009-05-13T20:40:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/04/27/crash-do-internet-explorar-ao-executar-uma-tarefa-agendada/</loc>
+    <lastmod>2009-04-27T23:33:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/04/23/problema-ao-aceder-ao-servidor-devido-ao-limite-de-ligacoes-simultaneas/</loc>
+    <lastmod>2009-04-23T13:28:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/04/17/blog-sobre-vbnet-em-portugues/</loc>
+    <lastmod>2009-04-17T19:00:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/04/12/sql-server-2008-sp1-disponivel/</loc>
+    <lastmod>2009-04-12T17:49:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/04/10/linkedserver-do-sql-server-32-bits-no-sql-server-64-bits/</loc>
+    <lastmod>2009-04-10T15:08:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/04/02/erro-a-instalar-o-sql-server-2008-em-pcs-com-o-sistema-operativo-em-pt/</loc>
+    <lastmod>2009-04-02T12:39:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/03/20/mix09-algumas-coisas-que-se-vo-passando/</loc>
+    <lastmod>2009-03-20T00:16:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/03/19/aspnet-mvc-10-final/</loc>
+    <lastmod>2009-03-19T23:49:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/03/16/microsoft-techdays-developers-2009-virtual/</loc>
+    <lastmod>2009-03-16T00:30:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/03/16/webcast4share-sharepoint-e-enterprise-search/</loc>
+    <lastmod>2009-03-16T00:04:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/03/09/autenticao-e-autorizao-nas-aplicaes-web/</loc>
+    <lastmod>2009-03-09T23:04:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/01/28/aspnet-mvc-10-rc/</loc>
+    <lastmod>2009-01-28T13:32:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/01/23/web-development-project-estimator/</loc>
+    <lastmod>2009-01-23T14:14:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/01/23/c-yellow-book/</loc>
+    <lastmod>2009-01-23T13:38:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2009/01/19/getting-started-with-iphone-development/</loc>
+    <lastmod>2009-01-19T14:22:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/12/30/data-structures-and-algorithms-book/</loc>
+    <lastmod>2008-12-30T13:26:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/12/16/aspnet-security-tools/</loc>
+    <lastmod>2008-12-16T13:43:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/11/21/intellisence-no-visual-studio-2008-com-suporte-a-librarias-em-javascript/</loc>
+    <lastmod>2008-11-21T13:58:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/11/12/manter-a-ligacao-wireless-activa-quando-o-pocketpc-entra-em-standby/</loc>
+    <lastmod>2008-11-12T14:02:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/11/09/sql-server-2008-erro-ao-alterar-a-estrutura-de-uma-tabela/</loc>
+    <lastmod>2008-11-09T00:41:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/11/06/review-ao-windows-7/</loc>
+    <lastmod>2008-11-06T13:53:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/11/05/sql-server-2005-sp3/</loc>
+    <lastmod>2008-11-05T13:32:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/11/05/windows-mobile-e-live-mesh/</loc>
+    <lastmod>2008-11-05T13:29:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/10/26/aspnet-e-windows-forms-charts-controls-gratis/</loc>
+    <lastmod>2008-10-26T23:20:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/10/26/vs-2008-snippet-designer/</loc>
+    <lastmod>2008-10-26T19:25:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/22/apagar-items-de-uma-dropdownlist-e-manter-um-default/</loc>
+    <lastmod>2008-09-22T22:50:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/22/visual-studio-themes-2/</loc>
+    <lastmod>2008-09-22T21:51:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/16/tipos-de-ficheiros-bloqueados-no-ms-office-2003-apos-instalar-sp3/</loc>
+    <lastmod>2008-09-16T13:01:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/13/c-yield/</loc>
+    <lastmod>2008-09-13T01:34:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/08/google-reader-rss-bandit/</loc>
+    <lastmod>2008-09-08T21:07:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/03/classes-pair-e-triplet/</loc>
+    <lastmod>2008-09-03T23:18:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/03/aspnet-membership-location-paths/</loc>
+    <lastmod>2008-09-03T12:58:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/09/02/google-chrome/</loc>
+    <lastmod>2008-09-02T22:45:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/31/outlook-2007-email-prioritizer/</loc>
+    <lastmod>2008-08-31T17:37:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/26/sysinternals-desktops-v10/</loc>
+    <lastmod>2008-08-26T20:59:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/25/defraggler/</loc>
+    <lastmod>2008-08-25T13:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/24/microsoft-update-catalog/</loc>
+    <lastmod>2008-08-24T14:38:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/24/windows-server-2008-windows-live/</loc>
+    <lastmod>2008-08-24T14:22:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/12/truques-e-dicas-de-aspnet-iis-vwd-etc/</loc>
+    <lastmod>2008-08-12T12:45:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/12/sp1-para-o-vs2008-e-net35/</loc>
+    <lastmod>2008-08-12T09:11:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/08/05/revista-programar-15%C2%AA-edicao/</loc>
+    <lastmod>2008-08-05T12:39:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/07/29/sql-server-2k5-copiar-resultados-com-nome-das-colunas/</loc>
+    <lastmod>2008-07-29T12:49:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/07/07/httpwebrequest-forcar-validacao-de-certificado/</loc>
+    <lastmod>2008-07-07T10:06:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/06/16/usar-o-filterexpression-do-sqldatasrouce-na-gridview/</loc>
+    <lastmod>2008-06-16T13:25:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/06/16/criar-grupo-de-utilizadores-no-vista/</loc>
+    <lastmod>2008-06-16T12:59:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/06/03/pdc-2008/</loc>
+    <lastmod>2008-06-03T13:42:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/05/20/script-para-verifiar-cobertura-meo/</loc>
+    <lastmod>2008-05-20T13:28:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/05/19/revista-programar-14-edio/</loc>
+    <lastmod>2008-05-19T21:53:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/05/19/uac-em-modo-de-silencio/</loc>
+    <lastmod>2008-05-19T13:17:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/05/09/ms-office-2007-alterar-tipo-de-documento-por-defeito/</loc>
+    <lastmod>2008-05-09T22:55:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/05/02/t-sql-intellisense-no-sql-server-2008-management-studio/</loc>
+    <lastmod>2008-05-02T08:27:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/04/07/planeta-pp/</loc>
+    <lastmod>2008-04-07T21:39:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/03/26/twitter-actualizar-ip-e-receber-alerta-por-sms/</loc>
+    <lastmod>2008-03-26T00:52:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/03/18/windows-vista-sp1/</loc>
+    <lastmod>2008-03-18T21:53:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/03/18/summer-of-code-2008/</loc>
+    <lastmod>2008-03-18T21:46:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/03/07/ultimatepc-extras-e-exclusivos/</loc>
+    <lastmod>2008-03-07T14:01:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/03/07/visual-studio-gallery/</loc>
+    <lastmod>2008-03-07T13:49:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/02/16/visual-studio-themes/</loc>
+    <lastmod>2008-02-16T16:24:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tiagosalgado.com/2008/01/06/rss-reader-web-based/</loc>
+    <lastmod>2008-01-06T23:14:20+00:00</lastmod>
   </url>
   
 </urlset>

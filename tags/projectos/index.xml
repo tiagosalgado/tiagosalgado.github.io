@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projectos on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/projectos/</link>
+    <description>Recent content in Projectos on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 26 Oct 2010 22:31:32 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/projectos/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Laharsub: a message server for real time web applications</title>
+      <link>https://blog.tiagosalgado.com/2010/10/26/laharsub-a-message-server-for-real-time-web-applications/</link>
+      <pubDate>Tue, 26 Oct 2010 22:31:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/10/26/laharsub-a-message-server-for-real-time-web-applications/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Laharsub is an open source messaging server designed for real time communication in web applications. Laharsub supports a publish/subscribe message exchange pattern many modern, real time web applications use. Online chat and collaboration, multiplayer online gaming, news or stock quote updates, and many more types of web applications created today require real time data transfer from the server to the web client, and between web clients. Laharsub server is implemented in .NET and ships with support for several client technologies: jQuery, Silverlight, and .NET. The protocol is based on HTTP long polling and exposed through a set of REST APIs. Laharsub server can be used from any environment that supports HTTP, including JavaScript running in a web browser. Laharsub enables adding support for a variety of backend technologies to support scale out to a large number of concurrent users. The memory based backend implementation included in Laharsub does not support scale-out but offers high performance in small deployments (several thousand users).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Para mais detalhes acerca do projecto cliquem &lt;a href=&#34;http://laharsub.codeplex.com/&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

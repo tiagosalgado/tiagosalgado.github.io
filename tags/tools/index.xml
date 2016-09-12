@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/tools/</link>
+    <description>Recent content in Tools on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 23 Jan 2013 18:00:37 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SvcPerf &amp;#8211; E2E ETW trace analysis tool</title>
+      <link>https://blog.tiagosalgado.com/2013/01/23/svcperf-e2e-etw-trace-analysis-tool/</link>
+      <pubDate>Wed, 23 Jan 2013 18:00:37 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/01/23/svcperf-e2e-etw-trace-analysis-tool/</guid>
+      <description>&lt;p&gt;SvcPerf is an End-to-End ETW trace viewer for manifest based traces.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An End to End Trace Analysis tool for WCF/WF and other Activity based ETW traces.&lt;/li&gt;
+&lt;li&gt;Based on &lt;a href=&#34;http://tx.codeplex.com/&#34;&gt;Linq over Traces(TX)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;View ETL files or live traces sessions and create custom queries.&lt;/li&gt;
+&lt;li&gt;Use from commandline to dump raw events or custom queries using linq over traces.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://svcperf.codeplex.com/documentation?referringTitle=Home&#34;&gt;User&amp;#8217;s Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://svcperf.codeplex.com/wikipage?title=FAQs&amp;amp;referringTitle=Home&#34;&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt=&#34;svcPerf&#34; src=&#34;http://i3.codeplex.com/Download?ProjectName=svcperf&amp;DownloadId=604539&#34; width=&#34;740&#34; height=&#34;360&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ReSharper 6</title>
+      <link>https://blog.tiagosalgado.com/2011/07/14/resharper-6/</link>
+      <pubDate>Thu, 14 Jul 2011 22:54:37 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/07/14/resharper-6/</guid>
+      <description>&lt;p&gt;Foi lançada a 6ª versão do ReSharper e conta com novas funcionalidades:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JavaScript support&lt;/li&gt;
+&lt;li&gt;ASP.NET MVC 3 Razor support&lt;/li&gt;
+&lt;li&gt;CSS support&lt;/li&gt;
+&lt;li&gt;HTML support&lt;/li&gt;
+&lt;li&gt;Code analysis in VB.NET&lt;/li&gt;
+&lt;li&gt;Improvements in XAML support&lt;/li&gt;
+&lt;li&gt;Color assistance&lt;/li&gt;
+&lt;li&gt;Macros for file headers&lt;/li&gt;
+&lt;li&gt;ReSharper suggestions explained&lt;/li&gt;
+&lt;li&gt;Searchable inspection severity options&lt;/li&gt;
+&lt;li&gt;Extended navigation and search&lt;/li&gt;
+&lt;li&gt;Bundled decompiler&lt;/li&gt;
+&lt;li&gt;Multiple new code inspections&lt;/li&gt;
+&lt;li&gt;Find similar issues&lt;/li&gt;
+&lt;li&gt;Converting LINQ to loops&lt;/li&gt;
+&lt;li&gt;New String.Format context actions&lt;/li&gt;
+&lt;li&gt;Import types for pasted code&lt;/li&gt;
+&lt;li&gt;In-place refactorings&lt;/li&gt;
+&lt;li&gt;Improvements in unit testing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div&gt;
+  &lt;a href=&#34;http://www.jetbrains.com/resharper/index.html&#34;&gt;http://www.jetbrains.com/resharper/index.html&lt;/a&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projectos porreiros no CodePlex</title>
+      <link>https://blog.tiagosalgado.com/2011/03/14/projectos-porreiros-no-codeplex/</link>
+      <pubDate>Mon, 14 Mar 2011 22:57:15 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/14/projectos-porreiros-no-codeplex/</guid>
+      <description>
+
+&lt;p&gt;Existe um número bastante consideraval de projectos no &lt;a href=&#34;http://www.codeplex.com&#34;&gt;Codeplex&lt;/a&gt; que vão de encontro com algumas das nossas necessidades.&lt;/p&gt;
+
+&lt;p&gt;Como tal, deixo aqui dois que já me foram uteis.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-href-http-de-codeplex-com-target-blank-droid-explorer-a&#34;&gt;&lt;a href=&#34;http://de.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Droid Explorer&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Tal como o nome indica, permite-nos explorar um dispositivo com Android e tem funcionalidades como:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Copy local files to device&lt;/li&gt;
+&lt;li&gt;Reboot device&lt;/li&gt;
+&lt;li&gt;Reboot device in to recovery mode&lt;/li&gt;
+&lt;li&gt;Open files for viewing / execution &lt;strong&gt;locally&lt;/strong&gt; with the default file type executable&lt;/li&gt;
+&lt;li&gt;Package Manager (Install &amp;amp; Uninstall)&lt;/li&gt;
+&lt;li&gt;Take a Screen Shot (landscape or portrait)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://de.codeplex.com/wikipage?title=Features&amp;referringTitle=Home&#34; target=&#34;_blank&#34;&gt;etc&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;virtual-router-wifi-hot-spot-windows-7-2008-r2-http-virtualrouter-codeplex-com&#34;&gt;&lt;a href=&#34;http://virtualrouter.codeplex.com/&#34;&gt;Virtual Router – Wifi Hot Spot (Windows 7 / 2008 R2)&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Permite criar um ponto de acesso, partilhando a ligação à Internet local, com outros dispositivos por wireless. É sem duvida uma aplicação a ter sempre instalada pela simplicidade que nos fornecede em criar um recurso com este.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Profiler para as versões Express do MS SQL Server</title>
+      <link>https://blog.tiagosalgado.com/2011/03/03/sql-profiler-para-as-versoes-express-do-ms-sql-server/</link>
+      <pubDate>Thu, 03 Mar 2011 19:00:52 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/03/sql-profiler-para-as-versoes-express-do-ms-sql-server/</guid>
+      <description>&lt;p&gt;Como devem saber, o SQL Server Profiler não está presente na edição Express, mas esta é uma optima ferramenta para analisar o que se vai passando nas nossas base de dados, e que dava cá um jeitasso se estivesse incluida 🙂&lt;/p&gt;
+
+&lt;p&gt;Pelos que vi neste &lt;a href=&#34;http://blog.tonysneed.com/2010/08/05/setting-up-sql-server-2008-express-with-profiler/&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt;, existe forma de instalar o Profiler sem ter que comprar uma versão do SQL Server que o inclua, por isso testem e avisem se funcionar, pois ainda não tive hipotese para tal.&lt;/p&gt;
+
+&lt;p&gt;Contudo, deixo duas alternativas gratuitas e que funcionam relativamente bem.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.xsqlsoftware.com/DownloadDetails.aspx?PackageID=12&amp;ProdID=xSQLProfiler&#34; target=&#34;_blank&#34;&gt;xSQL Profiler&lt;/a&gt; &amp;#8211; Gratis para SQL Server Express (até 2 instâncias)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sites.google.com/site/sqlprofiler/&#34; target=&#34;_blank&#34;&gt;SQL Server &lt;sup&gt;2005&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2008&lt;/sub&gt; Express Profiler&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NBlog : ASP.NET MVC 3.0 Blog Engine</title>
+      <link>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</link>
+      <pubDate>Sat, 26 Feb 2011 15:54:09 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nblog.codeplex.com/&#34; target=&#34;_blank&#34;&gt;NLog&lt;/a&gt; é um sistema de blogs desenvolvido em ASP.NET MVC 3, Razor, JQuery e C#.&lt;/p&gt;
+
+&lt;p&gt;Podem ver em funcionamento em &lt;a href=&#34;http://chrisfulstow.com/&#34; title=&#34;http://chrisfulstow.com/&#34;&gt;http://chrisfulstow.com/&lt;/a&gt; ou &lt;a href=&#34;http://blog.appharbor.com/&#34; title=&#34;http://blog.appharbor.com/&#34;&gt;http://blog.appharbor.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Este projecto está disponivel para download no &lt;a href=&#34;http://www.codeplex.com/&#34; target=&#34;_blank&#34;&gt;CodePlex&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NLog – Advanced .NET Logging</title>
+      <link>https://blog.tiagosalgado.com/2010/05/23/nlog-advanced-net-logging/</link>
+      <pubDate>Sun, 23 May 2010 21:06:27 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/05/23/nlog-advanced-net-logging/</guid>
+      <description>&lt;div class=&#34;wlWriterHeaderFooter&#34; style=&#34;float:none; margin:0px; padding:4px 0px 4px 0px;&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img339.imageshack.us/img339/1092/nlog.png&#34; width=&#34;352&#34; height=&#34;78&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NLog is a free logging platform for .NET with rich log routing and management capabilities. It makes it easy to produce and manage high-quality logs for your application regardless of its size or complexity.&lt;/p&gt;
+
+&lt;p&gt;NLog can process diagnostic messages emitted from any .NET language (such as C# or Visual Basic), augment them with contextual information (such as date/time, severity, thread, process, environment enviroment), format them according to your preference and send them to one or more targets such as file or database.&lt;/p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nlog-project.org/&#34; target=&#34;_blank&#34;&gt;NLog-Project&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nlog-project.org/documentation.html&#34; target=&#34;_blank&#34;&gt;Documentação&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nlog-project.org/wiki/Main_Page&#34; target=&#34;_blank&#34;&gt;Wiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nlog.codeplex.com/Release/ProjectReleases.aspx#ReleaseFiles&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Netsparker – web application security scanner</title>
+      <link>https://blog.tiagosalgado.com/2010/05/18/netsparker-web-application-security-scanner/</link>
+      <pubDate>Tue, 18 May 2010 00:41:53 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/05/18/netsparker-web-application-security-scanner/</guid>
+      <description>&lt;div class=&#34;wlWriterHeaderFooter&#34; style=&#34;float:none; margin:0px; padding:4px 0px 4px 0px;&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;O titulo do post diz exactamente do que se trata, mas o que leva a indica-lo é por ter uma “&lt;a href=&#34;http://www.mavitunasecurity.com/communityedition/&#34; target=&#34;_blank&#34;&gt;community edition&lt;/a&gt;” totalmente gratuita.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://img156.imageshack.us/img156/7568/netsparker.png&#34; width=&#34;483&#34; height=&#34;112&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Netsparker&lt;sub&gt;®&lt;/sub&gt; Community Edition&lt;/strong&gt; shares many features with Netsparker&lt;sub&gt;®&lt;/sub&gt; Professional and just like Netsparker Professional, Community Edition is also False Positive Free. It can detect SQL Injection and Cross-site Scripting issues better than many other scanners (if not all), and it&amp;#8217;s completely &lt;strong&gt;FREE&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.mavitunasecurity.com/communityedition/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Abrir Tabs no PC que estão abertas noutro com o Xmarks</title>
+      <link>https://blog.tiagosalgado.com/2010/04/21/abrir-tabs-no-pc-que-esto-abertas-noutro-com-o-xmarks/</link>
+      <pubDate>Wed, 21 Apr 2010 23:46:19 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/21/abrir-tabs-no-pc-que-esto-abertas-noutro-com-o-xmarks/</guid>
+      <description>&lt;p&gt;Há &lt;a href=&#34;http://blog.tiagosalgado.com/sincronizar-favoritos-entre-diferentes-browsers/&#34; target=&#34;_blank&#34;&gt;pouco tempo atrás&lt;/a&gt;, instalei o &lt;a href=&#34;http://www.xmarks.com&#34; target=&#34;_blank&#34;&gt;Xmarks&lt;/a&gt; para me sincronizar os favoritos entre os browsers e PCs que utilizo. A solução funciona bastante bem, e faz realmente o que quero que ela faça.&lt;/p&gt;
+
+&lt;p&gt;Hoje fiz a actualização do plugin, e vi que adicionaram uma funcionalidade engraçada, que é permitir abrir os sites num PC que estavamos a consultar noutro.&lt;/p&gt;
+
+&lt;p&gt;Imaginem que estão em casa, e estão a ver alguns sites, e decidem ir tomar um café, para aquela esplanada que até tem acesso à net gratuita, e querem levar o portatil para continuar a fazer o que estavam.&lt;/p&gt;
+
+&lt;p&gt;Ora, a solução normal é ir para o café, ligar o portatil e tornar a abrir tudo que tinham aberto em casa certo?&lt;/p&gt;
+
+&lt;p&gt;É aqui que entra o xMarks, com esta nova funcionalidade, a Tab Sync.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img227.imageshack.us/img227/4392/xmarkstabsyncie.png&#34; width=&#34;403&#34; height=&#34;473&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rapidamente, podemos ter acesso aos sites que estavamos a ver, e abri-los com um clique. Podem ver uma descrição completa no &lt;a href=&#34;http://blog.xmarks.com/?p=1623&#34; target=&#34;_blank&#34;&gt;blog do xMarks&lt;/a&gt; (&lt;a href=&#34;http://blog.xmarks.com/?p=1534&#34; target=&#34;_blank&#34;&gt;e aqui também&lt;/a&gt;) e também como activar esta funcionalidade.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 Logon Background Changer em WPF</title>
+      <link>https://blog.tiagosalgado.com/2010/03/15/windows-7-logon-background-changer-em-wpf/</link>
+      <pubDate>Mon, 15 Mar 2010 01:12:55 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/03/15/windows-7-logon-background-changer-em-wpf/</guid>
+      <description>&lt;p&gt;Este post tem dois propósitos, um para divulgar este utilitário que permite fazer exactamente o que indica no titulo do post, e outro que é por ter sido desenvolvido em WPF 🙂&lt;/p&gt;
+
+&lt;p&gt;Quanto ao funcionamento deste utilitário, é só escolher a imagem que queremos e ele altera a imagem que aparece na janela de login do Windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://img96.imageshack.us/img96/4673/win7bg.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img96.imageshack.us/img96/4673/win7bg.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.julien-manici.com/windows_7_logon_background_changer/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sincronizar Favoritos entre diferentes browsers</title>
+      <link>https://blog.tiagosalgado.com/2010/03/14/sincronizar-favoritos-entre-diferentes-browsers/</link>
+      <pubDate>Sun, 14 Mar 2010 19:14:27 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/03/14/sincronizar-favoritos-entre-diferentes-browsers/</guid>
+      <description>&lt;p&gt;Há uns dias, andei à procura de um programa que me permitisse sincronizar os meus favoritos entre o &lt;a href=&#34;http://www.microsoft.com/windows/internet-explorer/default.aspx&#34; target=&#34;_blank&#34;&gt;Internet Explorer&lt;/a&gt; e o &lt;a href=&#34;http://www.firefox.com&#34; target=&#34;_blank&#34;&gt;Firefox&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Como uso os dois para diferentes efeitos, comecei a ter os favoritos espalhados o que não me agravada.&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&#34;http://geracaohd.com&#34; target=&#34;_blank&#34;&gt;André&lt;/a&gt; indicou-me então o &lt;a href=&#34;http://www.xmarks.com&#34; target=&#34;_blank&#34;&gt;xMarks&lt;/a&gt; (ou foxmarks) como uma possivel solução.&lt;/p&gt;
+
+&lt;p&gt;Um simples registo no site do &lt;a href=&#34;http://www.xmarks.com/&#34; target=&#34;_blank&#34;&gt;xMarks&lt;/a&gt;, e o download dos plugins para o IE e FF resolveu-me o problema. E agora posso ainda aceder aos meus favoritos acedendo à minha conta no site.&lt;/p&gt;
+
+&lt;p&gt;Alem do IE e FF, tem ainda suporte para o &lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Chrome&lt;/a&gt; e &lt;a href=&#34;http://www.apple.com/safari/&#34; target=&#34;_blank&#34;&gt;Safari&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xmarks.com/&#34; target=&#34;_blank&#34;&gt;xMarks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://download.xmarks.com/download/binary/msie&#34; target=&#34;_blank&#34;&gt;Plugin para o IE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://download.xmarks.com/download/binary/firefox&#34; target=&#34;_blank&#34;&gt;Plugin para o FF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://download.xmarks.com/download/all&#34; target=&#34;_blank&#34;&gt;Outros browsers suportados&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Live Writer plugins</title>
+      <link>https://blog.tiagosalgado.com/2010/03/14/windows-live-writer-plugins/</link>
+      <pubDate>Sun, 14 Mar 2010 18:47:51 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/03/14/windows-live-writer-plugins/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img363.imageshack.us/img363/4915/windowslivewriterjpg.png&#34; width=&#34;240&#34; height=&#34;156&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Já uso há bastante tempo o &lt;a href=&#34;http://download.live.com/writer&#34; target=&#34;_blank&#34;&gt;Windows Live Writer&lt;/a&gt; como ferramenta de publicação nos meus blogs, e vou sempre procurando plugins que me possam facilitar a tarefa de criação de posts.&lt;/p&gt;
+
+&lt;p&gt;Faço este post não só para divulgação de alguns plugins, mas também para ficar como minha referência no caso de me esquecer de algum quando precisar de reinstalar o PC.&lt;/p&gt;
+
+&lt;p&gt;Seguem então alguns plugins sem qualquer ordem de importância:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=07c1dabd-accc-411f-bae0-ddef160067a9&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Facebook Live Writer Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=d9449418-e352-4850-8398-458edece8e74&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;On the fly Zip and attach Live Writer Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=bbb14b2a-0250-4513-a942-cb99a3459ab9&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Tag Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=e5a2ba98-e2a9-4083-a86f-c20a87e9253d&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Imtech MSDN Reference Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=6ba7122b-56aa-4651-a7ab-613359a31986&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;SnagIt Screen Capture Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveItemDetail.aspx?li=f5eb0e56-0132-4d3e-95c8-d43cd2c62688&amp;bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;SkyDrive Attachment plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.live.com/liveitemdetail.aspx?li=1f57bd9b-a692-4593-9e9e-e2962d9c0eee&amp;l=8&#34; target=&#34;_blank&#34;&gt;Insert Code for Windows Live Writer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/imageshackwriterplugin/&#34; target=&#34;_blank&#34;&gt;ImageShack&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;Podem encontrar mais plugins na &lt;a href=&#34;http://gallery.live.com/results.aspx?bt=9&amp;pl=8&#34; target=&#34;_blank&#34;&gt;Windows Live Gallery&lt;/a&gt;, e caso tenham algum para recomendar é só indicar nos comentários.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET Bundle</title>
+      <link>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</link>
+      <pubDate>Tue, 19 May 2009 12:55:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</guid>
+      <description>&lt;p&gt;O ASP.NET Bundle é o novo produto da &lt;a href=&#34;http://www.typemock.com/&#34; target=&#34;_blank&#34;&gt;TypeMock&lt;/a&gt;. É uma ferramanta para testes unitários em aplicações &lt;a href=&#34;http://msdn.microsoft.com/asp.net/&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt;. Para o lançamento deste produto, a &lt;a href=&#34;http://www.typemock.com&#34; target=&#34;_blank&#34;&gt;TypeMock &lt;/a&gt;está a oferecer licenças. Para ganhar uma basta seguirem as instruções &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;Begin&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.typemock.com/&#34;&gt;Unit Testing&lt;/a&gt; ASP.NET? &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET unit testing&lt;/a&gt; has never been this easy.&lt;/p&gt;
+
+&lt;p&gt;Typemock is launching a new product for ASP.NET developers – the &lt;strong&gt;ASP.NET Bundle&lt;/strong&gt; &amp;#8211; and for the launch will be giving out &lt;span style=&#34;color:#006600;&#34;&gt;&lt;strong&gt;FREE licenses&lt;/strong&gt;&lt;/span&gt; to bloggers and their readers.&lt;/p&gt;
+
+&lt;p&gt;The ASP.NET Bundle is the ultimate ASP.NET unit testing solution, and offers both &lt;a href=&#34;http://www.typemock.com/&#34;&gt;Typemock Isolator&lt;/a&gt;, a &lt;a href=&#34;http://www.typemock.com/&#34;&gt;unit test&lt;/a&gt; tool and &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;Ivonna&lt;/a&gt;, the Isolator add-on for &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;ASP.NET unit testing&lt;/a&gt;, for a bargain price.&lt;/p&gt;
+
+&lt;p&gt;Typemock Isolator is a leading &lt;a href=&#34;http://www.typemock.com/&#34;&gt;.NET unit testing&lt;/a&gt; tool (C# and VB.NET) for many ‘hard to test’ technologies such as &lt;a href=&#34;http://typemock.com/sharepointpage.php&#34;&gt;SharePoint&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;MVC&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/wcfpage.php&#34;&gt;WCF&lt;/a&gt;, WPF, &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;Silverlight&lt;/a&gt; and more. Note that for &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;unit testing Silverlight&lt;/a&gt; there is an open source Isolator add-on called &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;SilverUnit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first 60 bloggers who will blog this text in their blog and &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;tell us about it&lt;/a&gt;, will get a Free Isolator ASP.NET Bundle license (Typemock Isolator + Ivonna). If you post this in an ASP.NET &lt;strong&gt;dedicated&lt;/strong&gt; blog, you&amp;#8217;ll get a license automatically (even if more than 60 submit) during the first week of this announcement.&lt;/p&gt;
+
+&lt;p&gt;Also 8 bloggers will get an &lt;strong&gt;additional 2 licenses&lt;/strong&gt; (each) to give away to their readers / friends.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, click the following link for [O ASP.NET Bundle é o novo produto da &lt;a href=&#34;http://www.typemock.com/&#34; target=&#34;_blank&#34;&gt;TypeMock&lt;/a&gt;. É uma ferramanta para testes unitários em aplicações &lt;a href=&#34;http://msdn.microsoft.com/asp.net/&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt;. Para o lançamento deste produto, a &lt;a href=&#34;http://www.typemock.com&#34; target=&#34;_blank&#34;&gt;TypeMock &lt;/a&gt;está a oferecer licenças. Para ganhar uma basta seguirem as instruções &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;Begin&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.typemock.com/&#34;&gt;Unit Testing&lt;/a&gt; ASP.NET? &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET unit testing&lt;/a&gt; has never been this easy.&lt;/p&gt;
+
+&lt;p&gt;Typemock is launching a new product for ASP.NET developers – the &lt;strong&gt;ASP.NET Bundle&lt;/strong&gt; &amp;#8211; and for the launch will be giving out &lt;span style=&#34;color:#006600;&#34;&gt;&lt;strong&gt;FREE licenses&lt;/strong&gt;&lt;/span&gt; to bloggers and their readers.&lt;/p&gt;
+
+&lt;p&gt;The ASP.NET Bundle is the ultimate ASP.NET unit testing solution, and offers both &lt;a href=&#34;http://www.typemock.com/&#34;&gt;Typemock Isolator&lt;/a&gt;, a &lt;a href=&#34;http://www.typemock.com/&#34;&gt;unit test&lt;/a&gt; tool and &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;Ivonna&lt;/a&gt;, the Isolator add-on for &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;ASP.NET unit testing&lt;/a&gt;, for a bargain price.&lt;/p&gt;
+
+&lt;p&gt;Typemock Isolator is a leading &lt;a href=&#34;http://www.typemock.com/&#34;&gt;.NET unit testing&lt;/a&gt; tool (C# and VB.NET) for many ‘hard to test’ technologies such as &lt;a href=&#34;http://typemock.com/sharepointpage.php&#34;&gt;SharePoint&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;MVC&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/wcfpage.php&#34;&gt;WCF&lt;/a&gt;, WPF, &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;Silverlight&lt;/a&gt; and more. Note that for &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;unit testing Silverlight&lt;/a&gt; there is an open source Isolator add-on called &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;SilverUnit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first 60 bloggers who will blog this text in their blog and &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;tell us about it&lt;/a&gt;, will get a Free Isolator ASP.NET Bundle license (Typemock Isolator + Ivonna). If you post this in an ASP.NET &lt;strong&gt;dedicated&lt;/strong&gt; blog, you&amp;#8217;ll get a license automatically (even if more than 60 submit) during the first week of this announcement.&lt;/p&gt;
+
+&lt;p&gt;Also 8 bloggers will get an &lt;strong&gt;additional 2 licenses&lt;/strong&gt; (each) to give away to their readers / friends.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, click the following link for](&lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&lt;/a&gt;) on how to get your free license.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;End&lt;/em&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web Development Project Estimator</title>
+      <link>https://blog.tiagosalgado.com/2009/01/23/web-development-project-estimator/</link>
+      <pubDate>Fri, 23 Jan 2009 14:14:12 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/01/23/web-development-project-estimator/</guid>
+      <description>&lt;p&gt;Vi neste &lt;a href=&#34;http://www.111graus.com/2009/01/19/project-estimator/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt; o &lt;a href=&#34;http://estimator.astuteo.com&#34; target=&#34;_blank&#34;&gt;Web Development Project Estimulator&lt;/a&gt;, que é uma ferramenta que nos permite fazer uma estimativa do tempo e preço para determinado projecto.&lt;/p&gt;
+
+&lt;p&gt;Basta aceder ao &lt;a href=&#34;http://estimator.astuteo.com&#34; target=&#34;_blank&#34;&gt;site do projecto&lt;/a&gt; e preencher/alterar/remover/inserir a lista que lá está, , indicar o nome do nosso projecto, o valor por hora  e no fim é só mandar imprimir.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET Security Tools</title>
+      <link>https://blog.tiagosalgado.com/2008/12/16/aspnet-security-tools/</link>
+      <pubDate>Tue, 16 Dec 2008 13:43:27 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/12/16/aspnet-security-tools/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a title=&#34;CAT.NET&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=0178e2ef-9da8-445e-9348-c93f24cc9f9d&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;CAT.NET V1 CTP&lt;/a&gt; &amp;#8211; snap-in para o Visual Studio que permite identificar falhas de segurança no nosso código
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a title=&#34;AntiXSS&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=051ee83c-5ccf-48ed-8463-02f56a6bfc09&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;AntiXSS 3.0 BETA &lt;/a&gt;&amp;#8211; ajuda a proteger as aplicações contra ataques de &amp;#8220;Anti-Cross Site Scripting&amp;#8221;&lt;/li&gt;
+&lt;li&gt;AntiCSRF &amp;#8211; ajuda-nos a precaver contra ataques de &amp;#8220;Cross-Site Request Forgery&amp;#8221; (&lt;a title=&#34;AntiCSRF&#34; href=&#34;http://www.codeplex.com/AntiCSRF&#34; target=&#34;_blank&#34;&gt;mais info e download&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VS 2008 Snippet Designer</title>
+      <link>https://blog.tiagosalgado.com/2008/10/26/vs-2008-snippet-designer/</link>
+      <pubDate>Sun, 26 Oct 2008 19:25:43 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/10/26/vs-2008-snippet-designer/</guid>
+      <description>&lt;p&gt;Mathew Manela disponibilizou no &lt;a href=&#34;http://www.codeplex.com&#34; target=&#34;_blank&#34;&gt;CodePlex&lt;/a&gt; uma ferramenta para o &lt;a href=&#34;http://www.microsoft.com/vstudio&#34; target=&#34;_blank&#34;&gt;Visual Studio&lt;/a&gt; que nos permite criar snippets do nosso código, o &lt;a href=&#34;http://www.codeplex.com/SnippetDesigner&#34; target=&#34;_blank&#34;&gt;Snippet Designer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fica integrado no IDE e podemos exportar um pedaço de código para um snippet recorrendo ao botao direito do rato escolhendo a opção &amp;#8220;Export as Snippet&amp;#8221;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

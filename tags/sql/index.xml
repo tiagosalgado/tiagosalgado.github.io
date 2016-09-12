@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/sql/</link>
+    <description>Recent content in Sql on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 12 Apr 2013 08:19:44 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Free SQL Server Training Videos for Developers</title>
+      <link>https://blog.tiagosalgado.com/2013/04/12/free-sql-server-training-videos-for-developers/</link>
+      <pubDate>Fri, 12 Apr 2013 08:19:44 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/04/12/free-sql-server-training-videos-for-developers/</guid>
+      <description>
+
+&lt;p&gt;You can find some interesting videos (about 30 minutes each) on &lt;a href=&#34;http://www.brentozar.com/&#34; target=&#34;_blank&#34;&gt;Brent Ozar&lt;/a&gt; website.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s a list:&lt;/p&gt;
+
+&lt;h2 id=&#34;index-design&#34;&gt;INDEX DESIGN&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/10/back-index-basics-how-make-select-statements-faster-video/&#34; target=&#34;_blank&#34;&gt;Index Basics – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2013/01/the-okapis-of-sql-server-indexes/&#34; target=&#34;_blank&#34;&gt;The Okapis of Indexes – Jes Schultz Borland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/05/video-heaps/&#34; target=&#34;_blank&#34;&gt;Heaps (Tables Without Clustered Indexes) – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;blocking-and-isolation-levels&#34;&gt;BLOCKING AND ISOLATION LEVELS&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2011/11/theres-something-about-nolock-webcast-video/&#34; target=&#34;_blank&#34;&gt;There’s Something About Nolock – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2011/08/five-ways-fight-blocking-video/&#34; target=&#34;_blank&#34;&gt;Five Ways to Fight Blocking – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;query-design-and-tuning&#34;&gt;QUERY DESIGN AND TUNING&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/03/lets-talk-about-joins/&#34; target=&#34;_blank&#34;&gt;Let’s Talk About Joins – Jeremiah Peschka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/07/developers-guide-dangerous-queries-video/&#34; target=&#34;_blank&#34;&gt;Developer’s Guide to Dangerous Queries – Jeremiah Peschka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/06/tsql-measure-performance-improvements/&#34; target=&#34;_blank&#34;&gt;How to Measure T-SQL Improvements – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2011/08/video-how-use-denali-windowing-functions/&#34; target=&#34;_blank&#34;&gt;Windowing Functions in SQL 2012 – Jeremiah Peschka&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;troubleshooting-in-production&#34;&gt;TROUBLESHOOTING IN PRODUCTION&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2011/12/sql-server-first-responders-kit-video/&#34; target=&#34;_blank&#34;&gt;First Responders Kit – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2011/12/whats-going-on-my-sql-server-video/&#34; target=&#34;_blank&#34;&gt;What’s Going On in My SQL Server? – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2011/07/mystery-of-query-timeouts-video/&#34; target=&#34;_blank&#34;&gt;The Mystery of Query Timeouts – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sql-server-setup-usage&#34;&gt;SQL SERVER SETUP &amp;amp; USAGE&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2013/02/how-does-sql-server-store-data/&#34; target=&#34;_blank&#34;&gt;How Does SQL Server Store Data? – Brent Ozar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/02/developer-sql-server-transaction-log/&#34; target=&#34;_blank&#34;&gt;Developers and the Transaction Log – Kendra Little&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/sql-server-training-videos/completely-legal-performance-enhancements/&#34; target=&#34;_blank&#34;&gt;Completely Legal Performance Enhancements – Jeremiah Peschka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.brentozar.com/archive/2012/11/sql-server-management-studio-more-than-meets-the-eye/&#34; target=&#34;_blank&#34;&gt;SSMS: More than Meets the Eye – Jes Schultz Borland&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Application Name na ConnectionString</title>
+      <link>https://blog.tiagosalgado.com/2011/05/10/application-name-na-connectionstring/</link>
+      <pubDate>Tue, 10 May 2011 13:52:59 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/05/10/application-name-na-connectionstring/</guid>
+      <description>&lt;p&gt;Quando estou a desenolver algum projecto, é normal necessitar de analisar as querys que são executadas na base de dados para detectar um possivel bug ou algo que não esteja a bater certo com o que esperava.&lt;/p&gt;
+
+&lt;p&gt;Para isso, uso o Profiler do SQL Server que me dá rapidamente uma boa visão do que está a ser solicitado em cada ligação à base de dados.&lt;/p&gt;
+
+&lt;p&gt;O exemplo de um registo no profiler pode ser visto assim:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img841.imageshack.us/img841/8498/profiler1.png&#34; width=&#34;771&#34; height=&#34;30&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como se pode ver, a coluna Application Name tem o valor “.Net SqlClient Data Provider”, o que nos dificulta bastante a filtragem para apenas a aplicação que pretendemos analisar os dados.&lt;/p&gt;
+
+&lt;p&gt;Para resolver isso, basta-nos indicar na ConnectionString, o nome da nossa aplicação, e tudo fica mais fácil.&lt;/p&gt;
+
+&lt;pre&gt;&#34;Data Source=localhost;Initial Catalog=MyDatabase;Integrated Security=True;Application Name=MyAppName&#34;&lt;/pre&gt;
+
+&lt;p&gt;Após isto,, já teremos algo mais amigável como:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img148.imageshack.us/img148/2063/profiler2.png&#34; width=&#34;714&#34; height=&#34;19&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>T-SQL: CSV para Linhas (UDF e XML)</title>
+      <link>https://blog.tiagosalgado.com/2010/04/10/t-sql-csv-para-linhas-udf-e-xml/</link>
+      <pubDate>Sat, 10 Apr 2010 18:19:57 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/10/t-sql-csv-para-linhas-udf-e-xml/</guid>
+      <description>&lt;p&gt;Esta semana precisei de fazer exactamente o que o titulo do post indica, ou seja, retornar todas as linhas de uma tabela mas ao mesmo tempo separar os valores numa das colunas em cada linha.&lt;/p&gt;
+
+&lt;p&gt;Para testar, criei a seguinte tabela:&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;TABLE&lt;/span&gt; [dbo].[Agentes](&lt;/pre&gt;
+  
+  &lt;pre&gt;    [Codigo] [&lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;](50) &lt;span class=&#34;kwrd&#34;&gt;NULL&lt;/span&gt;,&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    [Nome] [&lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;](50) &lt;span class=&#34;kwrd&#34;&gt;NULL&lt;/span&gt;,&lt;/pre&gt;
+  
+  &lt;pre&gt;    [Emails] [&lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;](100) &lt;span class=&#34;kwrd&#34;&gt;NULL&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;) &lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt; 
+
+Inseri alguns dados com o mesmo formato da tabela real que iria depois utilizar:
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;INSERT &lt;span class=&#34;kwrd&#34;&gt;INTO&lt;/span&gt; Agentes &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;VALUES&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;C12345&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;Agente 1&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;agente1@xpto.pt;agente1.loja@xpto.pt&#39;&lt;/span&gt;)&lt;/pre&gt;
+  
+  &lt;pre&gt;INSERT &lt;span class=&#34;kwrd&#34;&gt;INTO&lt;/span&gt; Agentes &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;VALUES&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;C12346&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;Agente 2&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;agente2@xpto.pt;agente2.loja@xpto.pt&#39;&lt;/span&gt;)&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Como já podem perceber, o campo “Emails” precisa de ser retornado com apenas um email, ou seja, preciso de passar uma listagem como esta&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img256.imageshack.us/img256/1892/select1.png&#34; width=&#34;362&#34; height=&#34;66&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;para uma como esta&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img256.imageshack.us/img256/3897/select2c.png&#34; width=&#34;267&#34; height=&#34;98&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para isso precisei de fazer uma função que me separasse cada um emails de forma a poder retornar um por cada linha.&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;p&gt;
+  &lt;span class=&#34;kwrd&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;FUNCTION&lt;/span&gt; dbo.SplitEmails(@separador &lt;span class=&#34;kwrd&#34;&gt;char&lt;/span&gt;(1), &lt;br /&gt;@emails &lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;(512))
+&lt;/p&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;RETURNS&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;table&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;RETURN&lt;/span&gt; (&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    &lt;span class=&#34;kwrd&#34;&gt;WITH&lt;/span&gt; Emails(pn, &lt;span class=&#34;kwrd&#34;&gt;start&lt;/span&gt;, stop) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; (&lt;/pre&gt;
+  
+  &lt;pre&gt;      &lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; 1, 1, CHARINDEX(@separador, @emails)&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;      &lt;span class=&#34;kwrd&#34;&gt;UNION&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;ALL&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;      &lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; pn + 1, stop + 1, CHARINDEX(@separador, @emails, &lt;/pre&gt;
+  
+  &lt;pre&gt;stop + 1)&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;      &lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Emails&lt;/pre&gt;
+  
+  &lt;pre&gt;      &lt;span class=&#34;kwrd&#34;&gt;WHERE&lt;/span&gt; stop &amp;gt; 0&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    )&lt;/pre&gt;
+  
+  &lt;pre&gt;    &lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;SUBSTRING&lt;/span&gt;(@emails, &lt;span class=&#34;kwrd&#34;&gt;start&lt;/span&gt;, &lt;span class=&#34;kwrd&#34;&gt;CASE&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;WHEN&lt;/span&gt; stop &amp;gt; 0 &lt;span class=&#34;kwrd&#34;&gt;THEN&lt;/span&gt; &lt;/pre&gt;
+  
+  &lt;pre&gt;stop-&lt;span class=&#34;kwrd&#34;&gt;start&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;ELSE&lt;/span&gt; 512 &lt;span class=&#34;kwrd&#34;&gt;END&lt;/span&gt;) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; email&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    &lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Emails&lt;/pre&gt;
+  
+  &lt;pre&gt;  )&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Por fim, para ter a listagem com o formato pretendido, bastou fazer o CROSS APPLY com a minha tabela de agentes, e está o trabalho feito.&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; a.Codigo,a.Nome,c.email &lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Agentes a&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;CROSS&lt;/span&gt; APPLY SplitEmails(&lt;span class=&#34;str&#34;&gt;&#39;;&#39;&lt;/span&gt;,a.Emails) c&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img406.imageshack.us/img406/6914/select3.png&#34; width=&#34;271&#34; height=&#34;110&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Outra forma de retornar esta listagem, indicada pelo &lt;a href=&#34;http://twitter.com/CaioProiete&#34; target=&#34;_blank&#34;&gt;@Caio&lt;/a&gt;, era recorrendo ao XML e evitava assim criar uma função para fazer o split dos emails.&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;WITH&lt;/span&gt; Consulta &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;(&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; Codigo, Nome,&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;CAST&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;&amp;lt;email&amp;gt;&#39;&lt;/span&gt; + &lt;/pre&gt;
+  
+  &lt;pre&gt;REPLACE(Emails, &lt;span class=&#34;str&#34;&gt;&#39;;&#39;&lt;/span&gt;, &lt;span class=&#34;str&#34;&gt;&#39;&amp;lt;/email&amp;gt;&amp;lt;email&amp;gt;&#39;&lt;/span&gt;) + &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;str&#34;&gt;&#39;&amp;lt;/email&amp;gt;&#39;&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; XML) &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; EmailXml&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Agentes&lt;/pre&gt;
+  
+  &lt;pre&gt;)&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&amp;#160;&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; Codigo, Nome,&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    r.&lt;span class=&#34;kwrd&#34;&gt;value&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;.&#39;&lt;/span&gt;, &lt;span class=&#34;str&#34;&gt;&#39;varchar(255)&#39;&lt;/span&gt;) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; Email&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    Consulta&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;CROSS&lt;/span&gt; APPLY&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    consulta.EmailXml.nodes(&lt;span class=&#34;str&#34;&gt;&#39;email&#39;&lt;/span&gt;) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; x(r)&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LinkedServer  do SQL Server 32 bits no SQL Server 64 bits</title>
+      <link>https://blog.tiagosalgado.com/2009/04/10/linkedserver-do-sql-server-32-bits-no-sql-server-64-bits/</link>
+      <pubDate>Fri, 10 Apr 2009 15:08:39 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/10/linkedserver-do-sql-server-32-bits-no-sql-server-64-bits/</guid>
+      <description>&lt;p&gt;Esta semana andei mudar algumas base de dados que estavam no SQL Server 2005 e 2000 para o 2008.&lt;/p&gt;
+
+&lt;p&gt;Tudo a correr bem, até uma das base de dados incluir Stored Procedures que utilizavam um LinkedServer para o SQL Server 2000.&lt;/p&gt;
+
+&lt;p&gt;Testei uma simples query a uma das tabelas utilizando esse linkedserver e fui confrontado com o seguinte erro:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;OLE DB provider &amp;ldquo;SQLNCLI10&amp;rdquo; for linked server &amp;ldquo;MYSERVER&amp;rdquo; returned message &amp;ldquo;Erro não especificado&amp;rdquo;.&lt;br /&gt;
+OLE DB provider &amp;ldquo;SQLNCLI10&amp;rdquo; for linked server &amp;ldquo;MYSERVER&amp;rdquo; returned message &amp;ldquo;The stored procedure required to complete this operation could not be found on the server. Please contact your system administrator.&amp;rdquo;.&lt;br /&gt;
+Msg 7311, Level 16, State 2, Line 1&lt;br /&gt;
+Cannot obtain the schema rowset &amp;ldquo;DBSCHEMA_TABLES_INFO&amp;rdquo; for OLE DB provider &amp;ldquo;SQLNCLI10&amp;rdquo; for linked server &amp;ldquo;MYSERVER&amp;rdquo;. The provider supports the interface, but returns a failure code when it is used.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Andei um bom tempo de volta da criação do Linked Server sem qualquer sucesso, mas umas pesquisas no Google e fui encontrar a solução.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;USE [master]&lt;br /&gt;
+CREATE PROCEDURE [sp_tables_info_rowset_64]&lt;br /&gt;
+@table_name sysname&lt;br /&gt;
+, @table_schema sysname = NULL&lt;br /&gt;
+, @table_type nvarchar(255) = null&lt;br /&gt;
+AS&lt;br /&gt;
+DECLARE @Result int&lt;br /&gt;
+SELECT @Result = 0&lt;/p&gt;
+
+&lt;p&gt;EXEC @Result = sp_tables_info_rowset @table_name, @table_schema, @table_type&lt;br /&gt;
+GO&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Este erro acontece quando estamos a linkar num SQL Server de 64 bits para o Sql Server 32 bits.&lt;/p&gt;
+
+&lt;p&gt;Para resolver é necessário então criar este SP na tabela master do SQL Server 32 bits.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>T-SQL Intellisense no SQL Server 2008 Management Studio</title>
+      <link>https://blog.tiagosalgado.com/2008/05/02/t-sql-intellisense-no-sql-server-2008-management-studio/</link>
+      <pubDate>Fri, 02 May 2008 08:27:55 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/05/02/t-sql-intellisense-no-sql-server-2008-management-studio/</guid>
+      <description>&lt;p&gt;Parece que &lt;a href=&#34;http://davidhayden.com/blog/dave/archive/2008/05/01/SQLServer2008ManagementStudioGetsTSQLIntellisense.aspx&#34; target=&#34;_blank&#34;&gt;vamos ter&lt;/a&gt; (finalmente) o intellisense no SQL Server 2008 Management Studio. 🙂&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

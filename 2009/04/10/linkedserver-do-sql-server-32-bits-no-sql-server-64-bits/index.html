@@ -1,0 +1,248 @@
+    <!DOCTYPE html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Tiago Salgado">
+		<meta name="description" content="Describe your website">
+		<meta name="generator" content="Hugo 0.16" />
+		<title>LinkedServer  do SQL Server 32 bits no SQL Server 64 bits &middot; tiagosalgado.com</title>
+		<link rel="shortcut icon" href="https://blog.tiagosalgado.comimages/favicon.ico">
+		<link rel="stylesheet" href="https://blog.tiagosalgado.comcss/style.css">
+		<link rel="stylesheet" href="https://blog.tiagosalgado.comcss/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://blog.tiagosalgado.comcss/monosocialiconsfont.css">
+		
+
+		
+		<link href="https://blog.tiagosalgado.com/index.xml" rel="alternate" type="application/rss+xml" title="tiagosalgado.com" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://blog.tiagosalgado.com'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://blog.tiagosalgado.comabout'>About</a>
+	
+
+	
+	<a class="cta" href="https://blog.tiagosalgado.com/index.xml">Subscribe</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>LinkedServer  do SQL Server 32 bits no SQL Server 64 bits</h1>
+                    <h2 class="headline">
+                    April 10, 2009 
+                    <br>
+                    
+                    
+                        
+                            <a href="https://blog.tiagosalgado.comtags/microsoft">microsoft</a>
+                        
+                            <a href="https://blog.tiagosalgado.comtags/sql">sql</a>
+                        
+                            <a href="https://blog.tiagosalgado.comtags/sql-server">sql server</a>
+                        
+                    
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>Esta semana andei mudar algumas base de dados que estavam no SQL Server 2005 e 2000 para o 2008.</p>
+
+<p>Tudo a correr bem, até uma das base de dados incluir Stored Procedures que utilizavam um LinkedServer para o SQL Server 2000.</p>
+
+<p>Testei uma simples query a uma das tabelas utilizando esse linkedserver e fui confrontado com o seguinte erro:</p>
+
+<blockquote>
+<p>OLE DB provider &ldquo;SQLNCLI10&rdquo; for linked server &ldquo;MYSERVER&rdquo; returned message &ldquo;Erro não especificado&rdquo;.<br />
+OLE DB provider &ldquo;SQLNCLI10&rdquo; for linked server &ldquo;MYSERVER&rdquo; returned message &ldquo;The stored procedure required to complete this operation could not be found on the server. Please contact your system administrator.&rdquo;.<br />
+Msg 7311, Level 16, State 2, Line 1<br />
+Cannot obtain the schema rowset &ldquo;DBSCHEMA_TABLES_INFO&rdquo; for OLE DB provider &ldquo;SQLNCLI10&rdquo; for linked server &ldquo;MYSERVER&rdquo;. The provider supports the interface, but returns a failure code when it is used.</p>
+</blockquote>
+
+<p>Andei um bom tempo de volta da criação do Linked Server sem qualquer sucesso, mas umas pesquisas no Google e fui encontrar a solução.</p>
+
+<blockquote>
+<p>USE [master]<br />
+CREATE PROCEDURE [sp_tables_info_rowset_64]<br />
+@table_name sysname<br />
+, @table_schema sysname = NULL<br />
+, @table_type nvarchar(255) = null<br />
+AS<br />
+DECLARE @Result int<br />
+SELECT @Result = 0</p>
+
+<p>EXEC @Result = sp_tables_info_rowset @table_name, @table_schema, @table_type<br />
+GO</p>
+</blockquote>
+
+<p>Este erro acontece quando estamos a linkar num SQL Server de 64 bits para o Sql Server 32 bits.</p>
+
+<p>Para resolver é necessário então criar este SP na tabela master do SQL Server 32 bits.</p>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                <a href="https://twitter.com/tiagosalgado">
+                        <img class="avatar" src="https://blog.tiagosalgado.comimages/avatar.png">
+                        <div>
+                            <span class="dark">Tiago Salgado</span>
+                            <span>.Net developer</span>
+                        </div>
+                    </a>
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fblog.tiagosalgado.com%2f2009%2f04%2f10%2flinkedserver-do-sql-server-32-bits-no-sql-server-64-bits%2f - LinkedServer%20%20do%20SQL%20Server%2032%20bits%20no%20SQL%20Server%2064%20bits by @tiagosalgado"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'tiagosalgado';
+    var disqus_identifier = 'https:\/\/blog.tiagosalgado.com\/2009\/04\/10\/linkedserver-do-sql-server-32-bits-no-sql-server-64-bits\/';
+    var disqus_title = 'LinkedServer  do SQL Server 32 bits no SQL Server 64 bits';
+    var disqus_url = 'https:\/\/blog.tiagosalgado.com\/2009\/04\/10\/linkedserver-do-sql-server-32-bits-no-sql-server-64-bits\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2014/09/02/chrome-dev-tools-dark-theme/">Chrome dev tools dark theme<aside class="dates">Sep 2</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2014/08/31/add-validation-rules-with-fluentvalidation/">Add Validation rules with FluentValidation<aside class="dates">Aug 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2014/08/12/using-visual-studio-2013-with-tfs-and-git-repositories-on-same-project/">Using Visual Studio 2013 with TFS and Git repositories on same project<aside class="dates">Aug 12</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2014/06/21/dotnetconf-25th-and-26th-of-june-2014/">dotnetConf &amp;#8211; 25th and 26th of June 2014<aside class="dates">Jun 21</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2013/11/14/visual-studio-2012-update-4/">Visual Studio 2012 Update 4<aside class="dates">Nov 14</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2013/11/14/visual-studio-2013-launch/">Visual Studio 2013 Launch<aside class="dates">Nov 14</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2013/11/01/alert-users-when-they-have-lost-internet-connectivity/">Alert users when they have lost internet connectivity with Offline.js<aside class="dates">Nov 1</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2013/10/17/navigate-between-modules-on-dotnetnuke/">Navigate between modules on DotNetNuke<aside class="dates">Oct 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2013/10/17/asp-net-and-web-tools-for-visual-studio-2013-release-notes/">ASP.NET and Web Tools for Visual Studio 2013 Release Notes<aside class="dates">Oct 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://blog.tiagosalgado.com/2013/10/17/visual-studio-2013-available/">Visual Studio 2013 available<aside class="dates">Oct 17</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/tiagosalgado">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/tiagosalgado">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Tiago Salgado
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://blog.tiagosalgado.comjs/main.js"></script>
+<script src="https://blog.tiagosalgado.comjs/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>

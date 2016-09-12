@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql Server 2008 on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/sql-server-2008/</link>
+    <description>Recent content in Sql Server 2008 on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 10 Apr 2010 18:19:57 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/sql-server-2008/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>T-SQL: CSV para Linhas (UDF e XML)</title>
+      <link>https://blog.tiagosalgado.com/2010/04/10/t-sql-csv-para-linhas-udf-e-xml/</link>
+      <pubDate>Sat, 10 Apr 2010 18:19:57 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/10/t-sql-csv-para-linhas-udf-e-xml/</guid>
+      <description>&lt;p&gt;Esta semana precisei de fazer exactamente o que o titulo do post indica, ou seja, retornar todas as linhas de uma tabela mas ao mesmo tempo separar os valores numa das colunas em cada linha.&lt;/p&gt;
+
+&lt;p&gt;Para testar, criei a seguinte tabela:&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;TABLE&lt;/span&gt; [dbo].[Agentes](&lt;/pre&gt;
+  
+  &lt;pre&gt;    [Codigo] [&lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;](50) &lt;span class=&#34;kwrd&#34;&gt;NULL&lt;/span&gt;,&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    [Nome] [&lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;](50) &lt;span class=&#34;kwrd&#34;&gt;NULL&lt;/span&gt;,&lt;/pre&gt;
+  
+  &lt;pre&gt;    [Emails] [&lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;](100) &lt;span class=&#34;kwrd&#34;&gt;NULL&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;) &lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt; 
+
+Inseri alguns dados com o mesmo formato da tabela real que iria depois utilizar:
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;INSERT &lt;span class=&#34;kwrd&#34;&gt;INTO&lt;/span&gt; Agentes &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;VALUES&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;C12345&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;Agente 1&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;agente1@xpto.pt;agente1.loja@xpto.pt&#39;&lt;/span&gt;)&lt;/pre&gt;
+  
+  &lt;pre&gt;INSERT &lt;span class=&#34;kwrd&#34;&gt;INTO&lt;/span&gt; Agentes &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;VALUES&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;C12346&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;Agente 2&#39;&lt;/span&gt;,&lt;span class=&#34;str&#34;&gt;&#39;agente2@xpto.pt;agente2.loja@xpto.pt&#39;&lt;/span&gt;)&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Como já podem perceber, o campo “Emails” precisa de ser retornado com apenas um email, ou seja, preciso de passar uma listagem como esta&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img256.imageshack.us/img256/1892/select1.png&#34; width=&#34;362&#34; height=&#34;66&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;para uma como esta&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img256.imageshack.us/img256/3897/select2c.png&#34; width=&#34;267&#34; height=&#34;98&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para isso precisei de fazer uma função que me separasse cada um emails de forma a poder retornar um por cada linha.&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;p&gt;
+  &lt;span class=&#34;kwrd&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;FUNCTION&lt;/span&gt; dbo.SplitEmails(@separador &lt;span class=&#34;kwrd&#34;&gt;char&lt;/span&gt;(1), &lt;br /&gt;@emails &lt;span class=&#34;kwrd&#34;&gt;varchar&lt;/span&gt;(512))
+&lt;/p&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;RETURNS&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;table&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;RETURN&lt;/span&gt; (&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    &lt;span class=&#34;kwrd&#34;&gt;WITH&lt;/span&gt; Emails(pn, &lt;span class=&#34;kwrd&#34;&gt;start&lt;/span&gt;, stop) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; (&lt;/pre&gt;
+  
+  &lt;pre&gt;      &lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; 1, 1, CHARINDEX(@separador, @emails)&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;      &lt;span class=&#34;kwrd&#34;&gt;UNION&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;ALL&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;      &lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; pn + 1, stop + 1, CHARINDEX(@separador, @emails, &lt;/pre&gt;
+  
+  &lt;pre&gt;stop + 1)&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;      &lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Emails&lt;/pre&gt;
+  
+  &lt;pre&gt;      &lt;span class=&#34;kwrd&#34;&gt;WHERE&lt;/span&gt; stop &amp;gt; 0&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    )&lt;/pre&gt;
+  
+  &lt;pre&gt;    &lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;SUBSTRING&lt;/span&gt;(@emails, &lt;span class=&#34;kwrd&#34;&gt;start&lt;/span&gt;, &lt;span class=&#34;kwrd&#34;&gt;CASE&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;WHEN&lt;/span&gt; stop &amp;gt; 0 &lt;span class=&#34;kwrd&#34;&gt;THEN&lt;/span&gt; &lt;/pre&gt;
+  
+  &lt;pre&gt;stop-&lt;span class=&#34;kwrd&#34;&gt;start&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;ELSE&lt;/span&gt; 512 &lt;span class=&#34;kwrd&#34;&gt;END&lt;/span&gt;) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; email&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    &lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Emails&lt;/pre&gt;
+  
+  &lt;pre&gt;  )&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Por fim, para ter a listagem com o formato pretendido, bastou fazer o CROSS APPLY com a minha tabela de agentes, e está o trabalho feito.&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; a.Codigo,a.Nome,c.email &lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Agentes a&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;CROSS&lt;/span&gt; APPLY SplitEmails(&lt;span class=&#34;str&#34;&gt;&#39;;&#39;&lt;/span&gt;,a.Emails) c&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img406.imageshack.us/img406/6914/select3.png&#34; width=&#34;271&#34; height=&#34;110&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Outra forma de retornar esta listagem, indicada pelo &lt;a href=&#34;http://twitter.com/CaioProiete&#34; target=&#34;_blank&#34;&gt;@Caio&lt;/a&gt;, era recorrendo ao XML e evitava assim criar uma função para fazer o split dos emails.&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;WITH&lt;/span&gt; Consulta &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre&gt;(&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; Codigo, Nome,&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;CAST&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;&amp;lt;email&amp;gt;&#39;&lt;/span&gt; + &lt;/pre&gt;
+  
+  &lt;pre&gt;REPLACE(Emails, &lt;span class=&#34;str&#34;&gt;&#39;;&#39;&lt;/span&gt;, &lt;span class=&#34;str&#34;&gt;&#39;&amp;lt;/email&amp;gt;&amp;lt;email&amp;gt;&#39;&lt;/span&gt;) + &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;str&#34;&gt;&#39;&amp;lt;/email&amp;gt;&#39;&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; XML) &lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; EmailXml&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt; Agentes&lt;/pre&gt;
+  
+  &lt;pre&gt;)&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;&amp;#160;&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;SELECT&lt;/span&gt; Codigo, Nome,&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    r.&lt;span class=&#34;kwrd&#34;&gt;value&lt;/span&gt;(&lt;span class=&#34;str&#34;&gt;&#39;.&#39;&lt;/span&gt;, &lt;span class=&#34;str&#34;&gt;&#39;varchar(255)&#39;&lt;/span&gt;) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; Email&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;FROM&lt;/span&gt;&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    Consulta&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;CROSS&lt;/span&gt; APPLY&lt;/pre&gt;
+  
+  &lt;pre class=&#34;alt&#34;&gt;    consulta.EmailXml.nodes(&lt;span class=&#34;str&#34;&gt;&#39;email&#39;&lt;/span&gt;) &lt;span class=&#34;kwrd&#34;&gt;AS&lt;/span&gt; x(r)&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 Deep Dive</title>
+      <link>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</link>
+      <pubDate>Wed, 12 Aug 2009 12:59:53 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/08/12/sql-server-2008-deep-dive/</guid>
+      <description>&lt;p style=&#34;text-align:center;&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2009/08/image0011.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-449&#34; title=&#34;sqlserver2k8deepdive&#34; src=&#34;http://oito.files.wordpress.com/2009/08/image0011.jpg&#34; alt=&#34;sqlserver2k8deepdive&#34; width=&#34;590&#34; height=&#34;168&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Vai-se realizar dia 10 e 15 de Setembro, em Lisboa e no Porto respectivamente, um evento que aborda principalmente as novas funcionalidades presentes no SQL Server 2008.
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Resource Governor, Partitioning, Auditing, X-Events são alguns dos temas que irão ser abordados neste evento, mas o programa completo pode ser visto &lt;a href=&#34;http://www.microsoft.com/portugal/sqlserver2008deepdive/default.mspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  Podem fazer a inscrição nos seguintes links:
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423084&amp;Culture=pt-PT&#34; target=&#34;_blank&#34;&gt;Lisboa&lt;/a&gt; &amp;#8211; 10 de Setembro no Auditório Microsoft (TagusPark)
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423086&amp;Culture=pt-PT&#34; target=&#34;_blank&#34;&gt;Porto&lt;/a&gt; &amp;#8211; 15 de Setembro na Fundação Dr. António Cupertino de Miranda
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align:left;&#34;&gt;
+  &lt;a href=&#34;http://www.microsoft.com/portugal/sqlserver2008deepdive/default.mspx&#34; target=&#34;_blank&#34;&gt;Programa do Evento&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 Resource Governor</title>
+      <link>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</link>
+      <pubDate>Tue, 21 Jul 2009 12:24:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/07/ee151608-image001en-us1.gif&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-438&#34; title=&#34;sql_server_2008_logo&#34; src=&#34;http://oito.files.wordpress.com/2009/07/ee151608-image001en-us1.gif&#34; alt=&#34;sql_server_2008_logo&#34; width=&#34;363&#34; height=&#34;75&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;O Resource Governor é uma funcionalidade adicionado ao SQL Server 2008 que permite-nos gerir a carga e os recursos que irão ser usados em determinada base de dados.&lt;/p&gt;
+
+&lt;p&gt;Muitas vezes, devido a querys mal construidas ou até mesmo por se tratar de operações bastante pesadas, pretendiamos que apenas utiliza-se uma percentagem dos recursos do servidor e deixasse os restantes recursos para outras operações que fossem solicitadas.&lt;/p&gt;
+
+&lt;p&gt;Esta funcionalidade veio resolver isto mesmo, ou seja, podemos agora definir que determinada operação irá apenas usar X% dos recursos e até mesmo indicar quais serão as querys prioritárias.&lt;/p&gt;
+
+&lt;p&gt;Para perceberem melhor como funciona e como configurar, deixo os seguintes links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb934084.aspx&#34; target=&#34;_blank&#34;&gt;Resource Governor Concepts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb933866.aspx&#34; target=&#34;_blank&#34;&gt;Managing SQL Server Workloads with Resource Governor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee151608.aspx&#34; target=&#34;_blank&#34;&gt;Using Resource Governor&lt;/a&gt; (&lt;a href=&#34;http://download.microsoft.com/download/D/B/D/DBDE7972-1EB9-470A-BA18-58849DB3EB3B/ResourceGov.docx&#34; target=&#34;_blank&#34;&gt;download white-paper&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alterar a estrutura de um UserDefinedTable Type no SQL Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/07/08/alterar-a-estrutura-de-um-userdefinedtable-type-no-sql-server-2008/</link>
+      <pubDate>Wed, 08 Jul 2009 13:19:09 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/07/08/alterar-a-estrutura-de-um-userdefinedtable-type-no-sql-server-2008/</guid>
+      <description>&lt;p&gt;Uma das novidades do SQL Server 2008, foi o aparecimento do &lt;a href=&#34;http://technet.microsoft.com/en-us/library/bb522526.aspx&#34; target=&#34;_blank&#34;&gt;UserDefinedTable Type&lt;/a&gt;, permitindo assim criar uma estrutura de uma tabela e usa-la como um table-value parameter.&lt;/p&gt;
+
+&lt;p&gt;Num projecto em que estou a trabalhar actualmente utilizo este tipo de dados e precisei de o alterar após já o ter referenciado num stored procedure. Como está bem explicito &lt;a href=&#34;http://technet.microsoft.com/en-us/library/bb522526.aspx&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;, não podemos alterar a estrutura do tipo de dados após te-lo criado.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The user-defined table type definition cannot be modified after it is created.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Para o fazer, teremos que remover e criar novamente o nosso tipo com as alterações pretendidas. Extra-trabalho quando já o temos referenciado, pois como seria de esperar não deixa antes de removermos essas mesmas referências.&lt;/p&gt;
+
+&lt;p&gt;Para contornar o problema segui os seguintes passos:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Criar uma novo tipo igual ao que pretendo remover com um novo nome&lt;/li&gt;
+&lt;li&gt;Alterar para o novo nome todas as referências do que pretendemos alterar&lt;/li&gt;
+&lt;li&gt;Remover o tipo que existia inicialmente&lt;/li&gt;
+&lt;li&gt;Criar o novo com as alterações pretendidas e voltar a substituir todas as referências&lt;/li&gt;
+&lt;li&gt;Remover o tipo criado no ponto 1.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Não me parece a melhor solução para este problema, mas para já é que se arranja.&lt;/p&gt;
+
+&lt;p&gt;Se existir uma melhor agradeço que me digam. 🙂&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SSMS 2008 &#43; Alterar nr de registos a retornar nas opções SELECT e EDIT do menu de contexto da tabela</title>
+      <link>https://blog.tiagosalgado.com/2009/05/28/ssms-2008-alterar-nr-de-registos-a-retornar-nas-opes-select-e-edit-do-menu-de-contexto-da-tabela/</link>
+      <pubDate>Thu, 28 May 2009 22:48:35 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/28/ssms-2008-alterar-nr-de-registos-a-retornar-nas-opes-select-e-edit-do-menu-de-contexto-da-tabela/</guid>
+      <description>&lt;p&gt;Na ultima versão do SQL Server Management Studio (SSMS), ao abrirmos o menu de contexto de uma tabela na nossa base de dados, as opções de SELECT e EDIT têm um limite de registos que irão ser retornados definido por defeito, 1000 e 200 respectivamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/sql_server_2k8_select_edit_rows_limits.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;sql_server_2k8_select_edit_rows_limits&#34; border=&#34;0&#34; alt=&#34;sql_server_2k8_select_edit_rows_limits&#34; src=&#34;http://oito.files.wordpress.com/2009/05/sql_server_2k8_select_edit_rows_limits_thumb.jpg&#34; width=&#34;777&#34; height=&#34;696&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Isto faz com que sempre que quisermos retornar os resultados de uma tabela com mais de 200 (EDIT) e 1000 (SELECT), temos que ir à query gerada e retirar/alterar o “TOP N”.&lt;/p&gt;
+
+&lt;p&gt;Se para nós estes valores não são suficientes e queremos alterá-los, ou até mesmo ignora-los e retornarmos todos os registos da tabela, podemos fazê-lo no menu &lt;strong&gt;Tools &amp;gt; Options &amp;gt; SQL Server Object Explorer &amp;gt; Commands&lt;/strong&gt; e alterar os valores lá definidos ou simplesmente atribuir o valor 0 (zero) fazendo com que não seja incluida a expressão TOP N.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/05/image7.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;border-bottom:0;border-left:0;display:inline;border-top:0;border-right:0;&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://oito.files.wordpress.com/2009/05/image_thumb6.png&#34; width=&#34;747&#34; height=&#34;428&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Após esta alteração, já podem usar ambas opções com os novos valores definidos.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Actualizar a cache do Intellisence do SQL Server 2008</title>
+      <link>https://blog.tiagosalgado.com/2009/05/13/actualizar-a-cache-do-intellisence-do-sql-server-2008/</link>
+      <pubDate>Wed, 13 May 2009 20:40:36 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/13/actualizar-a-cache-do-intellisence-do-sql-server-2008/</guid>
+      <description>&lt;p&gt;No &lt;a href=&#34;http://www.microsoft.com/sqlserver/2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;SQL Server 2008&lt;/a&gt;, quando criamos uma nova tabela, um Stored Procedure, etc … o Intellisence (no SQL Server Management Studio) não fica de imediato actualizado para acedermos rapidamente a esse objecto que criamos.&lt;/p&gt;
+
+&lt;p&gt;Para resolver isso, podemos actualizar a cache do Intellisence usando uma das duas formas:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Menu Edit &amp;gt; Intellisence &amp;gt; Refresh Local Cache&lt;/li&gt;
+&lt;li&gt;Pelo atalho CTRL + SHIFT + R&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 SP1 disponivel</title>
+      <link>https://blog.tiagosalgado.com/2009/04/12/sql-server-2008-sp1-disponivel/</link>
+      <pubDate>Sun, 12 Apr 2009 17:49:19 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/04/12/sql-server-2008-sp1-disponivel/</guid>
+      <description>&lt;p&gt;Está disponível para download o SP1 para o &lt;a href=&#34;http://www.microsoft.com/sqlserver/2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;SQL Server 2008&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=66ab3dbb-bf3e-4f46-9559-ccc6a4f9dc19&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2008 – erro ao alterar a estrutura de uma tabela</title>
+      <link>https://blog.tiagosalgado.com/2008/11/09/sql-server-2008-erro-ao-alterar-a-estrutura-de-uma-tabela/</link>
+      <pubDate>Sun, 09 Nov 2008 00:41:49 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/11/09/sql-server-2008-erro-ao-alterar-a-estrutura-de-uma-tabela/</guid>
+      <description>&lt;p&gt;Ao tentar alterar o tipo de dados de uma coluna, surgiu-me um erro ao tentar gravar estas alterações, não me permitindo fazer o que pretendia.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2008/11/sql2k8-savedialogwarnig.jpg&#34;&gt;&lt;img title=&#34;sql2k8_savedialogwarnig&#34; style=&#34;display:block;float:none;margin-left:auto;margin-right:auto;border-width:0;&#34; height=&#34;194&#34; alt=&#34;sql2k8_savedialogwarnig&#34; src=&#34;http://oito.files.wordpress.com/2008/11/sql2k8-savedialogwarnig-thumb.jpg&#34; width=&#34;244&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Para contornar isto, temos que desactivar a opção “Prevent saving changes that require table re-creation”.&lt;/p&gt;
+
+&lt;p&gt;Para isso vao ao menu Tools &amp;gt; Options &amp;gt; Designers &amp;gt; Table and Database Designers e desmarcam essa opção.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2008/11/sql2k8-optionsdialog.jpg&#34;&gt;&lt;img title=&#34;sql2k8_optionsdialog&#34; style=&#34;display:block;float:none;margin-left:auto;margin-right:auto;border-width:0;&#34; height=&#34;371&#34; alt=&#34;sql2k8_optionsdialog&#34; src=&#34;http://oito.files.wordpress.com/2008/11/sql2k8-optionsdialog-thumb.jpg&#34; width=&#34;644&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

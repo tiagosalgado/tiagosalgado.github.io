@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typemock on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/typemock/</link>
+    <description>Recent content in Typemock on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 18 Jan 2011 10:21:27 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/typemock/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Telerik JustMock Free Edition</title>
+      <link>https://blog.tiagosalgado.com/2011/01/18/telerik-justmock-free-edition/</link>
+      <pubDate>Tue, 18 Jan 2011 10:21:27 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/01/18/telerik-justmock-free-edition/</guid>
+      <description>&lt;p&gt;JustMock Free Edition is a developer productivity tool designed to make&lt;/p&gt;
+
+&lt;p&gt;it easy to create mock objects. JustMock Free Edition cuts your&lt;/p&gt;
+
+&lt;p&gt;development time and helps you create better unit tests without&lt;/p&gt;
+
+&lt;p&gt;requiring you to change your code. It allows you to perform fast and&lt;/p&gt;
+
+&lt;p&gt;controlled tests that are independent of external dependencies like&lt;/p&gt;
+
+&lt;p&gt;databases, web services, or proprietary code._&lt;/p&gt;
+
+&lt;p&gt;Mais informação e download em &lt;a href=&#34;http://www.telerik.com/products/mocking/free.aspx&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.telerik.com/products/mocking/free.aspx&#34;&gt;http://www.telerik.com/products/mocking/free.aspx&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET Bundle</title>
+      <link>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</link>
+      <pubDate>Tue, 19 May 2009 12:55:26 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/05/19/asp-net-bundle/</guid>
+      <description>&lt;p&gt;O ASP.NET Bundle é o novo produto da &lt;a href=&#34;http://www.typemock.com/&#34; target=&#34;_blank&#34;&gt;TypeMock&lt;/a&gt;. É uma ferramanta para testes unitários em aplicações &lt;a href=&#34;http://msdn.microsoft.com/asp.net/&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt;. Para o lançamento deste produto, a &lt;a href=&#34;http://www.typemock.com&#34; target=&#34;_blank&#34;&gt;TypeMock &lt;/a&gt;está a oferecer licenças. Para ganhar uma basta seguirem as instruções &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;Begin&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.typemock.com/&#34;&gt;Unit Testing&lt;/a&gt; ASP.NET? &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET unit testing&lt;/a&gt; has never been this easy.&lt;/p&gt;
+
+&lt;p&gt;Typemock is launching a new product for ASP.NET developers – the &lt;strong&gt;ASP.NET Bundle&lt;/strong&gt; &amp;#8211; and for the launch will be giving out &lt;span style=&#34;color:#006600;&#34;&gt;&lt;strong&gt;FREE licenses&lt;/strong&gt;&lt;/span&gt; to bloggers and their readers.&lt;/p&gt;
+
+&lt;p&gt;The ASP.NET Bundle is the ultimate ASP.NET unit testing solution, and offers both &lt;a href=&#34;http://www.typemock.com/&#34;&gt;Typemock Isolator&lt;/a&gt;, a &lt;a href=&#34;http://www.typemock.com/&#34;&gt;unit test&lt;/a&gt; tool and &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;Ivonna&lt;/a&gt;, the Isolator add-on for &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;ASP.NET unit testing&lt;/a&gt;, for a bargain price.&lt;/p&gt;
+
+&lt;p&gt;Typemock Isolator is a leading &lt;a href=&#34;http://www.typemock.com/&#34;&gt;.NET unit testing&lt;/a&gt; tool (C# and VB.NET) for many ‘hard to test’ technologies such as &lt;a href=&#34;http://typemock.com/sharepointpage.php&#34;&gt;SharePoint&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;MVC&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/wcfpage.php&#34;&gt;WCF&lt;/a&gt;, WPF, &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;Silverlight&lt;/a&gt; and more. Note that for &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;unit testing Silverlight&lt;/a&gt; there is an open source Isolator add-on called &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;SilverUnit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first 60 bloggers who will blog this text in their blog and &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;tell us about it&lt;/a&gt;, will get a Free Isolator ASP.NET Bundle license (Typemock Isolator + Ivonna). If you post this in an ASP.NET &lt;strong&gt;dedicated&lt;/strong&gt; blog, you&amp;#8217;ll get a license automatically (even if more than 60 submit) during the first week of this announcement.&lt;/p&gt;
+
+&lt;p&gt;Also 8 bloggers will get an &lt;strong&gt;additional 2 licenses&lt;/strong&gt; (each) to give away to their readers / friends.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, click the following link for [O ASP.NET Bundle é o novo produto da &lt;a href=&#34;http://www.typemock.com/&#34; target=&#34;_blank&#34;&gt;TypeMock&lt;/a&gt;. É uma ferramanta para testes unitários em aplicações &lt;a href=&#34;http://msdn.microsoft.com/asp.net/&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt;. Para o lançamento deste produto, a &lt;a href=&#34;http://www.typemock.com&#34; target=&#34;_blank&#34;&gt;TypeMock &lt;/a&gt;está a oferecer licenças. Para ganhar uma basta seguirem as instruções &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;Begin&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.typemock.com/&#34;&gt;Unit Testing&lt;/a&gt; ASP.NET? &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET unit testing&lt;/a&gt; has never been this easy.&lt;/p&gt;
+
+&lt;p&gt;Typemock is launching a new product for ASP.NET developers – the &lt;strong&gt;ASP.NET Bundle&lt;/strong&gt; &amp;#8211; and for the launch will be giving out &lt;span style=&#34;color:#006600;&#34;&gt;&lt;strong&gt;FREE licenses&lt;/strong&gt;&lt;/span&gt; to bloggers and their readers.&lt;/p&gt;
+
+&lt;p&gt;The ASP.NET Bundle is the ultimate ASP.NET unit testing solution, and offers both &lt;a href=&#34;http://www.typemock.com/&#34;&gt;Typemock Isolator&lt;/a&gt;, a &lt;a href=&#34;http://www.typemock.com/&#34;&gt;unit test&lt;/a&gt; tool and &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;Ivonna&lt;/a&gt;, the Isolator add-on for &lt;a href=&#34;http://sm-art.biz/Ivonna.aspx&#34;&gt;ASP.NET unit testing&lt;/a&gt;, for a bargain price.&lt;/p&gt;
+
+&lt;p&gt;Typemock Isolator is a leading &lt;a href=&#34;http://www.typemock.com/&#34;&gt;.NET unit testing&lt;/a&gt; tool (C# and VB.NET) for many ‘hard to test’ technologies such as &lt;a href=&#34;http://typemock.com/sharepointpage.php&#34;&gt;SharePoint&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;ASP.NET&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/ASP.NET_unit_testing_page.php&#34;&gt;MVC&lt;/a&gt;, &lt;a href=&#34;http://www.typemock.com/wcfpage.php&#34;&gt;WCF&lt;/a&gt;, WPF, &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;Silverlight&lt;/a&gt; and more. Note that for &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;unit testing Silverlight&lt;/a&gt; there is an open source Isolator add-on called &lt;a href=&#34;http://www.typemock.com/Silverlight_unit_testing_page.php&#34;&gt;SilverUnit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first 60 bloggers who will blog this text in their blog and &lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;tell us about it&lt;/a&gt;, will get a Free Isolator ASP.NET Bundle license (Typemock Isolator + Ivonna). If you post this in an ASP.NET &lt;strong&gt;dedicated&lt;/strong&gt; blog, you&amp;#8217;ll get a license automatically (even if more than 60 submit) during the first week of this announcement.&lt;/p&gt;
+
+&lt;p&gt;Also 8 bloggers will get an &lt;strong&gt;additional 2 licenses&lt;/strong&gt; (each) to give away to their readers / friends.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, click the following link for](&lt;a href=&#34;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&#34;&gt;http://blog.typemock.com/2009/05/get-free-typemock-licenses-aspnet.html&lt;/a&gt;) on how to get your free license.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#cc0000;&#34;&gt;&lt;strong&gt;&lt;em&gt;End&lt;/em&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

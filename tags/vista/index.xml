@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vista on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/vista/</link>
+    <description>Recent content in Vista on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 03 Jun 2009 20:51:30 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/vista/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SP2 para Windows Server 2008 e Windows Vista</title>
+      <link>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</link>
+      <pubDate>Wed, 03 Jun 2009 20:51:30 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/06/03/sp2-para-windows-server-2008-e-windows-vista/</guid>
+      <description>&lt;p&gt;Já lá vai mais de uma semana mas deixo aqui os links para o SP2 do &lt;a href=&#34;http://www.microsoft.com/windowsserver2008/en/us/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Server 2008&lt;/a&gt; e &lt;a href=&#34;http://www.microsoft.com/windows/windows-vista/default.aspx&#34; target=&#34;_blank&#34;&gt;Windows Vista&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=9f073285-b6ef-4297-85ce-f4463d06d6cb&amp;displaylang=en&#34; target=&#34;_blank&#34;&gt;Download ISO&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd537674.aspx&#34; target=&#34;_blank&#34;&gt;Release Notes Windows Vista w/ SP2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd540765.aspx&#34; target=&#34;_blank&#34;&gt;Release Notes Windows Server 2008 w/ SP2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/windows/dd300591.aspx&#34; target=&#34;_blank&#34;&gt;Things to know&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/dd335038.aspx&#34; target=&#34;_blank&#34;&gt;FAQ&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Criar grupo de utilizadores no Vista</title>
+      <link>https://blog.tiagosalgado.com/2008/06/16/criar-grupo-de-utilizadores-no-vista/</link>
+      <pubDate>Mon, 16 Jun 2008 12:59:41 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/06/16/criar-grupo-de-utilizadores-no-vista/</guid>
+      <description>&lt;p&gt;Pelos vistos as versões Windows Vista Starter, Windows Vista Home Basic e Windows Vista Home Premium não permitem criar grupos de utilizadores de uma forma rápida e simples para o utilizador &amp;#8220;mais normal&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Para dar a volta a isto, podemos adicionar usando o &amp;#8220;NET LOCALGROUP /ADD nome_do_grupo&amp;#8221;. Basta abrir a linha de comandos e podem ver as opções do comando fazendo &amp;#8220;NET LOCALGROUP /?&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Já agora fica a dica que para instalar o Cisco VPN Client numa versão em inglês no Vista em Português, precisamos de criar o grupo &amp;#8220;Users&amp;#8221; para contornar o erro na instalação. Foi devido a isto que tive a necessidade de criar o grupo 🙂&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UAC em modo de silêncio</title>
+      <link>https://blog.tiagosalgado.com/2008/05/19/uac-em-modo-de-silencio/</link>
+      <pubDate>Mon, 19 May 2008 13:17:46 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/05/19/uac-em-modo-de-silencio/</guid>
+      <description>&lt;p&gt;Vi neste &lt;a href=&#34;http://www.portugal-a-programar.org/forum/index.php/topic,25142.msg197485.html#msg197485&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt; uma indicação de que poderia por o UAC em modo de silêncio em vez de o desligar completamente.&lt;/p&gt;
+
+&lt;p&gt;A solução está em instalar &lt;a title=&#34;TweakUAC&#34; href=&#34;http://www.tweak-uac.com/what-is-uac/&#34; target=&#34;_blank&#34;&gt;este&lt;/a&gt; software e aplicar-lhe o &amp;#8220;quiet mode&amp;#8221;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;This option does &lt;strong&gt;not&lt;/strong&gt; turn off UAC; instead, it only makes UAC to operate in the quiet mode. In the quiet mode, UAC does not display the elevation prompts for the administrators. That is, when you attempt to do an administrative task, you will be allowed to proceed automatically, without prompting you to confirm the operation. All other features of UAC would still be enabled: the programs will run with the standard user permissions by default, and the standard users will still see the elevation prompts (the quiet mode applies to the administrator accounts only).&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Vista SP1</title>
+      <link>https://blog.tiagosalgado.com/2008/03/18/windows-vista-sp1/</link>
+      <pubDate>Tue, 18 Mar 2008 21:53:58 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/03/18/windows-vista-sp1/</guid>
+      <description>&lt;p&gt;Já está aí o SP1 para o &lt;a href=&#34;http://www.microsoft.com/vista&#34; target=&#34;_blank&#34;&gt;Windows Vista&lt;/a&gt;. Façam o download para 32bits &lt;a href=&#34;http://download.microsoft.com/download/3/a/9/3a9b72c2-527d-4694-8a49-84c056d4c34d/Windows6.0-KB936330-X86-wave0.exe&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; ou para 64bits &lt;a href=&#34;http://download.microsoft.com/download/8/3/b/83b8c814-b000-44a4-b667-8c1f58727b8b/Windows6.0-KB936330-X64-wave0.exe&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; (ambos em inglês).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UltimatePC &amp;#8211; Extras e exclusivos</title>
+      <link>https://blog.tiagosalgado.com/2008/03/07/ultimatepc-extras-e-exclusivos/</link>
+      <pubDate>Fri, 07 Mar 2008 14:01:27 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/03/07/ultimatepc-extras-e-exclusivos/</guid>
+      <description>&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://www.ultimatepc.com/&#34; title=&#34;UltimatePC&#34;&gt;UltimatePC&lt;/a&gt; é o novo site lançado pela &lt;a target=&#34;_blank&#34; href=&#34;http://www.microsoft.com&#34; title=&#34;Microsoft&#34;&gt;Microsoft&lt;/a&gt; onde reune todos os extras e exclusivos disponiveis para quem possui o &lt;a href=&#34;http://www.microsoft.com/windows/products/windowsvista/default.aspx&#34; title=&#34;Windows Vista&#34;&gt;Windows Vista Ultimate&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

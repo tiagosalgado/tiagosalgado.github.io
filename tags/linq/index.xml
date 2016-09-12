@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linq on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/linq/</link>
+    <description>Recent content in Linq on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 15 Apr 2010 22:26:21 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/linq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Extrair texto entre tags HTML (LINQ&#43;Regex)</title>
+      <link>https://blog.tiagosalgado.com/2010/04/15/extrair-texto-entre-tags-html-linqregex/</link>
+      <pubDate>Thu, 15 Apr 2010 22:26:21 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/15/extrair-texto-entre-tags-html-linqregex/</guid>
+      <description>&lt;p&gt;Hoje o meu colega de trabalho pediu-me para o ajudar a extrair uma parte do texto de uma página p/ ser posteriormente enviado.&lt;/p&gt;
+
+&lt;p&gt;Não se trata nada de complexo, apenas apeteceu-me deixar aqui p/ consultar mais tarde caso precise 🙂&lt;/p&gt;
+
+&lt;p&gt;O HTML da página que deve ser pesquisado é algo como:&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;html&#34;&gt;TD&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;valign&lt;/span&gt;=&lt;span class=&#34;attr&#34;&gt;top&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;colspan&lt;/span&gt;=&lt;span class=&#34;attr&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;kwrd&#34;&gt;&amp;gt;&lt;/span&gt;TESTE 1XPTO ONLINE&lt;span class=&#34;kwrd&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;html&#34;&gt;TD&lt;/span&gt;&lt;span class=&#34;kwrd&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt; 
+
+Para o fazer, fiz o seguinte código:
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;Regex r = &lt;span class=&#34;kwrd&#34;&gt;new&lt;/span&gt; Regex(&lt;span class=&#34;str&#34;&gt;&#34;&amp;lt;TD(.*?)&amp;gt;(.*?)&amp;lt;/TD&amp;gt;&#34;&lt;/span&gt;);&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt; s = &lt;span class=&#34;str&#34;&gt;@&#34;&lt;TD valign=top colspan=6&gt;TESTE 1XPTO ONLINE&lt;/TD&gt;&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 2XPTO ONLINE&amp;lt;/TD&amp;gt;&lt;/pre&gt;
+
+
+&lt;pre&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 3XPTO ONLINE&amp;lt;/TD&amp;gt;&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 4XPTO ONLINE&amp;lt;/TD&amp;gt;&lt;/pre&gt;
+
+
+&lt;pre&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 5XPTO ONLINE&amp;lt;/TD&amp;gt;&#34;&amp;lt;/span&gt;;&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;&amp;#160;&lt;/pre&gt;
+
+
+&lt;pre&gt;MatchCollection mc = r.Matches(s);&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;foreach&lt;/span&gt; (Match m &lt;span class=&#34;kwrd&#34;&gt;in&lt;/span&gt; mc)&lt;/pre&gt;
+
+
+&lt;pre&gt;{&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;    Console.WriteLine(m.Groups[2].Value.Trim());&lt;/pre&gt;
+
+
+&lt;pre&gt;}&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+  Outra forma de fazer o mesmo, e recorrendo ao LINQ, é esta:
+&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;var q = from Match m &lt;span class=&#34;kwrd&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;new&lt;/span&gt; Regex(&lt;span class=&#34;str&#34;&gt;@&#34;&amp;lt;TD(.*?)&amp;gt;(.*?)&amp;lt;/TD&amp;gt;&#34;&lt;/span&gt;).Matches(s)&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;        select m.Groups[2].Value.Trim();&lt;/pre&gt;
+  
+  
+  &lt;pre class=&#34;alt&#34;&gt;&amp;#160;&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;q.ToArray&amp;lt;&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt;&amp;gt;().ToList().ForEach(&lt;span class=&#34;kwrd&#34;&gt;new&lt;/span&gt; Action&amp;lt;&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt;&amp;gt;(EnviarSinais));&lt;/pre&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;
+  Por fim, basta criar a função &lt;strong&gt;EnviarSinais&lt;/strong&gt;:
+&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;void&lt;/span&gt; EnviarSinais(&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt; str)&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;{&lt;/pre&gt;
+  
+  
+  &lt;pre class=&#34;alt&#34;&gt;        Console.WriteLine(str);&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;}&lt;/pre&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;
+  Quanto ao código em LINQ, se houver melhor forma de o fazer, indiquem pf 🙂
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

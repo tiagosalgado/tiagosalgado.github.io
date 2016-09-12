@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/cloud/</link>
+    <description>Recent content in Cloud on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 12 Apr 2011 14:02:12 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Concurso Reach the Cloud</title>
+      <link>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</link>
+      <pubDate>Tue, 12 Apr 2011 14:02:12 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/12/concurso-reach-the-cloud/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://img718.imageshack.us/img718/9763/reachthecloudcontest.png&#34; target=&#34;_blank&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; border=&#34;0&#34; src=&#34;http://img718.imageshack.us/img718/9763/reachthecloudcontest.png&#34; width=&#34;510&#34; height=&#34;176&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;grande-prémio&#34;&gt;Grande prémio&lt;/h4&gt;
+
+&lt;p&gt;Um voo de 25 min. num caça de combate L-39 Albatros. A experiência inclui manobras de voo como loopings, subidas e descidas a pique. ATENÇÃO: o prémio só é concedido a pessoas sem problemas de saúde sendo exigida a apresentação de electrocardiograma. Caso o vencedor não preencha os requisitos médicos, ser-lhe-á atribuído um prémio alternativo (por exemplo, viagem em balão). O prémio inclui uma viagem de fim-de-semana para uma pessoa a Usedom, Alemanha, com estadia em hotel, aluguer de automóvel e voo (valor total aprox. de 10,000 USD).&lt;/p&gt;
+
+&lt;h4 id=&#34;prémios-regionais&#34;&gt;Prémios regionais&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;1º:&lt;/strong&gt; uma XBOX 360 com televisor de topo e uma Kinect&lt;br /&gt;
+&lt;strong&gt;2º:&lt;/strong&gt; um portátil com Windows 7&lt;br /&gt;
+&lt;strong&gt;3º:&lt;/strong&gt; um telemóvel Windows Phone 7 (sem contrato de comunicações)&lt;/p&gt;
+
+&lt;h4 id=&#34;prémio-especial&#34;&gt;Prémio especial&lt;/h4&gt;
+
+&lt;p&gt;Os primeiros 250 participantes que se registem no desafio receberão um helicóptero R/C.&lt;/p&gt;
+
+&lt;p&gt;Todas as informações em &lt;a href=&#34;https://www.microsoft.com/emea/reachthecloud/pt-pt/Default.aspx#/Home&#34; target=&#34;_blank&#34;&gt;Reach the Cloud&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Orleans &amp;#8211; software framework for cloud applications</title>
+      <link>https://blog.tiagosalgado.com/2011/04/12/orleans-software-framework-for-cloud-applications/</link>
+      <pubDate>Tue, 12 Apr 2011 10:47:54 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/12/orleans-software-framework-for-cloud-applications/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Client + cloud computing is a disruptive, new computing platform, combining diverse client devices – PCs, smartphones, sensors, and single-function and embedded devices – with the unlimited, on-demand computation and data storage offered by cloud computing services such as Amazon’s AWS or Microsoft’s Windows Azure. As with every advance in computing, programming is a fundamental challenge as client + cloud computing combines many difficult aspects of software development.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Orleans is a software framework for building client + cloud applications. Orleans encourages use of simple concurrency patterns that are easy to understand and implement correctly, building on an actor-like model with declarative specification of persistence, replication, and consistency and using lightweight transactions to support the development of reliable and scalable client + cloud software.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://research.microsoft.com/apps/pubs/?id=141999&#34; target=&#34;_blank&#34;&gt;Orleans on Microsoft Research&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&#34;http://blog.agafonov.net.ua/post/2011/04/12/Orleans-software-framework-for-cloud-applications.aspx&#34; title=&#34;http://blog.agafonov.net.ua/post/2011/04/12/Orleans-software-framework-for-cloud-applications.aspx&#34;&gt;http://blog.agafonov.net.ua/post/2011/04/12/Orleans-software-framework-for-cloud-applications.aspx&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/azure/</link>
+    <description>Recent content in Azure on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 01 Mar 2013 13:39:38 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building Web Apps with ASP.NET Jump Start</title>
+      <link>https://blog.tiagosalgado.com/2013/03/01/building-web-apps-with-asp-net-jump-start/</link>
+      <pubDate>Fri, 01 Mar 2013 13:39:38 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/03/01/building-web-apps-with-asp-net-jump-start/</guid>
+      <description>&lt;p&gt;Jon Galloway, Damian Edwards and Scott Hanselman provides now 8 hours of free ASP.NET training videos.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-01-Whats-New-in-ASPNET-45&#34;&gt;Building Web Apps with ASP.NET Jump Start: (01) What&amp;#8217;s New in ASP.NET 4.5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-02-Building-and-Deploying-Websites-with-ASPNET-MVC-4&#34;&gt;Building Web Apps with ASP.NET Jump Start: (02) Building and Deploying Websites with ASP.NET MVC 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-03-Creating-HTML5-Applications-with-jQuery&#34;&gt;Building Web Apps with ASP.NET Jump Start: (03) Creating HTML5 Applications with jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-04-Building-a-Service-Layer-with-ASPNET-Web-API&#34;&gt;Building Web Apps with ASP.NET Jump Start: (04) Building a Service Layer with ASP.NET Web API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-05-Leveraging-Your-ASPNET-Development-Skills-to-Build-Offic&#34;&gt;Building Web Apps with ASP.NET Jump Start: (05) Leveraging Your ASP.NET Development Skills to Build Office Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-06-Building-and-Leveraging-Social-Services-in-ASPNET&#34;&gt;Building Web Apps with ASP.NET Jump Start: (06) Building and Leveraging Social Services in ASP.NET&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-07-Building-for-the-Mobile-Web&#34;&gt;Building Web Apps with ASP.NET Jump Start: (07) Building for the Mobile Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-08-Real-time-Communication-with-SignalR&#34;&gt;Building Web Apps with ASP.NET Jump Start: (08) Real-time Communication with SignalR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-09-Taking-Advantage-of-Windows-Azure-Services&#34;&gt;Building Web Apps with ASP.NET Jump Start: (09) Taking Advantage of Windows Azure Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Read the &lt;a href=&#34;http://www.hanselman.com/blog/BuildingWebAppsWithASPNETJumpStart8HoursOfFREETrainingVideos.aspx&#34; target=&#34;_blank&#34;&gt;Scott Hanselman post&lt;/a&gt; to check a summary of each episode and full course outline.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How-to Index for Windows Azure</title>
+      <link>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</link>
+      <pubDate>Mon, 11 Apr 2011 13:02:22 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/11/how-to-index-for-windows-azure/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How to: Build a Windows Azure Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee814754.aspx&#34;&gt;How to Configure Virtual Machine Sizes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee758697.aspx&#34;&gt;How to Configure Connection Strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee907419.aspx&#34;&gt;How to Configure Operating System Versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee758708.aspx&#34;&gt;How to Configure Local Storage Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432987.aspx&#34;&gt;How to Create a Certificate for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433063.aspx&#34;&gt;How to Create a Remote Desktop Protocol File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432991.aspx&#34;&gt;How to Define Environment Variables Before a Role Starts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433020.aspx&#34;&gt;How to Define Input Endpoints for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432980.aspx&#34;&gt;How to Define Internal Endpoints for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456327.aspx&#34;&gt;How to Define Startup Tasks for a Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432965.aspx&#34;&gt;How to Encrypt a Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433115.aspx&#34;&gt;How to Restrict Communication Between Roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433051.aspx&#34;&gt;How to Retrieve Role Instance Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432963.aspx&#34;&gt;How to Use the RoleEnvironment.Changing Event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433023.aspx&#34;&gt;How to Use the RoleEnvironment.Changed Event&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Use the Windows Azure SDK Tools to Package and Deploy an Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433136.aspx&#34;&gt;How to Prepare the Windows Azure Compute Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433131.aspx&#34;&gt;How to Configure the Compute Emulator to Emulate Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433133.aspx&#34;&gt;How to Package an Application by Using the CSPack Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433130.aspx&#34;&gt;How to Run an Application in the Compute Emulator by Using the CSRun Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433132.aspx&#34;&gt;How to Initialize the Storage Emulator by Using the DSInit Command-Line Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432970.aspx&#34;&gt;How to Change the Configuration of a Running Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432961.aspx&#34;&gt;How to Attach a Debugger to New Role Instances&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432969.aspx&#34;&gt;How to View Trace Information in the Compute Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433134.aspx&#34;&gt;How to Configure SQL Server for the Storage Emulator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Configure a Web Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433110.aspx&#34;&gt;How to Configure a Web Role for Multiple Web Sites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432956.aspx&#34;&gt;How to Configure the Virtual Directory Location&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433064.aspx&#34;&gt;How to Configure a Windows Azure Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433080.aspx&#34;&gt;How to Configure the Site Entry in the Service Definition File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433059.aspx&#34;&gt;How to Configure IIS Components in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433113.aspx&#34;&gt;How to Configure a Service to Use a Legacy Web Role&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Windows Azure VM Roles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465391.aspx&#34;&gt;How to Create the Base VHD for a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465409.aspx&#34;&gt;How to Install the Windows Azure Integration Components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg697584.aspx&#34;&gt;How to Enable Windows Azure Connect for a VM Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg466226.aspx&#34;&gt;How to Develop an Adapter for a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465407.aspx&#34;&gt;How to Prepare the Server Image for Uploading to Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465385.aspx&#34;&gt;How to Upload a VHD to Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465379.aspx&#34;&gt;How to Create and Deploy the VM Role Service Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg697586.aspx&#34;&gt;How to Use Certificates With a VM Role in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465406.aspx&#34;&gt;How to Change a Server Image for a VM Role by Using a Differencing VHD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465392.aspx&#34;&gt;How to Change the Configuration of a VM role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg466230.aspx&#34;&gt;How to Manage the Lifecycle of VM Role Instances in Windows Azure&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Administering Windows Azure Hosted Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433024.aspx&#34;&gt;How to Setup a Windows Azure Subscription&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456328.aspx&#34;&gt;How to Setup Multiple Administrator Accounts&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Deploy a Windows Azure Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456329.aspx&#34;&gt;How to Package your Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/dd179441.aspx&#34;&gt;How to Deploy a Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433118.aspx&#34;&gt;How to Create a Hosted Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433066.aspx&#34;&gt;How to Create a Storage Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee871996.aspx&#34;&gt;How to Configure the Service Topology&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Upgrade a Service&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee517255.aspx&#34;&gt;How to Perform In-Place Upgrades&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee517253.aspx&#34;&gt;How to Swap a Service&amp;#8217;s VIPs&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Upgrades to the Windows Azure Guest OS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456325.aspx&#34;&gt;How to Determine the Current Guest OS of your Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433101.aspx&#34;&gt;How to Upgrade the Guest OS in the Management Portal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg456324.aspx&#34;&gt;How to Upgrade the Guest OS in the Service Configuration File&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Management Certificates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551722.aspx&#34;&gt;How to Create a Management Certificate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551726.aspx&#34;&gt;How to Add a Management Certificate to a Windows Azure Subscription&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage Service Certificates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465712.aspx&#34;&gt;How to Add a New Certificate to the Certificate Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465718.aspx&#34;&gt;How to Associate a Certificate with a Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg465711.aspx&#34;&gt;How to Update a Certificate in the Certificate Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ff795779.aspx&#34;&gt;How to Configure an HTTPS Endpoint in Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg551724.aspx&#34;&gt;How to Control Access to Certificates on a Virtual Machine&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Use Storage Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433066.aspx&#34;&gt;How to Create a Storage Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg494982.aspx&#34;&gt;How to Read Configuration Settings for the Storage Client Library and Handle Changed Settings&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Configure Windows Azure Connect&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433071.aspx&#34;&gt;How to Activate Windows Azure Roles for Windows Azure Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432964.aspx&#34;&gt;How to Install Local Endpoints with Windows Azure Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg433031.aspx&#34;&gt;How to Create and Configure a Group of Endpoints in Windows Azure Connect&lt;/a&gt;****&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to: Manage CDN on Windows Azure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680301.aspx&#34;&gt;How to Enable CDN for Windows Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680307.aspx&#34;&gt;How to Map CDN Content to a Custom Domain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680303.aspx&#34;&gt;How to Remove Content from the CDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680306.aspx&#34;&gt;How to Manage Expiration of Blob Content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg680299.aspx&#34;&gt;How to Manage Expiration of Hosted Service Content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;from: &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/gg432998.aspx&#34; title=&#34;http://msdn.microsoft.com/en-us/library/gg432998.aspx&#34;&gt;http://msdn.microsoft.com/en-us/library/gg432998.aspx&lt;/a&gt; (via &lt;a href=&#34;http://blogs.msdn.com/b/otavio/&#34; title=&#34;http://blogs.msdn.com/b/otavio/&#34;&gt;http://blogs.msdn.com/b/otavio/&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

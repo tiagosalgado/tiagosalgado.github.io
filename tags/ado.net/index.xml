@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ado.Net on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/ado/index.net/</link>
+    <description>Recent content in Ado.Net on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 25 Jan 2011 10:24:28 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/ado.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cheat Sheet ADO.NET Entity Framework: Object-Relational Mapping and Data Access</title>
+      <link>https://blog.tiagosalgado.com/2011/01/25/cheat-sheet-ado-net-entity-framework-object-relational-mapping-and-data-access/</link>
+      <pubDate>Tue, 25 Jan 2011 10:24:28 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/01/25/cheat-sheet-ado-net-entity-framework-object-relational-mapping-and-data-access/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;alignnone&#34; title=&#34;refcardz_adonet&#34; src=&#34;http://refcardz.dzone.com/sites/all/files/refcardz/covers/34355.png&#34; alt=&#34;&#34; width=&#34;206&#34; height=&#34;266&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The ADO.NET Entity Framework is a powerful object-relational mapping tool that exists inside Microsoft Visual Studio 2010. This DZone Refcard starts with the basics by showing you how to create a new Data Model. Once you have finished creating the Data Model, author Dane Morgridge moves on to discuss how to insert, query, update, and delete entities. Finishing things up is a section on POCO support with Entity Framework 4.0.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://refcardz.dzone.com/refcardz/adonet-entity-framework-object?oid=hom34355&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

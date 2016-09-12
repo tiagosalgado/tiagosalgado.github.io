@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resource Governor on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/resource-governor/</link>
+    <description>Recent content in Resource Governor on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 21 Jul 2009 12:24:32 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/resource-governor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SQL Server 2008 Resource Governor</title>
+      <link>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</link>
+      <pubDate>Tue, 21 Jul 2009 12:24:32 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2009/07/21/sql-server-2008-resource-governor/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://oito.files.wordpress.com/2009/07/ee151608-image001en-us1.gif&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-438&#34; title=&#34;sql_server_2008_logo&#34; src=&#34;http://oito.files.wordpress.com/2009/07/ee151608-image001en-us1.gif&#34; alt=&#34;sql_server_2008_logo&#34; width=&#34;363&#34; height=&#34;75&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;O Resource Governor é uma funcionalidade adicionado ao SQL Server 2008 que permite-nos gerir a carga e os recursos que irão ser usados em determinada base de dados.&lt;/p&gt;
+
+&lt;p&gt;Muitas vezes, devido a querys mal construidas ou até mesmo por se tratar de operações bastante pesadas, pretendiamos que apenas utiliza-se uma percentagem dos recursos do servidor e deixasse os restantes recursos para outras operações que fossem solicitadas.&lt;/p&gt;
+
+&lt;p&gt;Esta funcionalidade veio resolver isto mesmo, ou seja, podemos agora definir que determinada operação irá apenas usar X% dos recursos e até mesmo indicar quais serão as querys prioritárias.&lt;/p&gt;
+
+&lt;p&gt;Para perceberem melhor como funciona e como configurar, deixo os seguintes links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb934084.aspx&#34; target=&#34;_blank&#34;&gt;Resource Governor Concepts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb933866.aspx&#34; target=&#34;_blank&#34;&gt;Managing SQL Server Workloads with Resource Governor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ee151608.aspx&#34; target=&#34;_blank&#34;&gt;Using Resource Governor&lt;/a&gt; (&lt;a href=&#34;http://download.microsoft.com/download/D/B/D/DBDE7972-1EB9-470A-BA18-58849DB3EB3B/ResourceGov.docx&#34; target=&#34;_blank&#34;&gt;download white-paper&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

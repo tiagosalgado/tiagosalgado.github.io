@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wpf on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/wpf/</link>
+    <description>Recent content in Wpf on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 21 Sep 2011 19:29:01 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mishra Reader</title>
+      <link>https://blog.tiagosalgado.com/2011/09/21/mishra-reader/</link>
+      <pubDate>Wed, 21 Sep 2011 19:29:01 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/09/21/mishra-reader/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;alignnone&#34; title=&#34;Mishra_Reader &#34; src=&#34;http://img171.imageshack.us/img171/6066/screen01wi.png&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&#34;http://mishrareader.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Mishra Reader&lt;/a&gt;, é um cliente do &lt;a href=&#34;http://www.google.com/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt; desenvolvido em &lt;a href=&#34;http://pt.wikipedia.org/wiki/Windows_Presentation_Foundation&#34; target=&#34;_blank&#34;&gt;WPF&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O projecto está alojado no &lt;a href=&#34;http://www.codeplex.com/&#34; target=&#34;_blank&#34;&gt;Codeplex&lt;/a&gt;, e pode ser feito o download &lt;a href=&#34;http://mishrareader.codeplex.com/releases/view/71161&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 Logon Background Changer em WPF</title>
+      <link>https://blog.tiagosalgado.com/2010/03/15/windows-7-logon-background-changer-em-wpf/</link>
+      <pubDate>Mon, 15 Mar 2010 01:12:55 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/03/15/windows-7-logon-background-changer-em-wpf/</guid>
+      <description>&lt;p&gt;Este post tem dois propósitos, um para divulgar este utilitário que permite fazer exactamente o que indica no titulo do post, e outro que é por ter sido desenvolvido em WPF 🙂&lt;/p&gt;
+
+&lt;p&gt;Quanto ao funcionamento deste utilitário, é só escolher a imagem que queremos e ele altera a imagem que aparece na janela de login do Windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://img96.imageshack.us/img96/4673/win7bg.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img96.imageshack.us/img96/4673/win7bg.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.julien-manici.com/windows_7_logon_background_changer/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/c/</link>
+    <description>Recent content in C# on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 31 Aug 2014 00:19:19 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/c" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Add Validation rules with FluentValidation</title>
+      <link>https://blog.tiagosalgado.com/2014/08/31/add-validation-rules-with-fluentvalidation/</link>
+      <pubDate>Sun, 31 Aug 2014 00:19:19 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2014/08/31/add-validation-rules-with-fluentvalidation/</guid>
+      <description>&lt;p&gt;One scenario we have in almost all applications where requires user inputs, are validation rules. We have lot of different ways to implement validation (both server and client sides), and one of these ways is using a library called &lt;a href=&#34;https://fluentvalidation.codeplex.com&#34; target=&#34;_blank&#34;&gt;FluentValidation&lt;/a&gt;, where it uses lambda expressions to build all validation rules.&lt;/p&gt;
+
+&lt;p&gt;To integrate it, we can get the package from Nuget and add it to our project:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://res.cloudinary.com/tiagosalgado/image/upload/v1473719146/nuget_ssrrj8.png&#34;&gt;&lt;img class=&#34;alignnone wp-image-1422 size-full&#34; src=&#34;https://res.cloudinary.com/tiagosalgado/image/upload/v1473719146/nuget_ssrrj8.png&#34; alt=&#34;nuget&#34; width=&#34;900&#34; height=&#34;600&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This will add FluentValidation references.&lt;/p&gt;
+
+&lt;p&gt;For this example, we&amp;#8217;ll use a simple model such as:&lt;/p&gt;
+
+&lt;pre class=&#34;brush: csharp; title: ; notranslate&#34; title=&#34;&#34;&gt;public class Person
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Address { get; set; }
+    public int Age { get; set; }
+}
+&lt;/pre&gt;
+
+&lt;p&gt;Now, to create our validator, we need to have a class who inherits from AbstractValidator&lt;T&gt;, where T in this case will the Person.&lt;/p&gt;
+
+&lt;pre class=&#34;brush: csharp; title: ; notranslate&#34; title=&#34;&#34;&gt;using FluentValidation;
+using FluentValidationExample.Models;
+namespace FluentValidationExample.Validators
+{
+    public class PersonValidator : AbstractValidator&amp;lt;Person&amp;gt;
+    {
+    }
+}
+&lt;/pre&gt;
+
+&lt;p&gt;Having our class created, we can now define the rules to validate a Person entity in the validator class constructor. For this example, I&amp;#8217;ll add two rules, one to validate if the first name is not empty and other to make sure we have a age greater than 18.&lt;/p&gt;
+
+&lt;pre class=&#34;brush: csharp; title: ; notranslate&#34; title=&#34;&#34;&gt;public PersonValidator()
+{
+    RuleFor(d =&amp;gt; d.FirstName)
+        .NotEmpty()
+        .WithMessage(&#34;First name cannot be empty&#34;);
+
+    RuleFor(d =&amp;gt; d.Age)
+        .Must(AgeMustBeGreaterThan18)
+        .WithMessage(&#34;Age must be greater than 18&#34;);
+}
+
+private bool AgeMustBeGreaterThan18(int age)
+{
+    return age &amp;gt; 18;
+}
+&lt;/pre&gt;
+
+&lt;p&gt;FluentValidation already includes some built-in validations, so for our first validation we can use the NotEmpty() method. For the second validation, we&amp;#8217;ve created a new method who verifies the Age property value and makes sure is greater than 18. If not, it will throw an error.&lt;/p&gt;
+
+&lt;p&gt;In this case, the validator will go through all rules and will send the result back with any errors, but we can decide to stop on the first failure.&lt;/p&gt;
+
+&lt;pre class=&#34;brush: csharp; title: ; notranslate&#34; title=&#34;&#34;&gt;public PersonValidator()
+{
+    RuleFor(d =&amp;gt; d.FirstName)
+        .Cascade(CascadeMode.StopOnFirstFailure)
+        .NotEmpty()
+        .WithMessage(&#34;First name cannot be empty&#34;);
+
+    RuleFor(d =&amp;gt; d.Age)
+        .Must(AgeMustBeGreaterThan18)
+        .WithMessage(&#34;Age must be greater than 18&#34;);
+}
+
+private bool AgeMustBeGreaterThan18(int age)
+{
+    return age &amp;gt; 18;
+}
+&lt;/pre&gt;
+
+&lt;p&gt;Having the validator created, we now need to call it when we want to validate all rules for the Person model, check if there are any errors, and display (and log) those to the user.&lt;/p&gt;
+
+&lt;pre class=&#34;brush: csharp; title: ; notranslate&#34; title=&#34;&#34;&gt;static void Main(string[] args)
+{
+    var person = new Person
+    {
+        FirstName = &#34;&#34;,
+        LastName = &#34;Salgado&#34;,
+        Age = 17, // I wish
+        Address = &#34;London, UK&#34;
+    };
+
+    var validator = new PersonValidator();
+
+    var validationResult = validator.Validate(person);
+
+    if (!validationResult.IsValid)
+    {
+        validationResult.Errors.ToList().ForEach(p =&amp;gt; Console.WriteLine(p.ErrorMessage));
+    }
+
+    Console.Read();
+}
+&lt;/pre&gt;
+
+&lt;p&gt;I&amp;#8217;m not defining the FirstName and i&amp;#8217;ve set the age as 17 to force both rules to fail, so the output will be both error messages:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://res.cloudinary.com/tiagosalgado/image/upload/v1473719247/console_output_swuen8.png&#34;&gt;&lt;img class=&#34;alignnone wp-image-1421 size-full&#34; src=&#34;https://res.cloudinary.com/tiagosalgado/image/upload/v1473719247/console_output_swuen8.png&#34; alt=&#34;console_output&#34; width=&#34;677&#34; height=&#34;343&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is just a example of how we can add FluentValidation to a project, but much more advanced validations can be done, so I recommend you to read the &lt;a href=&#34;https://fluentvalidation.codeplex.com/documentation&#34; target=&#34;_blank&#34;&gt;documentation &lt;/a&gt;and follow the examples available in the project page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replace filenames to avoid overwrite the ones already saved</title>
+      <link>https://blog.tiagosalgado.com/2013/01/08/replace-filenames-to-avoid-overwrite-the-ones-already-saved/</link>
+      <pubDate>Tue, 08 Jan 2013 18:00:37 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/01/08/replace-filenames-to-avoid-overwrite-the-ones-already-saved/</guid>
+      <description>&lt;p&gt;The following code is for a easy and simple way to change the filenames in order to avoid overwriting the ones already saved on file system. Any bug detected please leave a comment.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C# Yellow Book 2011</title>
+      <link>https://blog.tiagosalgado.com/2011/10/16/c-yellow-book-2011/</link>
+      <pubDate>Sun, 16 Oct 2011 21:38:43 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/10/16/c-yellow-book-2011/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;alignnone&#34; title=&#34;chsarp_yellow_book&#34; src=&#34;http://img69.imageshack.us/img69/7775/csharpyellow.png&#34; alt=&#34;&#34; width=&#34;315&#34; height=&#34;215&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&#34;http://www.robmiles.com&#34; target=&#34;_blank&#34;&gt;Rob Miles&lt;/a&gt; fez uma actualização ao seu já bem conhecido C# Yellow Book.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.robmiles.com/c-yellow-book/Rob%20Miles%20CSharp%20Yellow%20Book%202011.pdf&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Controlar Menus visiveis com o web.sitemap</title>
+      <link>https://blog.tiagosalgado.com/2011/04/14/controlar-menus-visiveis-com-o-web-sitemap/</link>
+      <pubDate>Thu, 14 Apr 2011 13:52:21 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/14/controlar-menus-visiveis-com-o-web-sitemap/</guid>
+      <description>&lt;p&gt;Uma maneira rápida de ter um menu a funcionar no nosso website, é recorrer ao controlo Menu e associá-lo a um web.sitemap usando o SiteMapDataSource.&lt;/p&gt;
+
+&lt;p&gt;Exemplo do ficheiro web.sitemap:&lt;/p&gt;
+
+&lt;pre&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; ?&amp;gt;
+&amp;lt;siteMap xmlns=&#34;http://schemas.microsoft.com/AspNet/SiteMap-File-1.0&#34; &amp;gt;
+    &amp;lt;siteMapNode  url=&#34;~/&#34; title=&#34;Home&#34;  description=&#34;Home&#34; &amp;gt;
+        &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 1&#34; title=&#34;Menu 1&#34;&amp;gt;
+            &amp;lt;siteMapNode url=&#34;&#34; description=&#34;SubMenu 1&#34; title=&#34;Sub Menu 1&#34;/&amp;gt;
+        &amp;lt;/siteMapNode&amp;gt;
+        &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 2&#34; title=&#34;Menu 2&#34;/&amp;gt;
+        &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 3&#34; title=&#34;Menu 3&#34;/&amp;gt;
+    &amp;lt;/siteMapNode&amp;gt;
+&amp;lt;/siteMap&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;Exemplo do código para adicionar na página o menu:&lt;/p&gt;
+
+&lt;pre&gt;&lt;pre&gt;&amp;lt;asp:Menu ID=&#34;NavigationMenu&#34; runat=&#34;server&#34; CssClass=&#34;menu&#34; 
+    EnableViewState=&#34;False&#34; IncludeStyleBlock=&#34;False&#34; Orientation=&#34;Horizontal&#34; 
+    DataSourceID=&#34;SiteMapDataSource1&#34; onmenuitemdatabound=&#34;NavigationMenu_MenuItemDataBound&#34;&amp;gt;
+&amp;lt;/asp:Menu&amp;gt;
+&amp;lt;asp:SiteMapDataSource ID=&#34;SiteMapDataSource1&#34; runat=&#34;server&#34;  ShowStartingNode=&#34;false&#34; /&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+  Correndo a aplicação, iremos ter algo como a próxima imagem:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img src=&#34;http://img576.imageshack.us/img576/1593/menu1rc.png&#34; alt=&#34;&#34; width=&#34;454&#34; height=&#34;143&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Para mostrar ou esconder os menus, consoante o tipo de acesso de cada utilizador, podemos definir as Roles em cada SiteMapNode.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Outra forma de controlar os menus visiveis, é adicionar um atributo em cada SiteMapNode e consoante o seu valor, irá ou não mostrar cada um dos menus.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Para isso, o web.sitemap será algo como:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;siteMap xmlns=&#34;http://schemas.microsoft.com/AspNet/SiteMap-File-1.0&#34;&amp;gt;
+  &amp;lt;siteMapNode url=&#34;~/&#34; title=&#34;Home&#34; description=&#34;Home&#34; visible=&#34;true&#34;&amp;gt;
+    &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 1&#34; title=&#34;Menu 1&#34; visible=&#34;true&#34;&amp;gt;
+      &amp;lt;siteMapNode url=&#34;&#34; description=&#34;SubMenu 1&#34; title=&#34;Sub Menu 1&#34; visible=&#34;true&#34; /&amp;gt;
+    &amp;lt;/siteMapNode&amp;gt;
+    &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 2&#34; title=&#34;Menu 2&#34; visible=&#34;False&#34; /&amp;gt;
+    &amp;lt;siteMapNode url=&#34;&#34; description=&#34;Menu 3&#34; title=&#34;Menu 3&#34; visible=&#34;true&#34; /&amp;gt;
+  &amp;lt;/siteMapNode&amp;gt;
+&amp;lt;/siteMap&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+  O atributo “visible” é que nos vai indicar se o menu é ou não mostrado, e para isso vamos adicionar ao evento MenuItemDataBound do Menu o seguinte código:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void NavigationMenu_MenuItemDataBound(object sender, MenuEventArgs e)
+{
+    SiteMapNode node = e.Item.DataItem as SiteMapNode;
+    if (!string.IsNullOrEmpty(node[&#34;visible&#34;]))
+    {
+        bool isVisible;
+        if (bool.TryParse(node[&#34;visible&#34;], out isVisible))
+        {
+            if (!isVisible)
+            {
+                if (e.Item.Parent != null)
+                    e.Item.Parent.ChildItems.Remove(e.Item);
+                else
+                    ((Menu)sender).Items.Remove(e.Item);
+            }
+        }
+    }
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  Desta forma, teremos o nosso menu a mostrar todos os nós cujo valor do atributo Visible seja igual a True.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Para podermos controlar directamente os menus que irão estar ou não visiveis, utilizei uma Treeview para carregar o ficheiro web.sitemap, definir que todos os items mostrarão uma checkbox, que irá indicar o estado do atributo Visible.
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;&amp;lt;asp:TreeView runat=&#34;server&#34; ID=&#34;tvMenus&#34; AutoGenerateDataBindings=&#34;False&#34; DataSourceID=&#34;XmlDsSiteMap&#34;
+    OnTreeNodeCheckChanged=&#34;tvMenus_TreeNodeCheckChanged&#34; ShowCheckBoxes=&#34;All&#34; ShowLines=&#34;True&#34;
+    OnTreeNodeDataBound=&#34;tvMenus_TreeNodeDataBound&#34;&amp;gt;
+    &amp;lt;DataBindings&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMapNode&#34; SelectAction=&#34;None&#34; ShowCheckBox=&#34;True&#34;
+            TextField=&#34;title&#34; /&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMapNode&#34; TextField=&#34;title&#34; /&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMapNode&#34; TextField=&#34;title&#34; /&amp;gt;
+        &amp;lt;asp:TreeNodeBinding DataMember=&#34;siteMap&#34; /&amp;gt;
+    &amp;lt;/DataBindings&amp;gt;
+&amp;lt;/asp:TreeView&amp;gt;
+&amp;lt;asp:XmlDataSource ID=&#34;XmlDsSiteMap&#34; runat=&#34;server&#34; DataFile=&#34;~/Web.sitemap&#34; XPath=&#34;/*/*/*&#34;&amp;gt;
+&amp;lt;/asp:XmlDataSource&amp;gt;
+    &amp;lt;p&amp;gt;
+        &amp;lt;asp:Button runat=&#34;server&#34; ID=&#34;btn&#34; Text=&#34;gravar&#34; OnClick=&#34;btn_Click&#34; /&amp;gt;&amp;lt;/p&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+  &amp;nbsp;
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void tvMenus_TreeNodeDataBound(object sender, TreeNodeEventArgs e)
+{
+    XmlElement node = e.Node.DataItem as XmlElement;
+    if (node.Attributes[&#34;visible&#34;] != null)
+    {
+        if (!string.IsNullOrEmpty(node.Attributes[&#34;visible&#34;].Value))
+        {
+            bool isVisible;
+            if (bool.TryParse(node.Attributes[&#34;visible&#34;].Value, out isVisible))
+            {
+                e.Node.Checked = isVisible;
+            }
+            else
+                e.Node.Checked = true;
+        }
+        else
+            e.Node.Checked = true;
+    }
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  &lt;img src=&#34;http://img828.imageshack.us/img828/8241/menu2f.png&#34; alt=&#34;&#34; width=&#34;396&#34; height=&#34;276&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Por fim, para gravarmos as alterações do atributo consoante o estado da checkbox, adicionamos ao evento TreeNodeCheckChanged da Treeview o seguinte código:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void tvMenus_TreeNodeCheckChanged(object sender, TreeNodeEventArgs e)
+{
+    XmlDsSiteMap.GetXmlDocument().SelectSingleNode(e.Node.DataPath).Attributes[&#34;visible&#34;].Value = e.Node.Checked.ToString();
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  E ao botão que adicionamos para gravar as alterações o seguinte código:
+&lt;/p&gt;
+
+&lt;pre&gt;
+
+
+&lt;pre&gt;protected void btn_Click(object sender, EventArgs e)
+{
+    XmlDsSiteMap.Save();
+}&lt;/pre&gt;
+
+&lt;p&gt;
+  Agora é só activar e desactivar os items ao nosso gosto.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img src=&#34;http://img828.imageshack.us/img828/543/menu3x.png&#34; alt=&#34;&#34; width=&#34;356&#34; height=&#34;271&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instaladores Habilitados de TDT por Código Postal (JSON &#43; C#)</title>
+      <link>https://blog.tiagosalgado.com/2011/04/01/instaladores-habilitados-de-tdt-por-cdigo-postal-json-c/</link>
+      <pubDate>Fri, 01 Apr 2011 18:30:00 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/04/01/instaladores-habilitados-de-tdt-por-cdigo-postal-json-c/</guid>
+      <description>&lt;p&gt;Pois é, a TDT já anda aí, e por razões que não interessam, precisei de retornar todos os instaladores por cada código postal, cuja PT indica como sendo um instalador habilitado.&lt;/p&gt;
+
+&lt;p&gt;Para tal, fiz uma pequena aplicação que enviada um pedido com o código postal, e interpretava o resultado retornado em JSON.&lt;/p&gt;
+
+&lt;p&gt;Primeiro tive que criar um ficheiro de texto com todos os códigos postais. Podem fazer download do que usei &lt;a href=&#34;http://www.box.net/shared/hn52rj4h38&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O código poderá não ser o melhor, mas fez o que pretendia e não precisei de me chatear mais com o assunto.&lt;/p&gt;
+
+&lt;div style=&#34;padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px&#34; id=&#34;scid:812469c5-0cb0-4c63-8c15-c81123a09de7:d60490cc-6ec5-4f42-a36b-2621f06e335e&#34; class=&#34;wlWriterEditableSmartContent&#34;&gt;
+  &lt;pre name=&#34;code&#34; class=&#34;c&#34;&gt;using System;
+using System.Collections.Generic;
+using System.Net;
+using System.IO;
+using System.Web.Script.Serialization;
+
+namespace WebApplication1
+{
+    public class CPs
+    {
+        public string cp4 { get; set; }
+        public string cp3 { get; set; }
+    }
+
+    public partial class _Default : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            GetData();
+        }
+
+        private void GetData()
+        {
+            List&amp;lt;CPs&amp;gt; cps = new List&amp;lt;CPs&amp;gt;();
+            
+            TextReader t = new StreamReader(@&#34;C:cps.txt&#34;);
+            string line = &#34;&#34;;
+            t.ReadLine();
+            while (t.Peek() &amp;gt; 0)
+            {
+                line = t.ReadLine();
+                cps.Add(new CPs() { cp4 = line.Split(&#39;-&#39;)[0].ToString(), cp3 = line.Split(&#39;-&#39;)[1].ToString() });
+            }
+
+            HttpWebRequest request = null;
+
+            foreach (CPs cp in cps)
+            {
+                try
+                {
+                    request = (HttpWebRequest)HttpWebRequest.Create(@&#34;http://tdt.telecom.pt/handlers/installerSearch.ashx?cp4=&#34; + cp.cp4 + &#34;&amp;cp3=&#34; + cp.cp3);
+                    request.ContentType = &#34;application/json; charset=utf-8&#34;;
+                    request.Accept = &#34;application/json, text/javascript, */*&#34;;
+                    WebResponse response = request.GetResponse();
+
+                    Stream stream = response.GetResponseStream();
+                    string json = &#34;&#34;;
+
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        while (!reader.EndOfStream)
+                        {
+                            json += reader.ReadLine();
+                        }
+                    }
+
+                    JavaScriptSerializer serializer = new JavaScriptSerializer();
+                    Dictionary&amp;lt;string, object&amp;gt; x = (Dictionary&amp;lt;string, object&amp;gt;)serializer.DeserializeObject(json);
+
+                    if (x.Count &amp;gt; 0)
+                        Response.Write(cp.cp4 + &#34;;&#34; + cp.cp3 + &#34;;&#34; + x[&#34;name&#34;].ToString() + &#34;;&#34; + x[&#34;phoneNumber1&#34;].ToString() + &#34;;&#34; + x[&#34;phoneNumber2&#34;].ToString() + &#34;&amp;lt;br /&amp;gt;&#34;);
+
+
+                }
+                catch (Exception)
+                {
+
+                }
+
+            }
+        }
+
+   
+    }
+
+    
+}&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;!-- Start block. Created with Code4Blog for Microsoft Visual Studio 2010. Copyright (c)2010 Vitaly Zayko http://zayko.net --&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a31515&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a31515&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #a5c25c&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #cc7832&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;span style=&#34;color: #ffc66d&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&lt;!-- End block --&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Criar um ficheiro Zip em C#</title>
+      <link>https://blog.tiagosalgado.com/2011/03/03/criar-um-ficheiro-zip-em-c/</link>
+      <pubDate>Thu, 03 Mar 2011 18:33:01 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/03/03/criar-um-ficheiro-zip-em-c/</guid>
+      <description>&lt;p&gt;Uma forma rápida de criarmos um ficheiro Zip, é recorrendo à classe ZipPackage do WindowsBase.dll.&lt;/p&gt;
+
+&lt;p&gt;Para tal, precisamos de adicionar a referencia a esta dll ao nosso projecto, que no meu caso está em &amp;#8220;C:Program Files (x86)Reference AssembliesMicrosoftFramework.NETFrameworkv4.0ProfileClientWindowsBase.dll&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Podemos criar agora uma classe com um método para criar o ficheiro Zip com os ficheiros que queremos.&lt;/p&gt;
+
+&lt;pre style=&#34;color: #000000; background: #ffffff;&#34;&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;void&lt;/span&gt; CreateZipFile&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;string&lt;/span&gt; zipFilename&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; List&lt;span style=&#34;color: #808030;&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;&amp;gt;&lt;/span&gt; files&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; CompressionOption compression&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;bool&lt;/span&gt; deleteFilesAfterZip&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;long&lt;/span&gt; bsize &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #008c00;&#34;&gt;4096&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;]&lt;/span&gt; b &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;[&lt;/span&gt;bsize&lt;span style=&#34;color: #808030;&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;int&lt;/span&gt; bytesRead &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #008c00;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;long&lt;/span&gt; bytesWritten &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #008c00;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;Package zip &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; System&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;IO&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Packaging&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Package&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Open&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;zipFilename&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; FileMode&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;OpenOrCreate&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;foreach&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;string&lt;/span&gt; file &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;in&lt;/span&gt; files&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+                    Uri uri &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; PackUriHelper&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;CreatePartUri&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;new&lt;/span&gt; Uri&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;file&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; UriKind&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Absolute&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+                    &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;zip&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;PartExists&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;uri&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                        zip&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;DeletePart&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;uri&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+
+                    PackagePart part &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; zip&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;CreatePart&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;uri&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; compression&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+                    &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;FileStream stream &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;new&lt;/span&gt; FileStream&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;file&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; FileMode&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Open&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; FileAccess&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Read&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                    &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+                        &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;Stream dest &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; part&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;GetStream&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                        &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+                            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;bytesRead &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; stream&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Read&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;b&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #008c00;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; b&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Length&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #008c00;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                            &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+                                dest&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Write&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;b&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #008c00;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; bytesRead&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+                                bytesWritten &lt;span style=&#34;color: #808030;&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; bsize&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+                            &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+                        &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+                    &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+                &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+
+            &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;deleteFilesAfterZip&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                DeleteFiles&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;files&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Adicionei um parametro (deleteFilesAfterZip) que vai remover todos os ficheiros que foram incluidos no Zip, apenas para me facilitar o trabalho, mas não é obrigatório.&lt;/p&gt;
+
+&lt;p&gt;A função DeleteFiles() será algo parecido com isto:&lt;/p&gt;
+
+&lt;pre style=&#34;color: #000000; background: #ffffff;&#34;&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;void&lt;/span&gt; DeleteFiles&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;List&lt;span style=&#34;color: #808030;&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;&amp;gt;&lt;/span&gt; files&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;foreach&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;string&lt;/span&gt; file &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;in&lt;/span&gt; files&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt;
+                FileInfo f &lt;span style=&#34;color: #808030;&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;new&lt;/span&gt; FileInfo&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;file&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+                &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;!&lt;/span&gt;f&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Exists&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;
+                    &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;new&lt;/span&gt; FileNotFoundException&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+
+                f&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Delete&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Por fim, para chamarmos a função que cria o ficheiro Zip basta um simples&lt;/p&gt;
+
+&lt;pre style=&#34;color: #000000; background: #ffffff;&#34;&gt;ZIP&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;CreateZipFile&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #0000e6;&#34;&gt;c:xpto.zip&lt;/span&gt;&lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;new&lt;/span&gt; List&lt;span style=&#34;color: #808030;&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #800080;&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #0000e6;&#34;&gt;c:xpto.txt&lt;/span&gt;&lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color: #0000e6;&#34;&gt;c:xpto1.txt&lt;/span&gt;&lt;span style=&#34;color: #800000;&#34;&gt;&#34;&lt;/span&gt; &lt;span style=&#34;color: #800080;&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; System&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;IO&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Packaging&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;CompressionOption&lt;span style=&#34;color: #808030;&#34;&gt;.&lt;/span&gt;Normal&lt;span style=&#34;color: #808030;&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #800000; font-weight: bold;&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color: #808030;&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #800080;&#34;&gt;;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Referências:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.io.packaging.aspx&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.io.packaging.aspx&#34;&gt;http://msdn.microsoft.com/en-us/library/system.io.packaging.aspx&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.io.packaging.zippackage.aspx&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.io.packaging.zippackage.aspx&#34;&gt;http://msdn.microsoft.com/en-us/library/system.io.packaging.zippackage.aspx&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://weblogs.asp.net/jgalloway/archive/2007/10/25/creating-zip-archives-in-net-without-an-external-library-like-sharpziplib.aspx&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://weblogs.asp.net/jgalloway/archive/2007/10/25/creating-zip-archives-in-net-without-an-external-library-like-sharpziplib.aspx&#34;&gt;http://weblogs.asp.net/jgalloway/archive/2007/10/25/creating-zip-archives-in-net-without-an-external-library-like-sharpziplib.aspx&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NBlog : ASP.NET MVC 3.0 Blog Engine</title>
+      <link>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</link>
+      <pubDate>Sat, 26 Feb 2011 15:54:09 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/02/26/nblog-asp-net-mvc-3-0-blog-engine/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nblog.codeplex.com/&#34; target=&#34;_blank&#34;&gt;NLog&lt;/a&gt; é um sistema de blogs desenvolvido em ASP.NET MVC 3, Razor, JQuery e C#.&lt;/p&gt;
+
+&lt;p&gt;Podem ver em funcionamento em &lt;a href=&#34;http://chrisfulstow.com/&#34; title=&#34;http://chrisfulstow.com/&#34;&gt;http://chrisfulstow.com/&lt;/a&gt; ou &lt;a href=&#34;http://blog.appharbor.com/&#34; title=&#34;http://blog.appharbor.com/&#34;&gt;http://blog.appharbor.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Este projecto está disponivel para download no &lt;a href=&#34;http://www.codeplex.com/&#34; target=&#34;_blank&#34;&gt;CodePlex&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Entity Framework Tutorials</title>
+      <link>https://blog.tiagosalgado.com/2011/01/19/entity-framework-tutorials/</link>
+      <pubDate>Wed, 19 Jan 2011 00:59:00 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2011/01/19/entity-framework-tutorials/</guid>
+      <description>&lt;p&gt;Estão disponiveis no site &lt;a href=&#34;www.asp.net&#34; target=&#34;_blank&#34;&gt;ASP.NET&lt;/a&gt; uma &lt;a href=&#34;http://www.asp.net/entity-framework/tutorials&#34; target=&#34;_blank&#34;&gt;série de tutoriais sobre Entity Framework&lt;/a&gt;. Cada um contem ainda um exemplo para download em C# e VB.NET.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-1&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 1&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-2&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 2&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-3&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 3&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-4&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 4&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-5&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 5&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-6&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 6&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-7&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 7&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.asp.net/entity-framework/tutorials/the-entity-framework-and-aspnet-%E2%80%93-getting-started-part-8&#34; target=&#34;_blank&#34;&gt;The Entity Framework and ASP.NET – Getting Started Part 8&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Asynchronous Programming for C# and Visual Basic</title>
+      <link>https://blog.tiagosalgado.com/2010/11/01/asynchronous-programming-for-c-and-visual-basic/</link>
+      <pubDate>Mon, 01 Nov 2010 18:56:08 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/11/01/asynchronous-programming-for-c-and-visual-basic/</guid>
+      <description>&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl02&#34; title=&#34;Visual Studio Async CTP&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl02&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=203690&#34;&gt;&lt;strong&gt;Visual Studio Async CTP&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Download a CTP with new syntax and APIs for asynchronous development.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl04&#34; title=&#34;Whitepaper: Asynchrony in .NET&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl04&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=204844&#34;&gt;&lt;strong&gt;Whitepaper: Asynchrony in .NET&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Get an overview of the new asynchronous features being developed for C#, Visual Basic and the .NET Framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl06&#34; title=&#34;Walkthrough: Getting Started with Async&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl06&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=203988&#34;&gt;&lt;strong&gt;Walkthrough: Getting Started with Async&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow step-by-step instructions for converting a synchronous solution in Visual Basic or C# to an asynchronous one by using the new asynchronous features.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;ctl00_mainContentContainer_ctl08&#34; title=&#34;Iterators in Visual Basic&#34; onclick=&#34;javascript:Track(&#39;ctl00_mainContentContainer_ctl00|ctl00_mainContentContainer_ctl08&#39;,this);&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=204549&#34;&gt;&lt;strong&gt;Iterators in Visual Basic&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn about the iterators that this CTP introduces in Visual Basic. An iterator function or get accessor performs a custom iteration over a collection, and uses the Yield statement to return each element in turn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;101 Samples in C# and Visual Basic&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Download the CTP and then use the 101 samples (in DocumentsMicrosoft Visual Studio Async CTPSamples) to try the new Async CTP features yourself. Check back for an online version coming soon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Utilizar a API do bit.ly para gerar um url curto em C#</title>
+      <link>https://blog.tiagosalgado.com/2010/04/24/utilizar-a-api-do-bit-ly-para-gerar-um-url-curto-em-c/</link>
+      <pubDate>Sat, 24 Apr 2010 00:33:13 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/24/utilizar-a-api-do-bit-ly-para-gerar-um-url-curto-em-c/</guid>
+      <description>&lt;p&gt;Hoje andei a dar uma olhadela à API do serviço bit.ly. Para utilizarmos basta mesmo criar uma conta, e com a key que gera para utilizarmos a API rapidamente fazemos qualquer brincadeira.&lt;/p&gt;
+
+&lt;p&gt;Segue um exemplo rápido de como gerar um link curto a partir da URL inserida.&lt;/p&gt;
+
+&lt;p style=&#34;background-color: white;&#34;&gt;
+  &lt;code style=&#34;font-size: 12px;&#34;&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;string &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;username &amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;= &amp;lt;/span&gt;&amp;lt;span style=&#34;color: darkred;&#34;&gt;&#34;username&#34;&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;;&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;string &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;api &amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;= &amp;lt;/span&gt;&amp;lt;span style=&#34;color: darkred;&#34;&gt;&#34;your_api_key&#34;&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;;&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;using &amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;(&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;WebClient w &amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;= new &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;WebClient&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;())&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;{&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;string &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;LongUrl &amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;= &amp;lt;/span&gt;&amp;lt;span style=&#34;color: darkred;&#34;&gt;&#34;http://blog.tiagosalgado.com&#34;&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;;&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;string &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;bitLyUrl &amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;=string&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;.Format&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;(&amp;lt;/span&gt;&amp;lt;span style=&#34;color: darkred;&#34;&gt;&#34;http://api.bit.ly/v3/shorten?login={0}&amp;apiKey={1}&amp;uri={2}&amp;format=txt&#34;&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;,&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;username&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;,&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;api&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;,&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;LongUrl&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;);&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;string &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;ShortUrl &amp;lt;/span&gt;&amp;lt;span style=&#34;color: blue;&#34;&gt;= &amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;w.DownloadString&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;(&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;bitLyUrl&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;);&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;Console.Write&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;(&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;ShortUrl&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;);&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;Console.Read&amp;lt;/span&gt;&amp;lt;span style=&#34;color: gray;&#34;&gt;();&amp;lt;br /&gt;
+&amp;lt;/span&gt;&amp;lt;span style=&#34;color: black;&#34;&gt;}&amp;lt;/span&gt;&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;E temos algo como isto:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img691.imageshack.us/img691/154/outputbitlyapp.png&#34; alt=&#34;&#34; width=&#34;677&#34; height=&#34;342&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&#34;Download do Projecto&#34; href=&#34;http://www.box.net/shared/pr65xpnjhe&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://e3.boxcdn.net/resources/a5y417x8pf/thumbs/27x30/application/zip.gif&#34; border=&#34;0&#34; alt=&#34;File icon&#34; width=&#34;24&#34; height=&#34;24&#34; align=&#34;absMiddle&#34; /&gt;bitLy_get_shorturl_csharp.zip&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extrair texto entre tags HTML (LINQ&#43;Regex)</title>
+      <link>https://blog.tiagosalgado.com/2010/04/15/extrair-texto-entre-tags-html-linqregex/</link>
+      <pubDate>Thu, 15 Apr 2010 22:26:21 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2010/04/15/extrair-texto-entre-tags-html-linqregex/</guid>
+      <description>&lt;p&gt;Hoje o meu colega de trabalho pediu-me para o ajudar a extrair uma parte do texto de uma página p/ ser posteriormente enviado.&lt;/p&gt;
+
+&lt;p&gt;Não se trata nada de complexo, apenas apeteceu-me deixar aqui p/ consultar mais tarde caso precise 🙂&lt;/p&gt;
+
+&lt;p&gt;O HTML da página que deve ser pesquisado é algo como:&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;html&#34;&gt;TD&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;valign&lt;/span&gt;=&lt;span class=&#34;attr&#34;&gt;top&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;colspan&lt;/span&gt;=&lt;span class=&#34;attr&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;kwrd&#34;&gt;&amp;gt;&lt;/span&gt;TESTE 1XPTO ONLINE&lt;span class=&#34;kwrd&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;html&#34;&gt;TD&lt;/span&gt;&lt;span class=&#34;kwrd&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt; 
+
+Para o fazer, fiz o seguinte código:
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;Regex r = &lt;span class=&#34;kwrd&#34;&gt;new&lt;/span&gt; Regex(&lt;span class=&#34;str&#34;&gt;&#34;&amp;lt;TD(.*?)&amp;gt;(.*?)&amp;lt;/TD&amp;gt;&#34;&lt;/span&gt;);&lt;/pre&gt;
+  
+  &lt;pre&gt;&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt; s = &lt;span class=&#34;str&#34;&gt;@&#34;&lt;TD valign=top colspan=6&gt;TESTE 1XPTO ONLINE&lt;/TD&gt;&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 2XPTO ONLINE&amp;lt;/TD&amp;gt;&lt;/pre&gt;
+
+
+&lt;pre&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 3XPTO ONLINE&amp;lt;/TD&amp;gt;&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 4XPTO ONLINE&amp;lt;/TD&amp;gt;&lt;/pre&gt;
+
+
+&lt;pre&gt;            &amp;lt;TD valign=top colspan=6&amp;gt;TESTE 5XPTO ONLINE&amp;lt;/TD&amp;gt;&#34;&amp;lt;/span&gt;;&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;&amp;#160;&lt;/pre&gt;
+
+
+&lt;pre&gt;MatchCollection mc = r.Matches(s);&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;foreach&lt;/span&gt; (Match m &lt;span class=&#34;kwrd&#34;&gt;in&lt;/span&gt; mc)&lt;/pre&gt;
+
+
+&lt;pre&gt;{&lt;/pre&gt;
+
+
+&lt;pre class=&#34;alt&#34;&gt;    Console.WriteLine(m.Groups[2].Value.Trim());&lt;/pre&gt;
+
+
+&lt;pre&gt;}&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+  Outra forma de fazer o mesmo, e recorrendo ao LINQ, é esta:
+&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;var q = from Match m &lt;span class=&#34;kwrd&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;new&lt;/span&gt; Regex(&lt;span class=&#34;str&#34;&gt;@&#34;&amp;lt;TD(.*?)&amp;gt;(.*?)&amp;lt;/TD&amp;gt;&#34;&lt;/span&gt;).Matches(s)&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;        select m.Groups[2].Value.Trim();&lt;/pre&gt;
+  
+  
+  &lt;pre class=&#34;alt&#34;&gt;&amp;#160;&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;q.ToArray&amp;lt;&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt;&amp;gt;().ToList().ForEach(&lt;span class=&#34;kwrd&#34;&gt;new&lt;/span&gt; Action&amp;lt;&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt;&amp;gt;(EnviarSinais));&lt;/pre&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;
+  Por fim, basta criar a função &lt;strong&gt;EnviarSinais&lt;/strong&gt;:
+&lt;/p&gt;
+
+&lt;div class=&#34;csharpcode&#34;&gt;
+  &lt;pre class=&#34;alt&#34;&gt;&lt;span class=&#34;kwrd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kwrd&#34;&gt;void&lt;/span&gt; EnviarSinais(&lt;span class=&#34;kwrd&#34;&gt;string&lt;/span&gt; str)&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;{&lt;/pre&gt;
+  
+  
+  &lt;pre class=&#34;alt&#34;&gt;        Console.WriteLine(str);&lt;/pre&gt;
+  
+  
+  &lt;pre&gt;}&lt;/pre&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;
+  Quanto ao código em LINQ, se houver melhor forma de o fazer, indiquem pf 🙂
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C# yield</title>
+      <link>https://blog.tiagosalgado.com/2008/09/13/c-yield/</link>
+      <pubDate>Sat, 13 Sep 2008 01:34:39 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/13/c-yield/</guid>
+      <description>&lt;p&gt;A expressão &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx&#34; target=&#34;_blank&#34;&gt;yield&lt;/a&gt; é bastante útil quando queremos os valores de um método que retorna um &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx&#34; target=&#34;_blank&#34;&gt;IEnumerable&lt;/a&gt; ou &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.collections.ienumerator.aspx&#34; target=&#34;_blank&#34;&gt;IEnumerator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para retornarmos os valores entre o intervalo passado como parâmetro no método GetValuesFromInterval() teriamos algo assim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;font color=&#34;#0000ff&#34;&gt;static&lt;/font&gt; IEnumerable&amp;lt;&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt;&amp;gt; GetValuesFromInterval(&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt; min, &lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt; max)
+{
+        List&amp;lt;&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt;&amp;gt; intervalo = &lt;span style=&#34;color:#0000ff;&#34;&gt;new&lt;/span&gt; List&amp;lt;&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt;&amp;gt;();
+        &lt;span style=&#34;color:#0000ff;&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt; i = min+1; i &amp;lt; max; i++)
+        {
+                intervalo.Add(i);
+        }
+        &lt;span style=&#34;color:#0000ff;&#34;&gt;return&lt;/span&gt; intervalo;
+}&lt;/pre&gt;
+
+&lt;p&gt;Neste exemplo, para retornarmos todos os valores precisamos de criar um &lt;a href=&#34;http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx&#34; target=&#34;_blank&#34;&gt;List&lt;/a&gt; e adicionar todos os nºs do intervalo que indicamos, e por fim retornarmos o &lt;a href=&#34;http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx&#34; target=&#34;_blank&#34;&gt;List&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Com a expressão &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx&#34; target=&#34;_blank&#34;&gt;yield&lt;/a&gt; deixamos de precisar de criar um &lt;a href=&#34;http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx&#34; target=&#34;_blank&#34;&gt;List&lt;/a&gt; e ficamos com o código bastante mais elegante.&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&#34;color:#0000ff;&#34;&gt;static&lt;/span&gt; IEnumerable&amp;lt;&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt;&amp;gt; GetValuesFromInterval(&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt; min, &lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt; max)
+{
+        &lt;span style=&#34;color:#0000ff;&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#0000ff;&#34;&gt;int&lt;/span&gt; i = min + 1; i &amp;lt; max; i++)
+        {
+                yield &lt;span style=&#34;color:#0000ff;&#34;&gt;return&lt;/span&gt; i;
+        }
+}&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

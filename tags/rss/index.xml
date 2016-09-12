@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rss on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/rss/</link>
+    <description>Recent content in Rss on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 08 Sep 2008 21:07:51 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/rss/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google Reader &#43; RSS Bandit</title>
+      <link>https://blog.tiagosalgado.com/2008/09/08/google-reader-rss-bandit/</link>
+      <pubDate>Mon, 08 Sep 2008 21:07:51 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/09/08/google-reader-rss-bandit/</guid>
+      <description>&lt;p&gt;As aplicações web são sem dúvida o futuro, e desde que fiz &lt;a href=&#34;http://blog.tiagosalgado.com/2008/01/06/rss-reader-web-based/&#34; target=&#34;_blank&#34;&gt;esta análise&lt;/a&gt; que nunca mais troquei de leitor.&lt;/p&gt;
+
+&lt;p&gt;Mas ok, dá jeito para acedermos de qualquer sitio às nossas leituras mas uma aplicação &amp;#8220;local&amp;#8221; é sempre melhor no que respeita a rapidez na disponibilização dos conteúdos.&lt;/p&gt;
+
+&lt;p&gt;Foi então que me lembrei se existiria algum leitor offline que permitisse fazer a sincronização com o &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt;, e foi aí que encontrei o &lt;a href=&#34;http://www.rssbandit.org/&#34; target=&#34;_blank&#34;&gt;RSS Bandit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-logo.jpg&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;118&#34; alt=&#34;rssbandit_logo&#34; src=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-logo-thumb.jpg&#34; width=&#34;154&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Foi adicionada à nova versão (ainda em BETA) esta opção e que para já está a funcionar muito bem.&lt;/p&gt;
+
+&lt;p&gt;Podem fazer o download &lt;a href=&#34;http://sourceforge.net/forum/forum.php?forum_id=852844&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;, e para sincronizarem com o &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt; basta irem ao menu File &amp;gt; Sincronize Feeds. Alem do &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt;, ainda poderão optar por sincronizar com o &lt;a href=&#34;http://www.newsgator.com/&#34; target=&#34;_blank&#34;&gt;Newsgator Online&lt;/a&gt; e com o &lt;a href=&#34;http://www.microsoft.com/windows/products/winfamily/ie/default.mspx&#34; target=&#34;_blank&#34;&gt;Internet Explorer&lt;/a&gt; ou &lt;a href=&#34;http://office.microsoft.com/pt-pt/outlook/default.aspx&#34; target=&#34;_blank&#34;&gt;Outlook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-sync1.jpg&#34;&gt;&lt;img style=&#34;border-right:0;border-top:0;border-left:0;border-bottom:0;&#34; height=&#34;188&#34; alt=&#34;rssbandit_sync1&#34; src=&#34;http://oito.files.wordpress.com/2008/09/rssbandit-sync1-thumb.jpg&#34; width=&#34;244&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Basta indicarem o username/password da vossa conta e em poucos minutos tá a sincronização feita. O bom disto tudo é que as alterações que façam no &lt;a href=&#34;http://www.rssbandit.org/&#34; target=&#34;_blank&#34;&gt;RSS Bandit&lt;/a&gt; é reflectido no &lt;a href=&#34;http://www.google.pt/reader&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt; 🙂&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RSS Reader (web based)</title>
+      <link>https://blog.tiagosalgado.com/2008/01/06/rss-reader-web-based/</link>
+      <pubDate>Sun, 06 Jan 2008 23:14:20 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2008/01/06/rss-reader-web-based/</guid>
+      <description>
+
+&lt;p&gt;Uso já desde a primeira versão o FeedReader. É gratuito, rápido, simples, em constante desenvolvimento &amp;#8230; sem dúvida que é a aplicação de eleição para este efeito à qual a tenho incluida na &amp;#8220;lista de aplicações a instalar logo após uma instalação limpa do SO&amp;#8221; 🙂 .&lt;/p&gt;
+
+&lt;p&gt;Contudo, nem sempre temos o nosso computador à beira, mas, cada vez mais, o acesso a um computador com ligação à net começa a ser bastante banal. Por isso, decidi perder algum tempo à procura dum serviço que me permitisse ler os meus feeds (ou pelo menos aqueles que diariamente não escapam à minha leitura) em qualquer.&lt;/p&gt;
+
+&lt;p&gt;Algumas pesquisas e cheguei até à seguinte lista:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.google.com/reader/view/#&#34; target=&#34;_blank&#34;&gt;Google Reader&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.feedbucket.com/&#34; target=&#34;_blank&#34;&gt;FeedBucket&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rojo.com/&#34; target=&#34;_blank&#34;&gt;Rojo&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.netvibes.com&#34; target=&#34;_blank&#34;&gt;NetVibes&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.newsgator.com/default.aspx&#34; target=&#34;_blank&#34;&gt;Newsgator&lt;/a&gt;&lt;/ul&gt;
+&amp;nbsp;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;google-reader&#34;&gt;Google Reader&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Rápido a subscrever uma nova feed;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Navegação simples e bastante parecida com o FeedReader;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Importação do meu OPML a 100%.&lt;/ul&gt;
+&amp;nbsp;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;feedbucket&#34;&gt;FeedBucket&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Interface muito pobre;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Lento a adicionar uma subscrição;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sem possibilidade de importar o OPML (bastou esta falha para não continuar a testar).&lt;/ul&gt;
+&amp;nbsp;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;rojo&#34;&gt;Rojo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Não consegui perceber porque é que quando tentava adicionar uma nova feed ele dizia sempre: &amp;#8220;No feeds found&amp;#8221;.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;netvibes&#34;&gt;NetVibes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cada feed é tratada como um widget, logo não é o que procuro.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;De notar que é uma excelente plataforma e vale a pena explora-la e usa-la noutros sentidos.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;newsgator&#34;&gt;Newsgator&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Bastante parecido com o FeedReader&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Muito rápido na navegação, subscrição e apresentação dos conteudos&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transição rápida entre as feeds&lt;/ul&gt;
+&amp;nbsp;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And the winner is: &lt;font size=&#34;4&#34;&gt;&lt;strong&gt;Google Reader&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;Interface simples, rápido na transição entre feeds, actualização rápida dos conteudos, usabilidade na listagem das entradas e semelhança com o FeedReader foram os pontos que tive em consideração na escolha. O Newsgator não ficou muito atrás, mas a publicidade e a forma como estão listadas as entradas não foram de todo o meu agrado.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

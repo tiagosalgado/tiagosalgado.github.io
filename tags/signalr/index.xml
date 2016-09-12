@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Signalr on tiagosalgado.com</title>
+    <link>https://blog.tiagosalgado.com/tags/signalr/</link>
+    <description>Recent content in Signalr on tiagosalgado.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 01 Mar 2013 13:39:38 +0000</lastBuildDate>
+    <atom:link href="https://blog.tiagosalgado.com/tags/signalr/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building Web Apps with ASP.NET Jump Start</title>
+      <link>https://blog.tiagosalgado.com/2013/03/01/building-web-apps-with-asp-net-jump-start/</link>
+      <pubDate>Fri, 01 Mar 2013 13:39:38 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/03/01/building-web-apps-with-asp-net-jump-start/</guid>
+      <description>&lt;p&gt;Jon Galloway, Damian Edwards and Scott Hanselman provides now 8 hours of free ASP.NET training videos.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-01-Whats-New-in-ASPNET-45&#34;&gt;Building Web Apps with ASP.NET Jump Start: (01) What&amp;#8217;s New in ASP.NET 4.5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-02-Building-and-Deploying-Websites-with-ASPNET-MVC-4&#34;&gt;Building Web Apps with ASP.NET Jump Start: (02) Building and Deploying Websites with ASP.NET MVC 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-03-Creating-HTML5-Applications-with-jQuery&#34;&gt;Building Web Apps with ASP.NET Jump Start: (03) Creating HTML5 Applications with jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-04-Building-a-Service-Layer-with-ASPNET-Web-API&#34;&gt;Building Web Apps with ASP.NET Jump Start: (04) Building a Service Layer with ASP.NET Web API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-05-Leveraging-Your-ASPNET-Development-Skills-to-Build-Offic&#34;&gt;Building Web Apps with ASP.NET Jump Start: (05) Leveraging Your ASP.NET Development Skills to Build Office Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-06-Building-and-Leveraging-Social-Services-in-ASPNET&#34;&gt;Building Web Apps with ASP.NET Jump Start: (06) Building and Leveraging Social Services in ASP.NET&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-07-Building-for-the-Mobile-Web&#34;&gt;Building Web Apps with ASP.NET Jump Start: (07) Building for the Mobile Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-08-Real-time-Communication-with-SignalR&#34;&gt;Building Web Apps with ASP.NET Jump Start: (08) Real-time Communication with SignalR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://channel9.msdn.com/Series/Building-Web-Apps-with-ASP-NET-Jump-Start/Building-Web-Apps-with-ASPNET-Jump-Start-09-Taking-Advantage-of-Windows-Azure-Services&#34;&gt;Building Web Apps with ASP.NET Jump Start: (09) Taking Advantage of Windows Azure Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Read the &lt;a href=&#34;http://www.hanselman.com/blog/BuildingWebAppsWithASPNETJumpStart8HoursOfFREETrainingVideos.aspx&#34; target=&#34;_blank&#34;&gt;Scott Hanselman post&lt;/a&gt; to check a summary of each episode and full course outline.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET and Web Tools 2012.2 Update</title>
+      <link>https://blog.tiagosalgado.com/2013/02/19/asp-net-and-web-tools-2012-2-update/</link>
+      <pubDate>Tue, 19 Feb 2013 09:45:52 +0000</pubDate>
+      
+      <guid>https://blog.tiagosalgado.com/2013/02/19/asp-net-and-web-tools-2012-2-update/</guid>
+      <description>&lt;p&gt;The final release is &lt;a href=&#34;http://go.microsoft.com/fwlink/?LinkId=282650&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; 🙂&lt;/p&gt;
+
+&lt;p&gt;You can find a lot of new features and enhancements  on ASP.NET Web API, ASP.NET SignalR, ASP.NET Webforms and MVC and of course Windows Azure.&lt;/p&gt;
+
+&lt;p&gt;You can found some blog posts covering this new updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://weblogs.asp.net/scottgu/archive/2013/02/18/announcing-release-of-asp-net-and-web-tools-2012-2-update.aspx&#34; target=&#34;_blank&#34;&gt;Announcing release of ASP.NET and Web Tools 2012.2 Update&lt;/a&gt; &amp;#8211; by &lt;a href=&#34;http://weblogs.asp.net/scottgu/&#34; target=&#34;_blank&#34;&gt;Scott Gu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.hanselman.com/blog/ReleasedASPNETAndWebTools20122InContext.aspx&#34; target=&#34;_blank&#34;&gt;Released: ASP.NET and Web Tools 2012.2 in Context&lt;/a&gt; &amp;#8211; by &lt;a href=&#34;http://www.hanselman.com/&#34; target=&#34;_blank&#34;&gt;Scott Hanselman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://weblogs.asp.net/jgalloway/archive/2013/02/18/announcing-the-asp-net-and-web-tools-2012-2-release.aspx&#34; target=&#34;_blank&#34;&gt;Announcing the ASP.NET and Web Tools 2012.2 Release!&lt;/a&gt; &amp;#8211; By &lt;a href=&#34;http://weblogs.asp.net/jgalloway/&#34; target=&#34;_blank&#34;&gt;Jon Galloway&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
