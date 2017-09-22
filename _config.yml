@@ -1,0 +1,22 @@
+name: tiago salgado
+description:
+meta_description: "tiago salgado, .net stuff blog"
+
+markdown: kramdown
+highlighter: pygments
+logo: /assets/images/profile.png
+paginate: 15
+baseurl: /
+domain_name: 'https://blog.tiagosalgado.com'
+google_analytics: 'UA-24333751-1'
+#gems: [jekyll-paginate,jekyll-gist]
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-sitemap
+disqus: true
+disqus_shortname: tiagosalgado
+# Details for the RSS feed generator
+url:            'https://blog.tiagosalgado.com'
+author:         'Tiago Salgado'
+permalink: /:year/:month/:day/:title/
