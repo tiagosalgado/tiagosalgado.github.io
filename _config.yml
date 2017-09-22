@@ -3,7 +3,7 @@ description:
 meta_description: "tiago salgado, .net stuff blog"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: /assets/images/profile.png
 paginate: 15
 baseurl: /
