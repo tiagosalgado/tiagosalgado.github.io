@@ -1,0 +1,34 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: number
+  name: id
+  label: id
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: guid
+  label: guid
+- type: text
+  name: slug
+  label: slug
+- type: list
+  name: dsq_thread_id
+  label: dsq_thread_id
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
